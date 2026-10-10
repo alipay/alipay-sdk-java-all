@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.oceanbase.obglobal.sfleads.create request
  * 
  * @author auto create
- * @since 1.0, 2026-09-22 14:29:24
+ * @since 1.0, 2026-10-10 11:47:59
  */
 public class AnttechOceanbaseObglobalSfleadsCreateRequest implements AlipayRequest<AnttechOceanbaseObglobalSfleadsCreateResponse> {
 

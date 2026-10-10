@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoyagerPriceInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7496952435753777344L;
+	private static final long serialVersionUID = 1762771736699639969L;
 
 	/**
 	 * 折扣百分比

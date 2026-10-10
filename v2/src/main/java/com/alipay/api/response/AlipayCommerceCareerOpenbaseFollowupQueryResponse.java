@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceCareerOpenbaseFollowupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6322812165659341941L;
+	private static final long serialVersionUID = 3189364597424314834L;
 
 	/** 
 	 * 终态分类：status=ENDED 时必填(恒有值,回告仅随终态推送)。取值 ENDED=自然完成 / TIMEOUT=超时 / CANCELLED=客户取消(预留,当前抑制不推送) / REJECTED=执行域拒收。与

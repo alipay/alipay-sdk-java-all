@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LucContactWayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1723837413424566282L;
+	private static final long serialVersionUID = 7251866338627873938L;
 
 	/**
 	 * 联系方式类型

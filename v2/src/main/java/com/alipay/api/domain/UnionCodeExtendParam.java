@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UnionCodeExtendParam extends AlipayObject {
 
-	private static final long serialVersionUID = 1386334672561788377L;
+	private static final long serialVersionUID = 3846862871926578447L;
 
 	/**
 	 * 签约人身份信息

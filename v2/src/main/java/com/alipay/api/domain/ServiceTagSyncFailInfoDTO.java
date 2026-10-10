@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ServiceTagSyncFailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2514253256597712288L;
+	private static final long serialVersionUID = 8433414789361646947L;
 
 	/**
 	 * 标签同步的失败描述信息

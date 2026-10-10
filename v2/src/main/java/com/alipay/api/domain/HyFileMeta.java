@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HyFileMeta extends AlipayObject {
 
-	private static final long serialVersionUID = 2821121622216559494L;
+	private static final long serialVersionUID = 5676814842488525543L;
 
 	/**
 	 * 文件url

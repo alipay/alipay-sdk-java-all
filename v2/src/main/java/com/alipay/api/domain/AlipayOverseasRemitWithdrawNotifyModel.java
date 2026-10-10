@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasRemitWithdrawNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8899699264271128317L;
+	private static final long serialVersionUID = 1236235638387711895L;
 
 	/**
 	 * APS定义的机构ID

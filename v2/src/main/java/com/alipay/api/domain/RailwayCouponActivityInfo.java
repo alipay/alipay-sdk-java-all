@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RailwayCouponActivityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8742946696645757854L;
+	private static final long serialVersionUID = 8258923942517912545L;
 
 	/**
 	 * 营销文案

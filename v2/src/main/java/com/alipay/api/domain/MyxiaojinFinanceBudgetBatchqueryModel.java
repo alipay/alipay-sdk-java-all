@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MyxiaojinFinanceBudgetBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6766569241923631192L;
+	private static final long serialVersionUID = 3236834698516511826L;
 
 	/**
 	 * PURCHASE("PURCHASE", "采购")

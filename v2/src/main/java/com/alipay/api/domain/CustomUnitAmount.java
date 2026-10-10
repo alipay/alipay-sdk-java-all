@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CustomUnitAmount extends AlipayObject {
 
-	private static final long serialVersionUID = 4231569894848376623L;
+	private static final long serialVersionUID = 2464726432138826914L;
 
 	/**
 	 * 是否启用灵活定价，启用后可设置 preset、maximum、minimum 字段

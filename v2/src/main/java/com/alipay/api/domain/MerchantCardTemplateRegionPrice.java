@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-15 10:55:39
+ * @since 1.0, 2026-10-10 11:42:57
  */
 public class MerchantCardTemplateRegionPrice extends AlipayObject {
 
-	private static final long serialVersionUID = 3141268984714147746L;
+	private static final long serialVersionUID = 3397917157145239549L;
 
 	/**
 	 * 市级行政区划码，与省、区编码三选一。

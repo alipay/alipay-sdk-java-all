@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-21 11:17:53
+ * @since 1.0, 2026-10-10 11:11:38
  */
 public class HmStageReport extends AlipayObject {
 
-	private static final long serialVersionUID = 8356667631819453579L;
+	private static final long serialVersionUID = 3744269313394832344L;
 
 	/**
 	 * 活动ID

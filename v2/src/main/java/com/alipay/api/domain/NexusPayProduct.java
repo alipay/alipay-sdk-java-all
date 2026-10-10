@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NexusPayProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 5154522725377595833L;
+	private static final long serialVersionUID = 8265451827765696639L;
 
 	/**
 	 * 是否可用

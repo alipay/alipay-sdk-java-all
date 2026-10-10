@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品动态价格删除
  *
  * @author auto create
- * @since 1.0, 2026-09-11 10:47:15
+ * @since 1.0, 2026-10-10 11:47:59
  */
 public class AlipayCommerceMerchantcardTemplatepriceDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1493432245812341859L;
+	private static final long serialVersionUID = 4364477338522449912L;
 
 	/**
 	 * 需要删除动态价格的商品模板ID。
@@ -63,6 +63,13 @@ public class AlipayCommerceMerchantcardTemplatepriceDeleteModel extends AlipayOb
 	@ApiField("string")
 	private List<String> shopIdList;
 
+	/**
+	 * null
+	 */
+	@ApiListField("technician_id_list")
+	@ApiField("string")
+	private List<String> technicianIdList;
+
 	public String getCardTemplateId() {
 		return this.cardTemplateId;
 	}
@@ -110,6 +117,13 @@ public class AlipayCommerceMerchantcardTemplatepriceDeleteModel extends AlipayOb
 	}
 	public void setShopIdList(List<String> shopIdList) {
 		this.shopIdList = shopIdList;
+	}
+
+	public List<String> getTechnicianIdList() {
+		return this.technicianIdList;
+	}
+	public void setTechnicianIdList(List<String> technicianIdList) {
+		this.technicianIdList = technicianIdList;
 	}
 
 }

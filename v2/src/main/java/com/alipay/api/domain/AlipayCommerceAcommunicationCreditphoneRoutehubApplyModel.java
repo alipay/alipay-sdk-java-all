@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceAcommunicationCreditphoneRoutehubApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3775783494368941677L;
+	private static final long serialVersionUID = 8219565334118582726L;
 
 	/**
 	 * 机构PID

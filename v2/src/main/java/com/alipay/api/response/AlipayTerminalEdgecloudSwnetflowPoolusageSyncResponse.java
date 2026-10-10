@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTerminalEdgecloudSwnetflowPoolusageSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4644422273218121532L;
+	private static final long serialVersionUID = 7884412666537335182L;
 
 	
 

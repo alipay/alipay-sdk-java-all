@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class XingheLendassistCarfinauctionApplyloanNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5166393541872365754L;
+	private static final long serialVersionUID = 6391687934818433956L;
 
 	/**
 	 * 星河申请单号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CoreMaterialPoData extends AlipayObject {
 
-	private static final long serialVersionUID = 1494669733428664358L;
+	private static final long serialVersionUID = 2542783147246813363L;
 
 	/**
 	 * 已到货数量，单位是个

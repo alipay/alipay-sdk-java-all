@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSpNfcexpoprodOrderdetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4546182328285918977L;
+	private static final long serialVersionUID = 3459845666622487186L;
 
 	/** 
 	 * null

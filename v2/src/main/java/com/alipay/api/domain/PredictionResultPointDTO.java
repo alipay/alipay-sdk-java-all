@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PredictionResultPointDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5129678765717943815L;
+	private static final long serialVersionUID = 4877295922325898528L;
 
 	/**
 	 * 预测时间，格式yyyy-MM-dd HH:mm

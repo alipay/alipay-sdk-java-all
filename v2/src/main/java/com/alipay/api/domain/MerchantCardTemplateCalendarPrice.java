@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 普通日历价配置，至少包含一条星期固定价或日期固定价。
  *
  * @author auto create
- * @since 1.0, 2026-09-15 10:55:39
+ * @since 1.0, 2026-10-10 11:42:57
  */
 public class MerchantCardTemplateCalendarPrice extends AlipayObject {
 
-	private static final long serialVersionUID = 8753558559252539335L;
+	private static final long serialVersionUID = 2758886539358189782L;
 
 	/**
 	 * null

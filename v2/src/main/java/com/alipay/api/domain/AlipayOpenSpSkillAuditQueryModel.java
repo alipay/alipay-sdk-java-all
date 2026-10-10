@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSpSkillAuditQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8434579573466296521L;
+	private static final long serialVersionUID = 4353293474846482678L;
 
 	/**
 	 * SKILL能力编码code

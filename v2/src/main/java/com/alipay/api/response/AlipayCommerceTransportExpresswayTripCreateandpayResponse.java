@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportExpresswayTripCreateandpayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1276544861243984166L;
+	private static final long serialVersionUID = 1365788181389458137L;
 
 	/** 
 	 * 路网侧扣款行程单号： 1、需要与真实的扣款行程对应 2、路网侧全国车牌付场景下唯一

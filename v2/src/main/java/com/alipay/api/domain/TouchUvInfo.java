@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TouchUvInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7452993227486156219L;
+	private static final long serialVersionUID = 4194131531988169636L;
 
 	/**
 	 * 二维码链接

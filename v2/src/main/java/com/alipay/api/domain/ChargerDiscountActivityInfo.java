@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChargerDiscountActivityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1364895132462156126L;
+	private static final long serialVersionUID = 3169995552399577424L;
 
 	/**
 	 * 满减金额，单位：元

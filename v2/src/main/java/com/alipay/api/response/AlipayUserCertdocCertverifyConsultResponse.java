@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserCertdocCertverifyConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5872327252191263691L;
+	private static final long serialVersionUID = 8736382344378892745L;
 
 	/** 
 	 * 具体哪些字段不一致。与预授权的输入字段对应，类型为字符串列表的JSON格式。

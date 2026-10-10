@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ObTemplateParamRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1773881625242474464L;
+	private static final long serialVersionUID = 5334694167378341275L;
 
 	/**
 	 * 描述字段类型的关键字

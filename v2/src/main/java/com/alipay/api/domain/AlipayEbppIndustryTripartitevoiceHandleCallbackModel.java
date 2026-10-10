@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryTripartitevoiceHandleCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5255348477997533917L;
+	private static final long serialVersionUID = 6463841982539968456L;
 
 	/**
 	 * 机构处理完成时间，yyyy-MM-dd HH:mm:ss；不能早于该客诉的gmtCreate

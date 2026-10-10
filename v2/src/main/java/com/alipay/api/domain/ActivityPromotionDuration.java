@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ActivityPromotionDuration extends AlipayObject {
 
-	private static final long serialVersionUID = 3451655515748319929L;
+	private static final long serialVersionUID = 8319768812957168574L;
 
 	/**
 	 * 参数allowed_days表示允许的星期枚举集合，取值范围为星期至星期日，共7个明确的枚举值。

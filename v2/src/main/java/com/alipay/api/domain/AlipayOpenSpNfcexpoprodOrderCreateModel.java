@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSpNfcexpoprodOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7751723557869779613L;
+	private static final long serialVersionUID = 6735873957938923914L;
 
 	/**
 	 * 订单的描述文案，长度不要超过256个字符

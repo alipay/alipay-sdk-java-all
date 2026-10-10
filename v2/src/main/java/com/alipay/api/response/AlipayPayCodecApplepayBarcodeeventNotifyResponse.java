@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayCodecApplepayBarcodeeventNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3454561246572688857L;
+	private static final long serialVersionUID = 7498839951411412899L;
 
 	/** 
 	 * 结果。 statusCode:Status code used to indicate an error. If omitted, assumed to be 200 (success);subStatusCode:Conveys failure codes from downstream entities or for more granular conveyance of specific error conditions;statusMessage:Not parsed programmatically. Example "Downstream system offline".

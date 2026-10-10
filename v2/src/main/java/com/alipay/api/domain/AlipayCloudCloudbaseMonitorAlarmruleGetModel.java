@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudbaseMonitorAlarmruleGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4491659886223761648L;
+	private static final long serialVersionUID = 3383889975681659947L;
 
 	/**
 	 * 小程序云app ID

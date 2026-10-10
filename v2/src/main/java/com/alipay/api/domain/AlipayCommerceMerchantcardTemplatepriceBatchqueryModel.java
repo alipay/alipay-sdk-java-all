@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品动态价格批量查询
  *
  * @author auto create
- * @since 1.0, 2026-09-11 10:45:55
+ * @since 1.0, 2026-10-10 11:42:58
  */
 public class AlipayCommerceMerchantcardTemplatepriceBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2383139531575122562L;
+	private static final long serialVersionUID = 3123694425941152364L;
 
 	/**
 	 * 需要查询动态价格的商品模板ID。
@@ -66,6 +66,12 @@ public class AlipayCommerceMerchantcardTemplatepriceBatchqueryModel extends Alip
 	 */
 	@ApiField("shop_id")
 	private String shopId;
+
+	/**
+	 * 手艺人价查询条件，仅price_mode=6时可传。
+	 */
+	@ApiField("technician_id")
+	private String technicianId;
 
 	public String getCardTemplateId() {
 		return this.cardTemplateId;
@@ -128,6 +134,13 @@ public class AlipayCommerceMerchantcardTemplatepriceBatchqueryModel extends Alip
 	}
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
+	}
+
+	public String getTechnicianId() {
+		return this.technicianId;
+	}
+	public void setTechnicianId(String technicianId) {
+		this.technicianId = technicianId;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VcpPromoTargetInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2773893788122613962L;
+	private static final long serialVersionUID = 3356277889633786769L;
 
 	/**
 	 * 营销目标

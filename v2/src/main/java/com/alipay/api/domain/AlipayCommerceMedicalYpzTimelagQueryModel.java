@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalYpzTimelagQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7475783633666295934L;
+	private static final long serialVersionUID = 6631638817327559517L;
 
 	/**
 	 * 查询结束时间（事件发生时间）

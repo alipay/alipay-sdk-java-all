@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DormitoryConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 5453325118372765432L;
+	private static final long serialVersionUID = 4171637145887598296L;
 
 	/**
 	 * 允许重复签到开关，不传默认为关闭重复签到

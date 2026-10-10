@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DatadigitalAicsDevinIvrQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8793896274896467295L;
+	private static final long serialVersionUID = 2387411528563263769L;
 
 	/**
 	 * 完整流程名称

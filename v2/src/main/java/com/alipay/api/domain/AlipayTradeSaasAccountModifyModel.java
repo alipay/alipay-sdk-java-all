@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeSaasAccountModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1678788666536133924L;
+	private static final long serialVersionUID = 1635374935835884814L;
 
 	/**
 	 * 需要变更企业主体信息的SaaS客户ID。该客户必须属于当前调用商户，且当前仅允许存在一个可用银行转账账户。

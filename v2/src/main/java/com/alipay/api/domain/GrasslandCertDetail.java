@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GrasslandCertDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6528567279435812786L;
+	private static final long serialVersionUID = 4249969212525298157L;
 
 	/**
 	 * 证书生成时间

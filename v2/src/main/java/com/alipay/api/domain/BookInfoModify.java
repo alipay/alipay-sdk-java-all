@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BookInfoModify extends AlipayObject {
 
-	private static final long serialVersionUID = 2284426157353957875L;
+	private static final long serialVersionUID = 5494871371194789486L;
 
 	/**
 	 * 订座桌台位置。如LOBBY表示大厅；如BOX表示包厢。

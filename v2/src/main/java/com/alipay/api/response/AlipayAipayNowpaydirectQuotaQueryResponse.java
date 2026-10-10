@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAipayNowpaydirectQuotaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6495838746458338164L;
+	private static final long serialVersionUID = 3417841527125554412L;
 
 	/** 
 	 * 余额计算时间

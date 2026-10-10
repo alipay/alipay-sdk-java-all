@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiPcreditbenefitHuabeijinCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4435967826744156617L;
+	private static final long serialVersionUID = 6312326586531795945L;
 
 	/**
 	 * hbmt_53434343434商户活动id

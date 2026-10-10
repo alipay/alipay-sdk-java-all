@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-11 10:45:55
+ * @since 1.0, 2026-10-10 11:42:58
  */
 public class MerchantCardTemplatePriceItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4745336189838818693L;
+	private static final long serialVersionUID = 1591494517679142192L;
 
 	/**
 	 * 市级区域价对应的行政区划码。
@@ -76,6 +76,12 @@ public class MerchantCardTemplatePriceItem extends AlipayObject {
 	 */
 	@ApiField("shop_id")
 	private String shopId;
+
+	/**
+	 * 手艺人价查询条件，仅price_mode=6时可传。
+	 */
+	@ApiField("technician_id")
+	private String technicianId;
 
 	/**
 	 * null
@@ -152,6 +158,13 @@ public class MerchantCardTemplatePriceItem extends AlipayObject {
 	}
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
+	}
+
+	public String getTechnicianId() {
+		return this.technicianId;
+	}
+	public void setTechnicianId(String technicianId) {
+		this.technicianId = technicianId;
 	}
 
 	public List<MerchantCardTemplatePriceWeekRuleVO> getWeekPriceList() {

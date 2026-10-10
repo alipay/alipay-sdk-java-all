@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleBrand extends AlipayObject {
 
-	private static final long serialVersionUID = 2381186122737611599L;
+	private static final long serialVersionUID = 3434521853925327922L;
 
 	/**
 	 * 品牌code

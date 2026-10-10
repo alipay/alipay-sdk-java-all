@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 执行流水查询
  *
  * @author auto create
- * @since 1.0, 2026-10-09 10:17:57
+ * @since 1.0, 2026-10-09 16:27:08
  */
 public class AlipayCommerceCareerFollowupExecutionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3691677481772145412L;
+	private static final long serialVersionUID = 6488393556889131915L;
 
 	/**
 	 * 实际外呼明细 ID。传入时仅查询该任务下的这一条通话明细；不传时返回该任务的全部已结束明细。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalHomedoctorFollowuptaskCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5419181668619835662L;
+	private static final long serialVersionUID = 1498645233938142262L;
 
 	/**
 	 * 阿福用户openid

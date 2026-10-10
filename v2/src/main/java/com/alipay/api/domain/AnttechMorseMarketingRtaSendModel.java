@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 摩卡营销活动发奖接口
  *
  * @author auto create
- * @since 1.0, 2026-02-04 16:46:52
+ * @since 1.0, 2026-10-10 10:30:24
  */
 public class AnttechMorseMarketingRtaSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3887725537133295931L;
+	private static final long serialVersionUID = 8347936376883773315L;
 
 	/**
 	 * 活动id描述具体给用户发奖的活动，预发奖时可以为空
@@ -26,7 +26,7 @@ public class AnttechMorseMarketingRtaSendModel extends AlipayObject {
 	private String certEncryption;
 
 	/**
-	 * 加密类型，参数值大写，如：SHA256或者SM3
+	 * 加密类型，参数值大写，如：SM3
 	 */
 	@ApiField("encryption_type")
 	private String encryptionType;
@@ -68,7 +68,7 @@ public class AnttechMorseMarketingRtaSendModel extends AlipayObject {
 	private String resourceId;
 
 	/**
-	 * 摩斯营销发奖类型，明确本次调用是预发奖或者发奖，发奖环节可以配置验证预发奖验证，二段式降低发奖风险。参数值大写，【PREGRANT：预发奖；GRANT：发奖】
+	 * 摩斯营销发奖类型，明确本次调用是预发奖或者发奖，发奖环节可以配置验证预发奖验证，二段式降低发奖风险。参数值大写，【PREGRANT：预发奖；GRANT：发奖；SMART_GRANT: 智能发奖； EXCHANGE： 兑换发奖】
 	 */
 	@ApiField("send_type")
 	private String sendType;

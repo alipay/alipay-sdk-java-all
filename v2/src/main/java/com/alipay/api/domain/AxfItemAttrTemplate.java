@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-29 17:41:33
+ * @since 1.0, 2026-10-10 11:37:58
  */
 public class AxfItemAttrTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 5841735867449859632L;
+	private static final long serialVersionUID = 7352322837727155925L;
 
 	/**
 	 * 属性说明
 	 */
 	@ApiField("attr_desc")
 	private String attrDesc;
+
+	/**
+	 * DESC，表明该商品属性为描述性字段；SPEC，表明该商品属性为规格字段，创建SKU商品时，需要在sku_list中sku_attrs内填写该属性相关的key和value
+	 */
+	@ApiField("attr_field_type")
+	private String attrFieldType;
 
 	/**
 	 * 属性key
@@ -89,6 +95,13 @@ public class AxfItemAttrTemplate extends AlipayObject {
 	}
 	public void setAttrDesc(String attrDesc) {
 		this.attrDesc = attrDesc;
+	}
+
+	public String getAttrFieldType() {
+		return this.attrFieldType;
+	}
+	public void setAttrFieldType(String attrFieldType) {
+		this.attrFieldType = attrFieldType;
 	}
 
 	public String getAttrKey() {

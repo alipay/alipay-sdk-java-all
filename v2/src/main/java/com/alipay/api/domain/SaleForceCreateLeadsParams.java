@@ -11,17 +11,30 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 提供给saleforce创建商机接口的入参
  *
  * @author auto create
- * @since 1.0, 2026-09-22 14:29:24
+ * @since 1.0, 2026-10-10 11:47:59
  */
 public class SaleForceCreateLeadsParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5123217162742296416L;
+	private static final long serialVersionUID = 7117229745652818515L;
 
 	/**
 	 * 实际主导方
 	 */
 	@ApiField("actual_lead_party")
 	private String actualLeadParty;
+
+	/**
+	 * null
+	 */
+	@ApiListField("ai_products")
+	@ApiField("string")
+	private List<String> aiProducts;
+
+	/**
+	 * AI产品版本
+	 */
+	@ApiField("ai_products_source_version")
+	private String aiProductsSourceVersion;
 
 	/**
 	 * 阿里云结算模式枚举值
@@ -332,6 +345,20 @@ public class SaleForceCreateLeadsParams extends AlipayObject {
 	}
 	public void setActualLeadParty(String actualLeadParty) {
 		this.actualLeadParty = actualLeadParty;
+	}
+
+	public List<String> getAiProducts() {
+		return this.aiProducts;
+	}
+	public void setAiProducts(List<String> aiProducts) {
+		this.aiProducts = aiProducts;
+	}
+
+	public String getAiProductsSourceVersion() {
+		return this.aiProductsSourceVersion;
+	}
+	public void setAiProductsSourceVersion(String aiProductsSourceVersion) {
+		this.aiProductsSourceVersion = aiProductsSourceVersion;
 	}
 
 	public String getAlicloudSettlementMode() {

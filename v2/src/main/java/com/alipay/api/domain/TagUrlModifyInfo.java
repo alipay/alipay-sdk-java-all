@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TagUrlModifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3132956592588332978L;
+	private static final long serialVersionUID = 6179593189539833368L;
 
 	/**
 	 * 链接地址

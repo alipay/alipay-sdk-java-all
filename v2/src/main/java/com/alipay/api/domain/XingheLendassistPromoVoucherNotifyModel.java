@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class XingheLendassistPromoVoucherNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2431935756736497963L;
+	private static final long serialVersionUID = 6283879679746887319L;
 
 	/**
 	 * 星河侧唯一申请单号

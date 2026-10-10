@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCareerOpenbaseFollowupCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8117722533374511238L;
+	private static final long serialVersionUID = 6282674853654417656L;
 
 	/**
 	 * 候选人姓名

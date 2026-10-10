@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AdCamPagination extends AlipayObject {
 
-	private static final long serialVersionUID = 4138732126859312463L;
+	private static final long serialVersionUID = 1663198465393213827L;
 
 	/**
 	 * 当前页

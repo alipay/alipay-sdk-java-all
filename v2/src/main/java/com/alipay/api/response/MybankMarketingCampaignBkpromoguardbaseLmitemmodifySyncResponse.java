@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankMarketingCampaignBkpromoguardbaseLmitemmodifySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1455176592877423172L;
+	private static final long serialVersionUID = 1424229783287624386L;
 
 	/** 
 	 * request_id + 唯一 + LinkedMall商品修改同步场景 +返回请求中的服务标识

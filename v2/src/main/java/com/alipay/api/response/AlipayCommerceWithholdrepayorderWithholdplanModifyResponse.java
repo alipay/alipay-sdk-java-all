@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceWithholdrepayorderWithholdplanModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1334397941683538649L;
+	private static final long serialVersionUID = 2633962836516992367L;
 
 	
 

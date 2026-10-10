@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品动态价格设置
  *
  * @author auto create
- * @since 1.0, 2026-09-15 10:55:39
+ * @since 1.0, 2026-10-10 11:42:57
  */
 public class AlipayCommerceMerchantcardTemplatepriceSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2388916643572997296L;
+	private static final long serialVersionUID = 7157952964324492879L;
 
 	/**
 	 * 普通日历价配置，至少包含一条星期固定价或日期固定价。
@@ -49,6 +49,13 @@ public class AlipayCommerceMerchantcardTemplatepriceSetModel extends AlipayObjec
 	@ApiField("merchant_card_template_shop_price")
 	private List<MerchantCardTemplateShopPrice> shopPriceList;
 
+	/**
+	 * null
+	 */
+	@ApiListField("technician_price_list")
+	@ApiField("merchant_card_template_technician_price")
+	private List<MerchantCardTemplateTechnicianPrice> technicianPriceList;
+
 	public MerchantCardTemplateCalendarPrice getCalendarPrice() {
 		return this.calendarPrice;
 	}
@@ -82,6 +89,13 @@ public class AlipayCommerceMerchantcardTemplatepriceSetModel extends AlipayObjec
 	}
 	public void setShopPriceList(List<MerchantCardTemplateShopPrice> shopPriceList) {
 		this.shopPriceList = shopPriceList;
+	}
+
+	public List<MerchantCardTemplateTechnicianPrice> getTechnicianPriceList() {
+		return this.technicianPriceList;
+	}
+	public void setTechnicianPriceList(List<MerchantCardTemplateTechnicianPrice> technicianPriceList) {
+		this.technicianPriceList = technicianPriceList;
 	}
 
 }

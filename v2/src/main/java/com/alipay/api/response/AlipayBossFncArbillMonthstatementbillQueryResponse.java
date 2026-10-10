@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncArbillMonthstatementbillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6486764714932961871L;
+	private static final long serialVersionUID = 6345161824538644993L;
 
 	/** 
 	 * 当前页码

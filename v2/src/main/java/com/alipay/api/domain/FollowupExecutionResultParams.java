@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 本次通话的结果结构；没有结果时返回空对象。
  *
  * @author auto create
- * @since 1.0, 2026-10-09 10:17:57
+ * @since 1.0, 2026-10-09 16:27:08
  */
 public class FollowupExecutionResultParams extends AlipayObject {
 
-	private static final long serialVersionUID = 4135667393332631419L;
+	private static final long serialVersionUID = 1781334764193555739L;
 
 	/**
 	 * 具体见产品线下定义的字段

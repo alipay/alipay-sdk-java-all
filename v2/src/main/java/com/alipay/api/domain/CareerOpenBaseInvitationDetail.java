@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CareerOpenBaseInvitationDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1472746431969153813L;
+	private static final long serialVersionUID = 2113718148239961752L;
 
 	/**
 	 * 使用SM4算法加密后的手机号密文

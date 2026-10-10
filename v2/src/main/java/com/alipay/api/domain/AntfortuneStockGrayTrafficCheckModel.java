@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntfortuneStockGrayTrafficCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6496574571837932397L;
+	private static final long serialVersionUID = 2544454639996982353L;
 
 	/**
 	 * 实际发往灰度环境的组件/应用名清单，由发布单各组件所选发布环境推得

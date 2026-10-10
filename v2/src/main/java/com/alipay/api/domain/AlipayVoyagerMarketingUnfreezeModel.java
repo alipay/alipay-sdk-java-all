@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayVoyagerMarketingUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8722398794634671731L;
+	private static final long serialVersionUID = 2881373744185894913L;
 
 	/**
 	 * null

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceMediaReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5798714256833288627L;
+	private static final long serialVersionUID = 5265597478166425962L;
 
 	/** 
 	 * 商家pid，类型是服务商并且传参里有m_pid的情况才会返回

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TagUrlInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5626623679948369942L;
+	private static final long serialVersionUID = 2316994956797936591L;
 
 	/**
 	 * nfc链接

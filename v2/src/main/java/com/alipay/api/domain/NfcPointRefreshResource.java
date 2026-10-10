@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NfcPointRefreshResource extends AlipayObject {
 
-	private static final long serialVersionUID = 3538878934653323322L;
+	private static final long serialVersionUID = 3889371424917171691L;
 
 	/**
 	 * 素材文件地址

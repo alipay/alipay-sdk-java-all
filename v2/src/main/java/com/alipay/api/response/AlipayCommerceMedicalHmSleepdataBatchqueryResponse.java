@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalHmSleepdataBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4188515788681643323L;
+	private static final long serialVersionUID = 6127822447617138915L;
 
 	/** 
 	 * 是否已经绑定硬件设备 Y/N

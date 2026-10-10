@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品
  *
  * @author auto create
- * @since 1.0, 2026-08-18 13:29:53
+ * @since 1.0, 2026-10-10 10:20:21
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 6641686322921733621L;
+	private static final long serialVersionUID = 6675459771993766566L;
 
 	/**
 	 * 不传时默认卡商品类型
@@ -162,6 +162,12 @@ public class MerchantCardTemplate extends AlipayObject {
 	private List<LsItemCustomAttr> itemCustomAttrs;
 
 	/**
+	 * 商品版本
+	 */
+	@ApiField("item_version")
+	private String itemVersion;
+
+	/**
 	 * 金额卡的必要参数。其他卡类型无需传入
 	 */
 	@ApiField("money_card_info")
@@ -216,6 +222,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	 */
 	@ApiField("settle_type")
 	private String settleType;
+
+	/**
+	 * SKU列表
+	 */
+	@ApiListField("sku_list")
+	@ApiField("item_sku")
+	private List<ItemSku> skuList;
 
 	/**
 	 * 是否支持用户主动退卡
@@ -389,6 +402,13 @@ public class MerchantCardTemplate extends AlipayObject {
 		this.itemCustomAttrs = itemCustomAttrs;
 	}
 
+	public String getItemVersion() {
+		return this.itemVersion;
+	}
+	public void setItemVersion(String itemVersion) {
+		this.itemVersion = itemVersion;
+	}
+
 	public MoneyCardInfo getMoneyCardInfo() {
 		return this.moneyCardInfo;
 	}
@@ -450,6 +470,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	}
 	public void setSettleType(String settleType) {
 		this.settleType = settleType;
+	}
+
+	public List<ItemSku> getSkuList() {
+		return this.skuList;
+	}
+	public void setSkuList(List<ItemSku> skuList) {
+		this.skuList = skuList;
 	}
 
 	public String getSupportWithdraw() {

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BatchTemplateMsgRecordVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1626867589271129475L;
+	private static final long serialVersionUID = 6234859279372142622L;
 
 	/**
 	 * 批量发送记录ID，唯一标识一次消息模板批量查询
