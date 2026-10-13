@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoTrainstationStopvehicleSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3726339387644988417L;
+	private static final long serialVersionUID = 5732747446466661915L;
 
 	
 

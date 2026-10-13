@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EduRosterInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5676831838254444348L;
+	private static final long serialVersionUID = 5236966736621931853L;
 
 	/**
 	 * 绑定状态

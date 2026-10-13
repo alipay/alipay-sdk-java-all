@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LifeServiceBookingResourceSync extends AlipayObject {
 
-	private static final long serialVersionUID = 8567759122635281546L;
+	private static final long serialVersionUID = 3429912212485567557L;
 
 	/**
 	 * 资源服务截止时间，格式：yyyy-MM-dd HH:mm:ss

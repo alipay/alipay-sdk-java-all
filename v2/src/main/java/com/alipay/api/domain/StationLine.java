@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StationLine extends AlipayObject {
 
-	private static final long serialVersionUID = 8394125325131485449L;
+	private static final long serialVersionUID = 8561374381454692649L;
 
 	/**
 	 * 实时公交到站信息

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndustryInvoiceGasStationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5722356415322512913L;
+	private static final long serialVersionUID = 5415958747741632745L;
 
 	/**
 	 * 支付渠道，2026年10月20号后必传

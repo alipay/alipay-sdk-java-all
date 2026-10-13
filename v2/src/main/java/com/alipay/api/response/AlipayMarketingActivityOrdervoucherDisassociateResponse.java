@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingActivityOrdervoucherDisassociateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5275545595598883489L;
+	private static final long serialVersionUID = 2423244316628324158L;
 
 	/** 
 	 * 支付宝系统取消关联订单成功的时间。 格式为：yyyy-MM-dd HH:mm:ss

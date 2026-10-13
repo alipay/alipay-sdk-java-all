@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-10-10 11:11:38
+ * @since 1.0, 2026-10-12 11:07:59
  */
 public class HmStageReport extends AlipayObject {
 
-	private static final long serialVersionUID = 3744269313394832344L;
+	private static final long serialVersionUID = 4136131772364923289L;
 
 	/**
 	 * 活动ID
 	 */
 	@ApiField("activity_id")
 	private String activityId;
+
+	/**
+	 * 活动类型
+	 */
+	@ApiField("activity_type")
+	private String activityType;
 
 	/**
 	 * 报告正文(Markdown)
@@ -74,6 +80,13 @@ public class HmStageReport extends AlipayObject {
 	}
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
+	}
+
+	public String getActivityType() {
+		return this.activityType;
+	}
+	public void setActivityType(String activityType) {
+		this.activityType = activityType;
 	}
 
 	public String getContentMarkdown() {

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ShortPlayAlbumInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2892154816528271844L;
+	private static final long serialVersionUID = 4254582917184885952L;
 
 	/**
 	 * 短剧唯一标识

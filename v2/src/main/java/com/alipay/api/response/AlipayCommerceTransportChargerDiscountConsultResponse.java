@@ -17,7 +17,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportChargerDiscountConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4745866443832653568L;
+	private static final long serialVersionUID = 7211682958475288641L;
 
 	/** 
 	 * 活动优惠信息

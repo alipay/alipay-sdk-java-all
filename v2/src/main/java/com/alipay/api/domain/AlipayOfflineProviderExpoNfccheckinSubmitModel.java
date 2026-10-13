@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderExpoNfccheckinSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4111448152311352456L;
+	private static final long serialVersionUID = 7827693958828387639L;
 
 	/**
 	 * 活动code值

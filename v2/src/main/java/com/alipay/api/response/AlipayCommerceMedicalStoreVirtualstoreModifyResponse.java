@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.store.virtualstore.modify response.
  * 
  * @author auto create
- * @since 1.0, 2026-10-08 19:47:53
+ * @since 1.0, 2026-10-10 16:32:54
  */
 public class AlipayCommerceMedicalStoreVirtualstoreModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1619961714852825323L;
+	private static final long serialVersionUID = 4757561122736977478L;
 
 	
 

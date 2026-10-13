@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceCareerOpenbaseFollowupCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2281698874262193174L;
+	private static final long serialVersionUID = 5719937814952875337L;
 
 	/** 
 	 * 平台任务号(18 位纯数字,按字符串处理,勿解析内部结构);用于回告与计费对账。查询、取消以 outBizNo 定位。

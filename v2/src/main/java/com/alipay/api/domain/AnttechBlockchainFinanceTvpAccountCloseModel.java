@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechBlockchainFinanceTvpAccountCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3591749517397838632L;
+	private static final long serialVersionUID = 4168288864392377765L;
 
 	/**
 	 * 账号

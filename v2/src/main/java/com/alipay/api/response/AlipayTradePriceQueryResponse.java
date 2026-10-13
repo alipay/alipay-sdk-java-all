@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradePriceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7471769644619339476L;
+	private static final long serialVersionUID = 8886388797276962227L;
 
 	/** 
 	 * 该价格实例是否可用

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LinkedMallItemSpecValueDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1283734953978479663L;
+	private static final long serialVersionUID = 5192143674837275794L;
 
 	/**
 	 * 规格值

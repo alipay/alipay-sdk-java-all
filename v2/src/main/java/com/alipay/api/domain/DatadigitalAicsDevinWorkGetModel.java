@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAicsDevinWorkGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5433765256692659528L;
+	private static final long serialVersionUID = 4838574818513739271L;
 
 	/**
 	 * 数字人标识code

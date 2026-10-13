@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppRentroomAreaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3772262552515986499L;
+	private static final long serialVersionUID = 2766134825345737149L;
 
 	/** 
 	 * 提报的公寓信息

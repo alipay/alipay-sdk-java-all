@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantQipanTuringtagQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7757286647484125877L;
+	private static final long serialVersionUID = 7752326117233952256L;
 
 	/**
 	 * 节点编码列表

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayInsSceneEcommercePurchaselinkAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5361573552396825347L;
+	private static final long serialVersionUID = 6773855474373684556L;
 
 	/**
 	 * 如果明确要求需要指定扣费账户，传入用于蚂蚁保进行校验

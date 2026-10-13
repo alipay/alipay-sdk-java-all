@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VoyagerOrderInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6476779452628929545L;
+	private static final long serialVersionUID = 5358252522842231123L;
 
 	/**
 	 * null

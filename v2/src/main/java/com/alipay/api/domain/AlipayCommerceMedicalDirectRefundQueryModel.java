@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalDirectRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2459853722117152391L;
+	private static final long serialVersionUID = 1481911813861951967L;
 
 	/**
 	 * 外部交易号，该字段与逸康交易号不能都为空

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantJobInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8131916383439359281L;
+	private static final long serialVersionUID = 1559547582999578825L;
 
 	/**
 	 * 活跃商家标签【是/否】

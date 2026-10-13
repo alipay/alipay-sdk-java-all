@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayInsMarketingInscouponQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5357118915996226678L;
+	private static final long serialVersionUID = 5275116134586212785L;
 
 	/**
 	 * 绑定券id，可选，如果传了券id，则只查该券对应的权益

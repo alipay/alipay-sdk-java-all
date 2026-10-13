@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推送淘宝营销人群
  *
  * @author auto create
- * @since 1.0, 2026-03-18 21:06:09
+ * @since 1.0, 2026-10-10 21:41:08
  */
 public class AlipayTradeCrowdConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8538269719997187395L;
+	private static final long serialVersionUID = 3337441697275887342L;
 
 	/**
 	 * 单位元
@@ -28,6 +28,13 @@ public class AlipayTradeCrowdConsultModel extends AlipayObject {
 	@ApiListField("consult_crowd_list")
 	@ApiField("string")
 	private List<String> consultCrowdList;
+
+	/**
+	 * 人群推送接口淘侧ab实验切流标识
+	 */
+	@ApiListField("experiment_flag")
+	@ApiField("experiment_object")
+	private List<ExperimentObject> experimentFlag;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -68,6 +75,13 @@ AAC潜客营销-aacProspectMarketing
 	}
 	public void setConsultCrowdList(List<String> consultCrowdList) {
 		this.consultCrowdList = consultCrowdList;
+	}
+
+	public List<ExperimentObject> getExperimentFlag() {
+		return this.experimentFlag;
+	}
+	public void setExperimentFlag(List<ExperimentObject> experimentFlag) {
+		this.experimentFlag = experimentFlag;
 	}
 
 	public String getOpenId() {

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelBenefitSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2721885798997735451L;
+	private static final long serialVersionUID = 1789346619447816758L;
 
 	/** 
 	 * 流量端生成的权益id

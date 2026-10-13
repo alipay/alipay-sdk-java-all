@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.ocr.llm.detect request
  * 
  * @author auto create
- * @since 1.0, 2026-10-09 21:17:38
+ * @since 1.0, 2026-10-12 10:48:01
  */
 public class DatadigitalFincloudGeneralsaasOcrLlmDetectRequest implements AlipayUploadRequest<DatadigitalFincloudGeneralsaasOcrLlmDetectResponse> {
 
@@ -21,9 +22,19 @@ public class DatadigitalFincloudGeneralsaasOcrLlmDetectRequest implements Alipay
 	private String apiVersion="1.0";
 
 	/** 
+	* 指定需要提取的字段名称，类型为字符串数组，字段名可自定义，与 ocr_type 互不约束。传入非空数组时按指定字段结构化抽取；不传或传空数组时，按材料类型默认字段或通用模式抽取。
+	 */
+	private List<String> extractFields;
+
+	/** 
 	* 二进制流图片，大小限制1M
 	 */
 	private FileItem fileContent;
+
+	/** 
+	* 待识别图片的材料类型。传入枚举编码时按对应材料默认字段抽取；不传或传 OTHER 时使用通用识别模式。可通过 extract_fields 指定需要提取的字段。
+	 */
+	private String ocrType;
 
 	/** 
 	* 客户业务单据号，请保证幂等性。
@@ -35,11 +46,25 @@ public class DatadigitalFincloudGeneralsaasOcrLlmDetectRequest implements Alipay
 	 */
 	private String prompt;
 
+	public void setExtractFields(List<String> extractFields) {
+		this.extractFields = extractFields;
+	}
+	public List<String> getExtractFields() {
+		return this.extractFields;
+	}
+
 	public void setFileContent(FileItem fileContent) {
 		this.fileContent = fileContent;
 	}
 	public FileItem getFileContent() {
 		return this.fileContent;
+	}
+
+	public void setOcrType(String ocrType) {
+		this.ocrType = ocrType;
+	}
+	public String getOcrType() {
+		return this.ocrType;
 	}
 
 	public void setOuterOrderNo(String outerOrderNo) {
@@ -116,6 +141,8 @@ public class DatadigitalFincloudGeneralsaasOcrLlmDetectRequest implements Alipay
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("extract_fields", this.extractFields == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.extractFields, true));
+		txtParams.put("ocr_type", this.ocrType);
 		txtParams.put("outer_order_no", this.outerOrderNo);
 		txtParams.put("prompt", this.prompt);
 		if(udfParams != null) {

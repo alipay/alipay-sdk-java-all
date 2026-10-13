@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserLabels extends AlipayObject {
 
-	private static final long serialVersionUID = 7856626524674427692L;
+	private static final long serialVersionUID = 1765342393362677184L;
 
 	/**
 	 * 当前参数为标签名称对应的属性编码（Code），其定义源自数据服务平台。

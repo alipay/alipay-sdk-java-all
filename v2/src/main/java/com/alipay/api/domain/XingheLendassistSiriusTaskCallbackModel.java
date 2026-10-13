@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class XingheLendassistSiriusTaskCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2554385815314113492L;
+	private static final long serialVersionUID = 1573916564464536345L;
 
 	/**
 	 * 申请单号

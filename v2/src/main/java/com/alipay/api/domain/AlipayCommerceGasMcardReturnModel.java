@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceGasMcardReturnModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1349552311542228199L;
+	private static final long serialVersionUID = 8354397665191478552L;
 
 	/**
 	 * 小程序id

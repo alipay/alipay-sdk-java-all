@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalFincloudGeneralsaasMedicalCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5468216197926635217L;
+	private static final long serialVersionUID = 4415451758938971323L;
 
 	/** 
 	 * OCR识别单据号，计费依据，请保留以便排查问题。

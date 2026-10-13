@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LubBusinessCopyLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4472185239613354996L;
+	private static final long serialVersionUID = 1765978919834634852L;
 
 	/**
 	 * 营业执照图片OSS Key

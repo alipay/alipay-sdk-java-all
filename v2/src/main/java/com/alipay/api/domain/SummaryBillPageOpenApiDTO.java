@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SummaryBillPageOpenApiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6561843153312422161L;
+	private static final long serialVersionUID = 3131882756688924886L;
 
 	/**
 	 * 当前页数

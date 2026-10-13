@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryCareertrainingCourseDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4168372338168418627L;
+	private static final long serialVersionUID = 2466599545851535979L;
 
 	/**
 	 * 课程id，与out_course_id至少传一个

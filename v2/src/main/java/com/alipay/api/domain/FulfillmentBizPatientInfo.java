@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FulfillmentBizPatientInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5552168473427255466L;
+	private static final long serialVersionUID = 4172967514641531878L;
 
 	/**
 	 * 年龄

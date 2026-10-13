@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NfcPointRefreshShowTime extends AlipayObject {
 
-	private static final long serialVersionUID = 1191682392494482119L;
+	private static final long serialVersionUID = 6489457146994319654L;
 
 	/**
 	 * 展示结束日期

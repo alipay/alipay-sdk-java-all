@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoanapplyLocallifeBlacklistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2546253775316313614L;
+	private static final long serialVersionUID = 8356818234441179275L;
 
 	/**
 	 * 站点会员

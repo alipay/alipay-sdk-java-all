@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditHuabeiFqqrcodeLogisticsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2895255976711917323L;
+	private static final long serialVersionUID = 1864833513755343561L;
 
 	/** 
 	 * 承接物料运输订单的快递公司名称

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSpNordermaterialsapplyTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7756988734625717826L;
+	private static final long serialVersionUID = 6729462846795576957L;
 
 	/** 
 	 * 近30天内有交易情况，有为TRUE，无为FALSE，无数据、未知为UNKNOWN

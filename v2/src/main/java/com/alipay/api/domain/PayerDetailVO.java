@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PayerDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4242494445855967397L;
+	private static final long serialVersionUID = 8742859187677547896L;
 
 	/**
 	 * 付款账户，pay_mode为OFFLINE时可选

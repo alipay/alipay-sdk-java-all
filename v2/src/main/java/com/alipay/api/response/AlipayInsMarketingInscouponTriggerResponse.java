@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsMarketingInscouponTriggerResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1878477959312336699L;
+	private static final long serialVersionUID = 6347756349225236424L;
 
 	/** 
 	 * null

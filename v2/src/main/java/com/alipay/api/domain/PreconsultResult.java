@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PreconsultResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3476773221856173582L;
+	private static final long serialVersionUID = 4716419961193612187L;
 
 	/**
 	 * 渠道列表

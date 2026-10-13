@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialAntforestWelfareforestBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1456797887443144353L;
+	private static final long serialVersionUID = 6789211911354836173L;
 
 	/** 
 	 * 会返回当前系统日期的时间戳

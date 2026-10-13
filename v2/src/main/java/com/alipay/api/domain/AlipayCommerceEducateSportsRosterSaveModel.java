@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateSportsRosterSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5841673983369746396L;
+	private static final long serialVersionUID = 6611782761644126934L;
 
 	/**
 	 * 证件号

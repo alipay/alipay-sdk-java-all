@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineSmddMerchantJobinfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7221417453755156335L;
+	private static final long serialVersionUID = 2334492394386597293L;
 
 	/** 
 	 * null

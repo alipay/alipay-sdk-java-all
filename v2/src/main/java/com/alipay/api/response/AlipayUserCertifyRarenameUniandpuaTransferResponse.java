@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserCertifyRarenameUniandpuaTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4575538751741977934L;
+	private static final long serialVersionUID = 1461177945182118426L;
 
 	/** 
 	 * 多于一字两码时，返回其他的编码。返回不包括ret_name和入参中的姓名。

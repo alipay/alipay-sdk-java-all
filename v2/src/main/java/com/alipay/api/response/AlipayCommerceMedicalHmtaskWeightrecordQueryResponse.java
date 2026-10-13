@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalHmtaskWeightrecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1645156923876485135L;
+	private static final long serialVersionUID = 6128231655799881618L;
 
 	/** 
 	 * null

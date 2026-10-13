@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenapiInterviewReportItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8667715427142379469L;
+	private static final long serialVersionUID = 3744461238854621846L;
 
 	/**
 	 * 面试间ID

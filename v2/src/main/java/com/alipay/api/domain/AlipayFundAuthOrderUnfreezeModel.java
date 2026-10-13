@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAuthOrderUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5378811316927247213L;
+	private static final long serialVersionUID = 3511173174169435131L;
 
 	/**
 	 * 本次操作解冻的金额，单位为：元（人民币），精确到小数点后两位。

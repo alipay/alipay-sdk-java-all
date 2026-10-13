@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingThirdpartyRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2288882948689973248L;
+	private static final long serialVersionUID = 8813629235739396693L;
 
 	/**
 	 * 退款异常订单的结束时间，可选，格式 yyyy-MM-dd HH:mm:ss

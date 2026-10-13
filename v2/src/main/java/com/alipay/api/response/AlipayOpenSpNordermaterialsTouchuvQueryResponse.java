@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.nordermaterials.touchuv.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-03 17:32:52
+ * @since 1.0, 2026-10-10 18:59:32
  */
 public class AlipayOpenSpNordermaterialsTouchuvQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5889989621898683516L;
+	private static final long serialVersionUID = 3221477493896959515L;
 
 	/** 
 	 * null

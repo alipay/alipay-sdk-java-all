@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalmgmtTreasuryPaymentCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7168774997764689871L;
+	private static final long serialVersionUID = 2662327733825361918L;
 
 	/** 
 	 * 付款撤销是否成功 true=成功 false=失败

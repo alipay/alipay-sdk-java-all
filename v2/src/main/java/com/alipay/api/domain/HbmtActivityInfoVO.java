@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HbmtActivityInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4833121936381841726L;
+	private static final long serialVersionUID = 7398542149589136732L;
 
 	/**
 	 * 活动通用描述

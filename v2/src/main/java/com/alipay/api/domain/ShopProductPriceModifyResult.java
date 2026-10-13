@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShopProductPriceModifyResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3245322975661932445L;
+	private static final long serialVersionUID = 8296566639691757641L;
 
 	/**
 	 * 当前门店处理失败时返回的业务错误码。

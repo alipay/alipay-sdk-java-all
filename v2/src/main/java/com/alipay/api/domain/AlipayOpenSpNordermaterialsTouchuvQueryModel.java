@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 线圈碰唤端UV查询
  *
  * @author auto create
- * @since 1.0, 2026-09-03 17:32:52
+ * @since 1.0, 2026-10-10 18:59:32
  */
 public class AlipayOpenSpNordermaterialsTouchuvQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2422818442648448574L;
+	private static final long serialVersionUID = 8187152551834188485L;
 
 	/**
 	 * null

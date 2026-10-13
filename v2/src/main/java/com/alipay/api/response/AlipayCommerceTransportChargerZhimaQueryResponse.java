@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportChargerZhimaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5882356421968185538L;
+	private static final long serialVersionUID = 8755942128232365841L;
 
 	/** 
 	 * 开通/授权状态，VALID: 有效，INVALID: 无效

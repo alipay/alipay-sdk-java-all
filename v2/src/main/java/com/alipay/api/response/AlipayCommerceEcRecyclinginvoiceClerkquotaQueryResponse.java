@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEcRecyclinginvoiceClerkquotaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7423168914115879821L;
+	private static final long serialVersionUID = 2779967235451824791L;
 
 	/** 
 	 * 额度计算时间

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserTaskProgress extends AlipayObject {
 
-	private static final long serialVersionUID = 7158837252535579529L;
+	private static final long serialVersionUID = 5381495477118813596L;
 
 	/**
 	 * 天天减活动进度日期

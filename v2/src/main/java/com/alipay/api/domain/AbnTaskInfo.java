@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AbnTaskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3378887968789971296L;
+	private static final long serialVersionUID = 1117719931354549889L;
 
 	/**
 	 * 任务扩展信息，json格式字符串，不同的task_type对应不同的扩展信息。

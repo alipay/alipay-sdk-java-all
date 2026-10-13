@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityDataIprShortplayCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1843257171382936952L;
+	private static final long serialVersionUID = 7775236466744612369L;
 
 	/**
 	 * 影视作品中的主要演员及演员所饰演的角色。例如演员张三在剧中饰演的人物角色叫李四，则表示为张三*李四，多个人物角色之间用英文逗号分隔

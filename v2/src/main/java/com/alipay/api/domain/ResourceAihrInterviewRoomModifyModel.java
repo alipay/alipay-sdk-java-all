@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ResourceAihrInterviewRoomModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8213332277987529664L;
+	private static final long serialVersionUID = 8663165228585161867L;
 
 	/**
 	 * 面试间ID

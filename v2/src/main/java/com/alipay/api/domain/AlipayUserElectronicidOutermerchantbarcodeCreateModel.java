@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserElectronicidOutermerchantbarcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3286755383162183491L;
+	private static final long serialVersionUID = 5317312525876584471L;
 
 	/**
 	 * 码类型，可选值：动态二维码：DYNAMIC，静态二维码：STATIC

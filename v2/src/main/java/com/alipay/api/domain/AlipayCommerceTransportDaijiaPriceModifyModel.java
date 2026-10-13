@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportDaijiaPriceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2648116711578639131L;
+	private static final long serialVersionUID = 1788267859213755765L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceRecycleCreditServiceEvaluateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1629673596333481884L;
+	private static final long serialVersionUID = 5795311976898761742L;
 
 	/** 
 	 * 是否准入（true 表示准入，false 表示不准入）

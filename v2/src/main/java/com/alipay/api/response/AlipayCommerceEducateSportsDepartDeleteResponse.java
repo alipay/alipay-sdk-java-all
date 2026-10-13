@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEducateSportsDepartDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8594613464596915913L;
+	private static final long serialVersionUID = 8552992259769369277L;
 
 	/** 
 	 * 部门主键code，用于定位被删除的部门

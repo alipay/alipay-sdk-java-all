@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RentCarGuaranteeDetailDescription extends AlipayObject {
 
-	private static final long serialVersionUID = 4356339231984961321L;
+	private static final long serialVersionUID = 6846138761789254534L;
 
 	/**
 	 * 是否包含该服务

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalmgmtHrhealthKdysPersoninfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7398358235177976378L;
+	private static final long serialVersionUID = 7575258164459986713L;
 
 	/** 
 	 * 出生日期，yyyy-MM-dd格式

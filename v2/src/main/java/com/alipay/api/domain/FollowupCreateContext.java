@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FollowupCreateContext extends AlipayObject {
 
-	private static final long serialVersionUID = 3321134789815464197L;
+	private static final long serialVersionUID = 1438891725544597569L;
 
 	/**
 	 * 候选人姓名

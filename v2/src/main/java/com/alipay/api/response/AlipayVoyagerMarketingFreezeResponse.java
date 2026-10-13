@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayVoyagerMarketingFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8517386959453425398L;
+	private static final long serialVersionUID = 6886877438722576775L;
 
 	/** 
 	 * null

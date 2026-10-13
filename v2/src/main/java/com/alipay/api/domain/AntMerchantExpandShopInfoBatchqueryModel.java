@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询门店信息接口
  *
  * @author auto create
- * @since 1.0, 2026-03-18 16:47:44
+ * @since 1.0, 2026-10-10 16:03:19
  */
 public class AntMerchantExpandShopInfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1323396857922776847L;
+	private static final long serialVersionUID = 4638837751237483552L;
 
 	/**
 	 * 行政区划版本，当前可传空值(取默认版本)、2022Q2、UPTODATE(取最新版本)，其中空值默认为：2020Q1版本（ address_version=''或null），想要查看版本是2022年2季度版本则传入:(address_version='2022Q2')，想要获取最新版本则传入:(address_version ='UPTODATE')

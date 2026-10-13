@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechNftNfrBenefitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4224142895367379133L;
+	private static final long serialVersionUID = 8114662563724786112L;
 
 	/** 
 	 * VALID（有效）/ INVALID_USED（无效-已使用）/ INVALID_EXPIRED（无效-已过期）

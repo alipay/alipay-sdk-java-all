@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandAstoreshopSettleAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2226441986372216578L;
+	private static final long serialVersionUID = 1856165557584898699L;
 
 	/**
 	 * 银行卡信息（特殊可选），结算到卡时必填 当前字段已废弃(银行卡信息字段位置转入门店结算信息字段中)

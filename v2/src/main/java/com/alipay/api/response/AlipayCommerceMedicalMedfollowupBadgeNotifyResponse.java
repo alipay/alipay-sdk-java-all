@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalMedfollowupBadgeNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7351119798449927642L;
+	private static final long serialVersionUID = 3567298484677676866L;
 
 	/** 
 	 * 通知

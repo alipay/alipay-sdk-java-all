@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentFile extends AlipayObject {
 
-	private static final long serialVersionUID = 4124976887443151443L;
+	private static final long serialVersionUID = 4736146331557389493L;
 
 	/**
 	 * 支付宝文件系统的afts的key，取值：通过支付宝文件上传接口获取

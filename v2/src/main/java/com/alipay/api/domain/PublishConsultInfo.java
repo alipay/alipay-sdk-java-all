@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PublishConsultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2149358293296718631L;
+	private static final long serialVersionUID = 1275939291863899757L;
 
 	/**
 	 * 权益数额，如果是金额类型则单位是分，如果是数量类型则单位是个
