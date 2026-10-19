@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMerchantcardBookingSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3537167826989752318L;
+	private static final long serialVersionUID = 8696299862871415552L;
 
 	/**
 	 * 预约动作（枚举）

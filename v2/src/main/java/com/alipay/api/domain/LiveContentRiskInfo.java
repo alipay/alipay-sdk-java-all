@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LiveContentRiskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6539612673438854947L;
+	private static final long serialVersionUID = 6411581564437916644L;
 
 	/**
 	 * 当前规则命中的风险详情信息，譬如风险在图片的坐标、位置信息,坐标对应文字。

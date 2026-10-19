@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 中长期天气参数
  *
  * @author auto create
- * @since 1.0, 2026-06-30 20:24:53
+ * @since 1.0, 2026-10-15 15:35:54
  */
 public class LongRangeWeatherVariables extends AlipayObject {
 
-	private static final long serialVersionUID = 4338896382925198863L;
+	private static final long serialVersionUID = 1654517424645691328L;
 
 	/**
 	 * 体感温度，表示人体实际感受到的温度，单位：°C。
@@ -153,6 +153,12 @@ UNKNOWN:未识别/空值
 	private String weatherCode;
 
 	/**
+	 * 天气现象数值码，返回天气现象对应的数值枚举。0表示晴，61表示小雨，完整取值及含义见枚举值。
+	 */
+	@ApiField("weather_type_code")
+	private String weatherTypeCode;
+
+	/**
 	 * 100 米高度风向，表示距地面 100 米高度处的风向，通常以角度表示，单位：°。
 	 */
 	@ApiField("wind_direction_100_m")
@@ -171,7 +177,7 @@ UNKNOWN:未识别/空值
 	private String windDirection200M;
 
 	/**
-	 * 10米高度阵风风速，表示地面以上10米处短时间内出现的最大风速。
+	 * 10米高度阵风风速，表示地面以上10米处短时间内出现的最大风速，单位：m/s
 	 */
 	@ApiField("wind_gusts_10_m")
 	private String windGusts10M;
@@ -318,6 +324,13 @@ UNKNOWN:未识别/空值
 	}
 	public void setWeatherCode(String weatherCode) {
 		this.weatherCode = weatherCode;
+	}
+
+	public String getWeatherTypeCode() {
+		return this.weatherTypeCode;
+	}
+	public void setWeatherTypeCode(String weatherTypeCode) {
+		this.weatherTypeCode = weatherTypeCode;
 	}
 
 	public String getWindDirection100M() {

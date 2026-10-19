@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 气象参数
  *
  * @author auto create
- * @since 1.0, 2026-05-30 14:52:08
+ * @since 1.0, 2026-10-15 15:34:33
  */
 public class WeatherVariables extends AlipayObject {
 
-	private static final long serialVersionUID = 8438443827646333691L;
+	private static final long serialVersionUID = 6816642622194662146L;
 
 	/**
 	 * 体感温度	°C
@@ -71,6 +71,12 @@ public class WeatherVariables extends AlipayObject {
 	private String diffuseRadiationInstant;
 
 	/**
+	 * 散射辐照平均值，单位W/m2，预测支持。
+	 */
+	@ApiField("diffuse_radiation_mean")
+	private String diffuseRadiationMean;
+
+	/**
 	 * 直接法向量辐照,单位 W/m^2
 	 */
 	@ApiField("direct_normal_irradiance")
@@ -93,6 +99,12 @@ public class WeatherVariables extends AlipayObject {
 	 */
 	@ApiField("direct_radiation_instant")
 	private String directRadiationInstant;
+
+	/**
+	 * 直接辐照平均值，单位W/m2，预测支持。
+	 */
+	@ApiField("direct_radiation_mean")
+	private String directRadiationMean;
 
 	/**
 	 * 该条数据的预测批次时间
@@ -156,10 +168,76 @@ public class WeatherVariables extends AlipayObject {
 	private String shortwaveRadiationInstant;
 
 	/**
+	 * 短波辐照平均值，单位W/m2，支持短期天气预测。
+	 */
+	@ApiField("shortwave_radiation_mean")
+	private String shortwaveRadiationMean;
+
+	/**
 	 * 降雪量	cm
 	 */
 	@ApiField("snowfall")
 	private String snowfall;
+
+	/**
+	 * 0-10cm土壤水分，单位m3/m3，历史实测支持。
+	 */
+	@ApiField("soil_moisture_0_to_10")
+	private String soilMoisture0To10;
+
+	/**
+	 * 0-5cm土壤水分，单位m3/m3，历史实测支持。
+	 */
+	@ApiField("soil_moisture_0_to_5")
+	private String soilMoisture0To5;
+
+	/**
+	 * 100-200cm土壤水分，单位m3/m3，历史实测支持。
+	 */
+	@ApiField("soil_moisture_100_to_200")
+	private String soilMoisture100To200;
+
+	/**
+	 * 10-40cm土壤水分，单位m3/m3，历史实测支持。
+	 */
+	@ApiField("soil_moisture_10_to_40")
+	private String soilMoisture10To40;
+
+	/**
+	 * 40-100cm土壤水分，单位m3/m3，历史实测支持。
+	 */
+	@ApiField("soil_moisture_40_to_100")
+	private String soilMoisture40To100;
+
+	/**
+	 * 10cm土壤温度，单位摄氏度，可为负数，历史实测支持。
+	 */
+	@ApiField("soil_temperature_10")
+	private String soilTemperature10;
+
+	/**
+	 * 100cm土壤温度，单位摄氏度，可为负数，历史实测支持。
+	 */
+	@ApiField("soil_temperature_100")
+	private String soilTemperature100;
+
+	/**
+	 * 200cm土壤温度，单位摄氏度，可为负数，历史实测支持。
+	 */
+	@ApiField("soil_temperature_200")
+	private String soilTemperature200;
+
+	/**
+	 * 40cm土壤温度，单位摄氏度，可为负数，历史实测支持。
+	 */
+	@ApiField("soil_temperature_40")
+	private String soilTemperature40;
+
+	/**
+	 * 5cm土壤温度，单位摄氏度，可为负数，历史实测支持。
+	 */
+	@ApiField("soil_temperature_5")
+	private String soilTemperature5;
 
 	/**
 	 * 地表大气压，单位hPa
@@ -181,6 +259,66 @@ public class WeatherVariables extends AlipayObject {
 	private String temperature2m;
 
 	/**
+	 * 地面100米处U风速分量，单位m/s，可为负数。预测支持。
+	 */
+	@ApiField("u_wind_100_m")
+	private String uWind100M;
+
+	/**
+	 * 地面10米处U风速分量，单位m/s，可为负数。预测和历史实测支持。
+	 */
+	@ApiField("u_wind_10_m")
+	private String uWind10M;
+
+	/**
+	 * 地面120米处U风速分量，单位m/s，可为负数。预测支持。
+	 */
+	@ApiField("u_wind_120_m")
+	private String uWind120M;
+
+	/**
+	 * 地面180米处U风速分量，单位m/s，可为负数。预测支持。
+	 */
+	@ApiField("u_wind_180_m")
+	private String uWind180M;
+
+	/**
+	 * 地面80米处U风速分量，单位m/s，可为负数。预测支持。
+	 */
+	@ApiField("u_wind_80_m")
+	private String uWind80M;
+
+	/**
+	 * 地面100米处V风速分量，单位m/s，可为负数。预测支持。
+	 */
+	@ApiField("v_wind_100_m")
+	private String vWind100M;
+
+	/**
+	 * 地面10米处V风速分量，单位m/s，可为负数。预测和历史实测支持。
+	 */
+	@ApiField("v_wind_10_m")
+	private String vWind10M;
+
+	/**
+	 * 地面120米处V风速分量，单位m/s，可为负数。预测支持。
+	 */
+	@ApiField("v_wind_120_m")
+	private String vWind120M;
+
+	/**
+	 * 地面180米处V风速分量，单位m/s，可为负数。预测支持。
+	 */
+	@ApiField("v_wind_180_m")
+	private String vWind180M;
+
+	/**
+	 * 地面80米处V风速分量，单位m/s，可为负数。预测支持。
+	 */
+	@ApiField("v_wind_80_m")
+	private String vWind80M;
+
+	/**
 	 * 气象变量的日期
 	 */
 	@ApiField("variable_date")
@@ -191,6 +329,18 @@ public class WeatherVariables extends AlipayObject {
 	 */
 	@ApiField("weather_code")
 	private String weatherCode;
+
+	/**
+	 * 天气现象数值码，返回天气现象对应的数值枚举。0表示晴，61表示小雨，完整取值及含义见枚举值。
+	 */
+	@ApiField("weather_type_code")
+	private String weatherTypeCode;
+
+	/**
+	 * 地面100米处风向，单位°，预测支持。
+	 */
+	@ApiField("wind_direction_100_m")
+	private String windDirection100M;
 
 	/**
 	 * 地面10米处风向，单位 °
@@ -236,6 +386,18 @@ public class WeatherVariables extends AlipayObject {
 	@ApiField("wind_direction_80m")
 	@Deprecated
 	private String windDirection80m;
+
+	/**
+	 * 地面10米处阵风，单位m/s，预测支持。
+	 */
+	@ApiField("wind_gusts_10_m")
+	private String windGusts10M;
+
+	/**
+	 * 地面100米处风速，单位m/s，预测支持。
+	 */
+	@ApiField("wind_speed_100_m")
+	private String windSpeed100M;
 
 	/**
 	 * 地面十米处风速，单位 m/s
@@ -345,6 +507,13 @@ public class WeatherVariables extends AlipayObject {
 		this.diffuseRadiationInstant = diffuseRadiationInstant;
 	}
 
+	public String getDiffuseRadiationMean() {
+		return this.diffuseRadiationMean;
+	}
+	public void setDiffuseRadiationMean(String diffuseRadiationMean) {
+		this.diffuseRadiationMean = diffuseRadiationMean;
+	}
+
 	public String getDirectNormalIrradiance() {
 		return this.directNormalIrradiance;
 	}
@@ -371,6 +540,13 @@ public class WeatherVariables extends AlipayObject {
 	}
 	public void setDirectRadiationInstant(String directRadiationInstant) {
 		this.directRadiationInstant = directRadiationInstant;
+	}
+
+	public String getDirectRadiationMean() {
+		return this.directRadiationMean;
+	}
+	public void setDirectRadiationMean(String directRadiationMean) {
+		this.directRadiationMean = directRadiationMean;
 	}
 
 	public Date getForecastBatchTime() {
@@ -443,11 +619,88 @@ public class WeatherVariables extends AlipayObject {
 		this.shortwaveRadiationInstant = shortwaveRadiationInstant;
 	}
 
+	public String getShortwaveRadiationMean() {
+		return this.shortwaveRadiationMean;
+	}
+	public void setShortwaveRadiationMean(String shortwaveRadiationMean) {
+		this.shortwaveRadiationMean = shortwaveRadiationMean;
+	}
+
 	public String getSnowfall() {
 		return this.snowfall;
 	}
 	public void setSnowfall(String snowfall) {
 		this.snowfall = snowfall;
+	}
+
+	public String getSoilMoisture0To10() {
+		return this.soilMoisture0To10;
+	}
+	public void setSoilMoisture0To10(String soilMoisture0To10) {
+		this.soilMoisture0To10 = soilMoisture0To10;
+	}
+
+	public String getSoilMoisture0To5() {
+		return this.soilMoisture0To5;
+	}
+	public void setSoilMoisture0To5(String soilMoisture0To5) {
+		this.soilMoisture0To5 = soilMoisture0To5;
+	}
+
+	public String getSoilMoisture100To200() {
+		return this.soilMoisture100To200;
+	}
+	public void setSoilMoisture100To200(String soilMoisture100To200) {
+		this.soilMoisture100To200 = soilMoisture100To200;
+	}
+
+	public String getSoilMoisture10To40() {
+		return this.soilMoisture10To40;
+	}
+	public void setSoilMoisture10To40(String soilMoisture10To40) {
+		this.soilMoisture10To40 = soilMoisture10To40;
+	}
+
+	public String getSoilMoisture40To100() {
+		return this.soilMoisture40To100;
+	}
+	public void setSoilMoisture40To100(String soilMoisture40To100) {
+		this.soilMoisture40To100 = soilMoisture40To100;
+	}
+
+	public String getSoilTemperature10() {
+		return this.soilTemperature10;
+	}
+	public void setSoilTemperature10(String soilTemperature10) {
+		this.soilTemperature10 = soilTemperature10;
+	}
+
+	public String getSoilTemperature100() {
+		return this.soilTemperature100;
+	}
+	public void setSoilTemperature100(String soilTemperature100) {
+		this.soilTemperature100 = soilTemperature100;
+	}
+
+	public String getSoilTemperature200() {
+		return this.soilTemperature200;
+	}
+	public void setSoilTemperature200(String soilTemperature200) {
+		this.soilTemperature200 = soilTemperature200;
+	}
+
+	public String getSoilTemperature40() {
+		return this.soilTemperature40;
+	}
+	public void setSoilTemperature40(String soilTemperature40) {
+		this.soilTemperature40 = soilTemperature40;
+	}
+
+	public String getSoilTemperature5() {
+		return this.soilTemperature5;
+	}
+	public void setSoilTemperature5(String soilTemperature5) {
+		this.soilTemperature5 = soilTemperature5;
 	}
 
 	public String getSurfacePressure() {
@@ -471,6 +724,76 @@ public class WeatherVariables extends AlipayObject {
 		this.temperature2m = temperature2m;
 	}
 
+	public String getuWind100M() {
+		return this.uWind100M;
+	}
+	public void setuWind100M(String uWind100M) {
+		this.uWind100M = uWind100M;
+	}
+
+	public String getuWind10M() {
+		return this.uWind10M;
+	}
+	public void setuWind10M(String uWind10M) {
+		this.uWind10M = uWind10M;
+	}
+
+	public String getuWind120M() {
+		return this.uWind120M;
+	}
+	public void setuWind120M(String uWind120M) {
+		this.uWind120M = uWind120M;
+	}
+
+	public String getuWind180M() {
+		return this.uWind180M;
+	}
+	public void setuWind180M(String uWind180M) {
+		this.uWind180M = uWind180M;
+	}
+
+	public String getuWind80M() {
+		return this.uWind80M;
+	}
+	public void setuWind80M(String uWind80M) {
+		this.uWind80M = uWind80M;
+	}
+
+	public String getvWind100M() {
+		return this.vWind100M;
+	}
+	public void setvWind100M(String vWind100M) {
+		this.vWind100M = vWind100M;
+	}
+
+	public String getvWind10M() {
+		return this.vWind10M;
+	}
+	public void setvWind10M(String vWind10M) {
+		this.vWind10M = vWind10M;
+	}
+
+	public String getvWind120M() {
+		return this.vWind120M;
+	}
+	public void setvWind120M(String vWind120M) {
+		this.vWind120M = vWind120M;
+	}
+
+	public String getvWind180M() {
+		return this.vWind180M;
+	}
+	public void setvWind180M(String vWind180M) {
+		this.vWind180M = vWind180M;
+	}
+
+	public String getvWind80M() {
+		return this.vWind80M;
+	}
+	public void setvWind80M(String vWind80M) {
+		this.vWind80M = vWind80M;
+	}
+
 	public Date getVariableDate() {
 		return this.variableDate;
 	}
@@ -483,6 +806,20 @@ public class WeatherVariables extends AlipayObject {
 	}
 	public void setWeatherCode(String weatherCode) {
 		this.weatherCode = weatherCode;
+	}
+
+	public String getWeatherTypeCode() {
+		return this.weatherTypeCode;
+	}
+	public void setWeatherTypeCode(String weatherTypeCode) {
+		this.weatherTypeCode = weatherTypeCode;
+	}
+
+	public String getWindDirection100M() {
+		return this.windDirection100M;
+	}
+	public void setWindDirection100M(String windDirection100M) {
+		this.windDirection100M = windDirection100M;
 	}
 
 	public String getWindDirection10M() {
@@ -532,6 +869,20 @@ public class WeatherVariables extends AlipayObject {
 	}
 	public void setWindDirection80m(String windDirection80m) {
 		this.windDirection80m = windDirection80m;
+	}
+
+	public String getWindGusts10M() {
+		return this.windGusts10M;
+	}
+	public void setWindGusts10M(String windGusts10M) {
+		this.windGusts10M = windGusts10M;
+	}
+
+	public String getWindSpeed100M() {
+		return this.windSpeed100M;
+	}
+	public void setWindSpeed100M(String windSpeed100M) {
+		this.windSpeed100M = windSpeed100M;
 	}
 
 	public String getWindSpeed10M() {

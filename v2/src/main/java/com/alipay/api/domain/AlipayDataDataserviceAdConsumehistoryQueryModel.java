@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消费明细查询接口
  *
  * @author auto create
- * @since 1.0, 2026-06-03 11:08:21
+ * @since 1.0, 2026-10-14 15:31:40
  */
 public class AlipayDataDataserviceAdConsumehistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2381487736215939284L;
+	private static final long serialVersionUID = 5762947954151244453L;
 
 	/**
-	 * 登录用户支付宝统一ID,2088开头字符串。登录校验和可反查出user_id。 【alipay_pid和principal_tag使用方法： 只传alipay_pid：获取的代理商下所有商家或直客的数据合计。 alipay_pid和principal_tag都传：若为代理商会获取代理商下指定委托人数据。若是直客会获取自身的合计数据。】
+	 * 登录用户支付宝统一ID,2088开头字符串。登录校验和可反查出user_id。
 	 */
 	@ApiField("alipay_pid")
 	private String alipayPid;
@@ -59,7 +59,7 @@ MONTH-月
 	private Long pageSize;
 
 	/**
-	 * 商家标志,唯一值,在广告投放平台商家详情获取。
+	 * 【参数必填】。商家标志,唯一值,在广告投放平台商家详情获取。【获取代理商下全部数据：传入主账号的tag和query_all_principal=true；获取指定委托人数据：传入委托人tag，query_all_principal=false。若是直客会获取自身的合计数据。】
 	 */
 	@ApiField("principal_tag")
 	private String principalTag;

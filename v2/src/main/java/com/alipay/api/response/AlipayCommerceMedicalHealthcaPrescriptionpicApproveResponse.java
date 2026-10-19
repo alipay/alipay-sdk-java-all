@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalHealthcaPrescriptionpicApproveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3551673538363729721L;
+	private static final long serialVersionUID = 3589681156719374355L;
 
 	/** 
 	 * 加签完成的图片的AFTS的fileId

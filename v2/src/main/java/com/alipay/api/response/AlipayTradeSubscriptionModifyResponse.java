@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.subscription.modify response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-21 12:20:51
+ * @since 1.0, 2026-10-12 17:58:00
  */
 public class AlipayTradeSubscriptionModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7647173464415623966L;
+	private static final long serialVersionUID = 7113941541393295556L;
 
 	/** 
 	 * 长链，适用于跳转拉起支付宝端，升级/降级/取消后撤销场景会返回
@@ -26,6 +26,12 @@ public class AlipayTradeSubscriptionModifyResponse extends AlipayResponse {
 	 */
 	@ApiField("alipay_schema")
 	private String alipaySchema;
+
+	/** 
+	 * 生效模式：IMMEDIATE_EFFECTIVE-立即生效；WAIT_USER_CONFIRM-待用户确认
+	 */
+	@ApiField("effective_mode")
+	private String effectiveMode;
 
 	/** 
 	 * 升级订阅时生成的支付请求单号
@@ -81,6 +87,13 @@ public class AlipayTradeSubscriptionModifyResponse extends AlipayResponse {
 	}
 	public String getAlipaySchema( ) {
 		return this.alipaySchema;
+	}
+
+	public void setEffectiveMode(String effectiveMode) {
+		this.effectiveMode = effectiveMode;
+	}
+	public String getEffectiveMode( ) {
+		return this.effectiveMode;
 	}
 
 	public void setOrderNo(String orderNo) {

@@ -4,67 +4,76 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 场景变量,Map<String,String>,键值均为 String,必含键:ORDER_NO 客户侧订单号(供话术引用与业务关联)、COMPANY 企业名称、WORK_LOCATION 工作地点、JOB_TITLE 岗位名称(均话术变量);WORK_TIME 上工时间(时间基准变量,计算首次触达基准;ISO 8601;未声明或未传时尽快执行,仍受频控与呼叫时段限制);CANDIDATE_NAME 候选人姓名(话术称呼,缺则创建拒绝);CANDIDATE_PHONE 候选人手机号(外呼目标,随整报文加密传输,明文不单独字段级加密,解密后平台外呼与同号频控,接入层透传不解析);TASK_DEADLINE 任务绝对截止时间(ISO 8601,须晚于当前且不超过创建后 30 天,超则创建失败;到点未果→任务以「结果获取超时」WAIT_TIMEOUT 结束并回告);STAGE_KEY 跟进环节标识(枚举 ARRIVAL_CONFIRMATION 上工履约 / SETTLEMENT_REMINDER 催结算提醒)。
+ * 场景扩展变量，类型为 Map<String, String>，键和值均为字符串。调用方可根据场景传入键值对；具体支持的字段及其含义，以对应场景的线下 DSL 配置为准。
  *
  * @author auto create
- * @since 1.0, 2026-09-29 15:37:52
+ * @since 1.0, 2026-10-15 14:51:55
  */
 public class FollowupCreateContext extends AlipayObject {
 
-	private static final long serialVersionUID = 1438891725544597569L;
+	private static final long serialVersionUID = 6527244362484625345L;
 
 	/**
-	 * 候选人姓名
+	 * 候选人姓名 当前字段已废弃(废弃历史字段,内部字段由三方自定义)
 	 */
 	@ApiField("candidate_name")
+	@Deprecated
 	private String candidateName;
 
 	/**
-	 * 候选人手机号
+	 * 候选人手机号 当前字段已废弃(废弃历史字段,内部字段由三方自定义)
 	 */
 	@ApiField("candidate_phone")
+	@Deprecated
 	private String candidatePhone;
 
 	/**
-	 * 企业名称
+	 * 企业名称 当前字段已废弃(废弃历史字段,内部字段由三方自定义)
 	 */
 	@ApiField("company")
+	@Deprecated
 	private String company;
 
 	/**
-	 * 仓储分拣
+	 * 仓储分拣 当前字段已废弃(废弃历史字段,内部字段由三方自定义)
 	 */
 	@ApiField("job_title")
+	@Deprecated
 	private String jobTitle;
 
 	/**
-	 * 订单号
+	 * 订单号 当前字段已废弃(废弃历史字段,内部字段由三方自定义)
 	 */
 	@ApiField("order_no")
+	@Deprecated
 	private String orderNo;
 
 	/**
-	 * 跟进环节标识
+	 * 跟进环节标识 当前字段已废弃(废弃历史字段,内部字段由三方自定义)
 	 */
 	@ApiField("stage_key")
+	@Deprecated
 	private String stageKey;
 
 	/**
-	 * 任务截止时间
+	 * 任务截止时间 当前字段已废弃(废弃历史字段,内部字段由三方自定义)
 	 */
 	@ApiField("task_deadline")
+	@Deprecated
 	private String taskDeadline;
 
 	/**
-	 * 工作地点
+	 * 工作地点 当前字段已废弃(废弃历史字段,内部字段由三方自定义)
 	 */
 	@ApiField("work_location")
+	@Deprecated
 	private String workLocation;
 
 	/**
-	 * 上工时间
+	 * 上工时间 当前字段已废弃(废弃历史字段,内部字段由三方自定义)
 	 */
 	@ApiField("work_time")
+	@Deprecated
 	private String workTime;
 
 	public String getCandidateName() {

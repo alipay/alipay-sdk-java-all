@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-10-09 15:27:54
+ * @since 1.0, 2026-10-14 11:22:57
  */
 public class NfcPointRefreshVoiceResource extends AlipayObject {
 
-	private static final long serialVersionUID = 6563713118232962176L;
+	private static final long serialVersionUID = 6616378752923348322L;
 
 	/**
 	 * 语音适配的设备类型

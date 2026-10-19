@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EduCourseCheckInRule extends AlipayObject {
 
-	private static final long serialVersionUID = 2657559251158517362L;
+	private static final long serialVersionUID = 3719529842434241633L;
 
 	/**
 	 * 自动刷新二维码

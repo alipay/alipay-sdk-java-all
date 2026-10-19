@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenLbsEntry extends AlipayObject {
 
-	private static final long serialVersionUID = 7774843289245733865L;
+	private static final long serialVersionUID = 6461988714974245363L;
 
 	/**
 	 * 地理点位地址

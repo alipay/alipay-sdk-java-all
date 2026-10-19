@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeAgentModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5248293835474527479L;
+	private static final long serialVersionUID = 6487385837858119848L;
 
 	/**
 	 * 需要修改的支付宝侧智能体唯一ID。

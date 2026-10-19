@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalIndustrydataImCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8481371372812376777L;
+	private static final long serialVersionUID = 3191316731454336818L;
 
 	/** 
 	 * 支付宝im消息id

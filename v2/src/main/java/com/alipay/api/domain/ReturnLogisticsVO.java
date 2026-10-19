@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ReturnLogisticsVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8523782997674585198L;
+	private static final long serialVersionUID = 8124711111426993974L;
 
 	/**
 	 * 退货凭证图片列表，用户寄回时上传的图片URL，上限6张

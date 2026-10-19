@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付可开票开票申请创建
  *
  * @author auto create
- * @since 1.0, 2026-09-30 13:49:43
+ * @since 1.0, 2026-10-15 22:54:11
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6579236789249647949L;
+	private static final long serialVersionUID = 3334691344325444772L;
 
 	/**
 	 * 附加要素列表
@@ -275,7 +275,7 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	private String taxNo;
 
 	/**
-	 * 交易信息列表,当前仅支持单个交易,交易渠道仅支持支付宝-ALIPAY
+	 * 交易信息列表,当前仅支持单个交易,交易渠道仅支持支付宝-ALIPAY和加油卡-GAS_CARD
 	 */
 	@ApiListField("trade_list")
 	@ApiField("industry_invoice_trade_info")

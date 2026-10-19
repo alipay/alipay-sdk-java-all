@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 提供给saleforce更新商机接口的入参
  *
  * @author auto create
- * @since 1.0, 2026-09-22 17:07:56
+ * @since 1.0, 2026-10-14 18:17:59
  */
 public class SaleForceUpdateLeadsParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7354594964639956597L;
+	private static final long serialVersionUID = 4652794822783964963L;
 
 	/**
 	 * 实际主导方
@@ -282,6 +282,18 @@ public class SaleForceUpdateLeadsParams extends AlipayObject {
 	 */
 	@ApiField("product_family")
 	private String productFamily;
+
+	/**
+	 * 商机关闭理由说明
+	 */
+	@ApiField("project_close_comment")
+	private String projectCloseComment;
+
+	/**
+	 * 商机关闭原因
+	 */
+	@ApiField("project_close_reason")
+	private String projectCloseReason;
 
 	/**
 	 * 商机项目名称
@@ -676,6 +688,20 @@ public class SaleForceUpdateLeadsParams extends AlipayObject {
 	}
 	public void setProductFamily(String productFamily) {
 		this.productFamily = productFamily;
+	}
+
+	public String getProjectCloseComment() {
+		return this.projectCloseComment;
+	}
+	public void setProjectCloseComment(String projectCloseComment) {
+		this.projectCloseComment = projectCloseComment;
+	}
+
+	public String getProjectCloseReason() {
+		return this.projectCloseReason;
+	}
+	public void setProjectCloseReason(String projectCloseReason) {
+		this.projectCloseReason = projectCloseReason;
 	}
 
 	public String getProjectName() {

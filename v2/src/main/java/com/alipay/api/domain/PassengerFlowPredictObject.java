@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PassengerFlowPredictObject extends AlipayObject {
 
-	private static final long serialVersionUID = 6193121118265684824L;
+	private static final long serialVersionUID = 7654966118584748678L;
 
 	/**
 	 * 进站客流预测数量

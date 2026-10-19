@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 创建AI跟进任务
+ * AI跟进-创建任务
  *
  * @author auto create
- * @since 1.0, 2026-09-29 15:37:52
+ * @since 1.0, 2026-10-15 14:51:55
  */
 public class AlipayCommerceCareerOpenbaseFollowupCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5582852218336615264L;
+	private static final long serialVersionUID = 8194952973719616986L;
 
 	/**
 	 * 候选人姓名
@@ -26,7 +26,7 @@ public class AlipayCommerceCareerOpenbaseFollowupCreateModel extends AlipayObjec
 	private String candidatePhone;
 
 	/**
-	 * 场景变量,Map<String,String>,键值均为 String,必含键:ORDER_NO 客户侧订单号(供话术引用与业务关联)、COMPANY 企业名称、WORK_LOCATION 工作地点、JOB_TITLE 岗位名称(均话术变量);WORK_TIME 上工时间(时间基准变量,计算首次触达基准;ISO 8601;未声明或未传时尽快执行,仍受频控与呼叫时段限制);CANDIDATE_NAME 候选人姓名(话术称呼,缺则创建拒绝);CANDIDATE_PHONE 候选人手机号(外呼目标,随整报文加密传输,明文不单独字段级加密,解密后平台外呼与同号频控,接入层透传不解析);TASK_DEADLINE 任务绝对截止时间(ISO 8601,须晚于当前且不超过创建后 30 天,超则创建失败;到点未果→任务以「结果获取超时」WAIT_TIMEOUT 结束并回告);STAGE_KEY 跟进环节标识(枚举 ARRIVAL_CONFIRMATION 上工履约 / SETTLEMENT_REMINDER 催结算提醒)。
+	 * 场景扩展变量，类型为 Map<String, String>，键和值均为字符串。调用方可根据场景传入键值对；具体支持的字段及其含义，以对应场景的线下 DSL 配置为准。
 	 */
 	@ApiField("context")
 	private FollowupCreateContext context;
@@ -38,13 +38,13 @@ public class AlipayCommerceCareerOpenbaseFollowupCreateModel extends AlipayObjec
 	private String deadline;
 
 	/**
-	 * 客户业务单号,appId 下唯一,作为创建幂等键;1~64 位英文字母与数字(纯数字可用、不强制),勿用下划线等符号。
+	 * 三方业务单号,appId 下唯一,作为创建幂等键;1~64 位英文字母与数字(纯数字可用、不强制),勿用下划线等符号。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
 	/**
-	 * 线下提供的可用方案 ID。
+	 * 由支付宝的对接人提供的 跟进场景ID标识
 	 */
 	@ApiField("plan_id")
 	private String planId;

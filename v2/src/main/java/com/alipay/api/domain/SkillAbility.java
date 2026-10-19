@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SkillAbility extends AlipayObject {
 
-	private static final long serialVersionUID = 3492324752443778972L;
+	private static final long serialVersionUID = 7299341158527898895L;
 
 	/**
 	 * 下载地址

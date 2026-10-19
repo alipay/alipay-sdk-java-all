@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 预定信息
  *
  * @author auto create
- * @since 1.0, 2026-01-23 14:41:45
+ * @since 1.0, 2026-10-14 20:19:46
  */
 public class LifeServiceBookInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1644732188443944675L;
+	private static final long serialVersionUID = 1889358562354656835L;
 
 	/**
 	 * 预定id
@@ -35,6 +35,13 @@ public class LifeServiceBookInfo extends AlipayObject {
 	@ApiField("shop_info")
 	private LifeServiceShopInfo shopInfo;
 
+	/**
+	 * 预约的手艺人信息
+	 */
+	@ApiListField("technician_infos")
+	@ApiField("life_service_booking_technician_info")
+	private List<LifeServiceBookingTechnicianInfo> technicianInfos;
+
 	public String getBookId() {
 		return this.bookId;
 	}
@@ -54,6 +61,13 @@ public class LifeServiceBookInfo extends AlipayObject {
 	}
 	public void setShopInfo(LifeServiceShopInfo shopInfo) {
 		this.shopInfo = shopInfo;
+	}
+
+	public List<LifeServiceBookingTechnicianInfo> getTechnicianInfos() {
+		return this.technicianInfos;
+	}
+	public void setTechnicianInfos(List<LifeServiceBookingTechnicianInfo> technicianInfos) {
+		this.technicianInfos = technicianInfos;
 	}
 
 }

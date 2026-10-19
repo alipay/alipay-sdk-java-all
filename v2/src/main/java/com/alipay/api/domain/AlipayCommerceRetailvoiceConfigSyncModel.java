@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 触享同步语音配置任务入库
  *
  * @author auto create
- * @since 1.0, 2026-09-20 10:07:53
+ * @since 1.0, 2026-10-18 18:57:50
  */
 public class AlipayCommerceRetailvoiceConfigSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1288248229459532349L;
+	private static final long serialVersionUID = 1886525819925223873L;
 
 	/**
 	 * 广告主名称

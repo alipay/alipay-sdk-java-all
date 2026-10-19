@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品基本信息
  *
  * @author auto create
- * @since 1.0, 2026-02-04 15:02:14
+ * @since 1.0, 2026-10-14 20:19:46
  */
 public class LifeServiceOrderBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7116595785249515181L;
+	private static final long serialVersionUID = 8564764936196313125L;
 
 	/**
 	 * 商家订单id
@@ -26,6 +26,18 @@ public class LifeServiceOrderBaseInfo extends AlipayObject {
 	 */
 	@ApiField("order_create_time")
 	private Date orderCreateTime;
+
+	/**
+	 * 订单结束时间
+	 */
+	@ApiField("order_end_time")
+	private Date orderEndTime;
+
+	/**
+	 * 订单开始时间
+	 */
+	@ApiField("order_start_time")
+	private Date orderStartTime;
 
 	/**
 	 * 订单状态
@@ -51,6 +63,20 @@ public class LifeServiceOrderBaseInfo extends AlipayObject {
 	}
 	public void setOrderCreateTime(Date orderCreateTime) {
 		this.orderCreateTime = orderCreateTime;
+	}
+
+	public Date getOrderEndTime() {
+		return this.orderEndTime;
+	}
+	public void setOrderEndTime(Date orderEndTime) {
+		this.orderEndTime = orderEndTime;
+	}
+
+	public Date getOrderStartTime() {
+		return this.orderStartTime;
+	}
+	public void setOrderStartTime(Date orderStartTime) {
+		this.orderStartTime = orderStartTime;
 	}
 
 	public String getOrderStatus() {

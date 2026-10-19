@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Lite音箱碰配件绑定接口
  *
  * @author auto create
- * @since 1.0, 2026-09-29 19:42:54
+ * @since 1.0, 2026-10-16 00:06:20
  */
 public class AlipayOfflineProviderBroadcastCoilBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8597331458947793229L;
+	private static final long serialVersionUID = 5278989584456845185L;
 
 	/**
 	 * 线圈NFCURL。服务商从线圈读取后原样传入。nfc_url和tag_sn必须传入至少一个值。

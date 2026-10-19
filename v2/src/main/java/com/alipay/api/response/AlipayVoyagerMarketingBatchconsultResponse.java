@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayVoyagerMarketingBatchconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1717122553517793632L;
+	private static final long serialVersionUID = 5519561155382238269L;
 
 	/** 
 	 * 最优的优惠列表

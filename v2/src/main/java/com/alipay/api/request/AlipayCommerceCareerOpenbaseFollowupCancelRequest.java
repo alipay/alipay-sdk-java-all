@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.career.openbase.followup.cancel request
  * 
  * @author auto create
- * @since 1.0, 2026-09-29 10:37:53
+ * @since 1.0, 2026-10-14 15:32:58
  */
 public class AlipayCommerceCareerOpenbaseFollowupCancelRequest implements AlipayRequest<AlipayCommerceCareerOpenbaseFollowupCancelResponse> {
 

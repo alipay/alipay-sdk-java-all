@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoyagerEnvInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4441548994811943673L;
+	private static final long serialVersionUID = 2341794135318967679L;
 
 	/**
 	 * 客户端ip

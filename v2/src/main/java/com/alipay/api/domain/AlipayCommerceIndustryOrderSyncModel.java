@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业服务标准化订单数据回流
  *
  * @author auto create
- * @since 1.0, 2025-01-14 14:29:12
+ * @since 1.0, 2026-10-13 10:13:06
  */
 public class AlipayCommerceIndustryOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7372961792557358672L;
+	private static final long serialVersionUID = 3365212734474764157L;
 
 	/**
 	 * 支付宝userid（用户在支付宝平台的2088开头16位id）

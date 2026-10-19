@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAntstarshipHomeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1867652939787184878L;
+	private static final long serialVersionUID = 5748176332993913849L;
 
 	/**
 	 * 活动id

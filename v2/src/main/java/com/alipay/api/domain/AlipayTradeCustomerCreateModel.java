@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客户创建接口
  *
  * @author auto create
- * @since 1.0, 2026-09-21 12:06:56
+ * @since 1.0, 2026-10-12 17:58:00
  */
 public class AlipayTradeCustomerCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7265274842715227469L;
+	private static final long serialVersionUID = 7329896583742524615L;
+
+	/**
+	 * 企业信息
+	 */
+	@ApiField("corporation_info")
+	private CorporationInfo corporationInfo;
 
 	/**
 	 * 客户描述
@@ -42,6 +48,19 @@ public class AlipayTradeCustomerCreateModel extends AlipayObject {
 	 */
 	@ApiField("phone")
 	private String phone;
+
+	/**
+	 * 用户类型，PRIVATE-个人用户；CORPORATION-企业用户
+	 */
+	@ApiField("type")
+	private String type;
+
+	public CorporationInfo getCorporationInfo() {
+		return this.corporationInfo;
+	}
+	public void setCorporationInfo(CorporationInfo corporationInfo) {
+		this.corporationInfo = corporationInfo;
+	}
 
 	public String getDescription() {
 		return this.description;
@@ -76,6 +95,13 @@ public class AlipayTradeCustomerCreateModel extends AlipayObject {
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 }

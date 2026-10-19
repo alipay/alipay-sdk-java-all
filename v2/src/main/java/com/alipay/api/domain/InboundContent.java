@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户操作入库需要同步的内容信息
  *
  * @author auto create
- * @since 1.0, 2026-05-27 10:40:50
+ * @since 1.0, 2026-10-17 11:29:28
  */
 public class InboundContent extends AlipayObject {
 
-	private static final long serialVersionUID = 8714969168835128111L;
+	private static final long serialVersionUID = 3441728299862775413L;
+
+	/**
+	 * 企业的经营地址列表
+	 */
+	@ApiListField("business_address_list")
+	@ApiField("string")
+	private List<String> businessAddressList;
 
 	/**
 	 * 企业证件号，非企业信息入库时为空
@@ -27,6 +34,13 @@ public class InboundContent extends AlipayObject {
 	 */
 	@ApiField("company_name")
 	private String companyName;
+
+	/**
+	 * 非企业类型入库时为空，企业的结构化联系方式列表，如果存在的话，脱敏姓名+电话号码配对展示
+	 */
+	@ApiListField("contact_detail_list")
+	@ApiField("inbound_contact_detail")
+	private List<InboundContactDetail> contactDetailList;
 
 	/**
 	 * 公开的联系方式，但是不一定是电话号码，可能是邮箱或者一段描述
@@ -93,6 +107,13 @@ public class InboundContent extends AlipayObject {
 	private String recommendationRationale;
 
 	/**
+	 * 企业的注册地址列表
+	 */
+	@ApiListField("registered_address_list")
+	@ApiField("string")
+	private List<String> registeredAddressList;
+
+	/**
 	 * 与推荐的企业相似的企业
 	 */
 	@ApiListField("similar_companies")
@@ -150,6 +171,13 @@ public class InboundContent extends AlipayObject {
 	@ApiField("string")
 	private List<String> tendereeList;
 
+	public List<String> getBusinessAddressList() {
+		return this.businessAddressList;
+	}
+	public void setBusinessAddressList(List<String> businessAddressList) {
+		this.businessAddressList = businessAddressList;
+	}
+
 	public String getCompanyCertNo() {
 		return this.companyCertNo;
 	}
@@ -162,6 +190,13 @@ public class InboundContent extends AlipayObject {
 	}
 	public void setCompanyName(String companyName) {
 		this.companyName = companyName;
+	}
+
+	public List<InboundContactDetail> getContactDetailList() {
+		return this.contactDetailList;
+	}
+	public void setContactDetailList(List<InboundContactDetail> contactDetailList) {
+		this.contactDetailList = contactDetailList;
 	}
 
 	public List<String> getContactInfo() {
@@ -232,6 +267,13 @@ public class InboundContent extends AlipayObject {
 	}
 	public void setRecommendationRationale(String recommendationRationale) {
 		this.recommendationRationale = recommendationRationale;
+	}
+
+	public List<String> getRegisteredAddressList() {
+		return this.registeredAddressList;
+	}
+	public void setRegisteredAddressList(List<String> registeredAddressList) {
+		this.registeredAddressList = registeredAddressList;
 	}
 
 	public List<String> getSimilarCompanies() {

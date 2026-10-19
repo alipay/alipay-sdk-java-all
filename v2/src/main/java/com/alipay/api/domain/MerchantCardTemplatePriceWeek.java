@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MerchantCardTemplatePriceWeek extends AlipayObject {
 
-	private static final long serialVersionUID = 3273646287383582861L;
+	private static final long serialVersionUID = 6378497728879254296L;
 
 	/**
 	 * 适用的星期列表，1至7分别表示周一至周日。

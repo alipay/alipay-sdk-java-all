@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CameraInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3721358797716119497L;
+	private static final long serialVersionUID = 2243191223516751912L;
 
 	/**
 	 * 验证码,用于兜底

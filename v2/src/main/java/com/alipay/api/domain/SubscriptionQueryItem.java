@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订阅查询场景下项目列表
  *
  * @author auto create
- * @since 1.0, 2026-05-12 01:07:52
+ * @since 1.0, 2026-10-12 17:06:58
  */
 public class SubscriptionQueryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7428926478278454665L;
+	private static final long serialVersionUID = 1446555552867283356L;
+
+	/**
+	 * 续费模式代表用户后续续费的支付方式，只在订阅的聚合收银模式下才会返回该字段
+	 */
+	@ApiField("charge_mode")
+	private String chargeMode;
 
 	/**
 	 * 优惠编码
@@ -48,6 +54,13 @@ public class SubscriptionQueryItem extends AlipayObject {
 	 */
 	@ApiField("quantity")
 	private Long quantity;
+
+	public String getChargeMode() {
+		return this.chargeMode;
+	}
+	public void setChargeMode(String chargeMode) {
+		this.chargeMode = chargeMode;
+	}
 
 	public String getCouponId() {
 		return this.couponId;

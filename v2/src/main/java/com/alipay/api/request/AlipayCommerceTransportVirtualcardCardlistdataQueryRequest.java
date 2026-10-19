@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.virtualcard.cardlistdata.query request
  * 
  * @author auto create
- * @since 1.0, 2025-08-04 17:02:35
+ * @since 1.0, 2026-10-19 16:31:15
  */
 public class AlipayCommerceTransportVirtualcardCardlistdataQueryRequest implements AlipayRequest<AlipayCommerceTransportVirtualcardCardlistdataQueryResponse> {
 

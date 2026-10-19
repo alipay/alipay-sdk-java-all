@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-10-09 15:27:54
+ * @since 1.0, 2026-10-14 11:22:57
  */
 public class NfcPointRefreshResource extends AlipayObject {
 
-	private static final long serialVersionUID = 1216912727229453537L;
+	private static final long serialVersionUID = 6894123784385527847L;
 
 	/**
 	 * 素材文件地址

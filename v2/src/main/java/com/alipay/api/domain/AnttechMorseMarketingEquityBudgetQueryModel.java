@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechMorseMarketingEquityBudgetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6239391176756778118L;
+	private static final long serialVersionUID = 3533743191182953182L;
 
 	/**
 	 * 开发者可从摩斯营销计划的权益配置或权益创建结果中获取：立减权益填写对应的discountId；立减金权益填写对应的outputCampaignId。该权益必须归属于tenant_id指定的租户。

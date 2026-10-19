@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.career.openbase.followup.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-10-09 10:17:57
+ * @since 1.0, 2026-10-15 15:01:01
  */
 public class AlipayCommerceCareerOpenbaseFollowupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8414986212114948933L;
+	private static final long serialVersionUID = 8461898534318282566L;
 
 	/** 
 	 * 终态分类：status=ENDED 时必填(恒有值,回告仅随终态推送)。取值 ENDED=自然完成 / TIMEOUT=超时 / CANCELLED=客户取消(预留,当前抑制不推送) / REJECTED=执行域拒收。与
@@ -22,7 +22,7 @@ public class AlipayCommerceCareerOpenbaseFollowupQueryResponse extends AlipayRes
 	private String endedType;
 
 	/** 
-	 * 平台任务号（18 位纯数字，按字符串处理，勿解析内部结构）；用于回告与计费对账。查询、取消以 outBizNo 定位。
+	 * 平台任务号，用于回告与计费对账。查询、取消以 outBizNo 定位。
 	 */
 	@ApiField("order_no")
 	private String orderNo;
@@ -34,7 +34,7 @@ public class AlipayCommerceCareerOpenbaseFollowupQueryResponse extends AlipayRes
 	private String outBizNo;
 
 	/** 
-	 * 任务实际关联的跟进方案标识。
+	 * 由支付宝的对接人提供的 跟进场景ID标识
 	 */
 	@ApiField("plan_id")
 	private String planId;

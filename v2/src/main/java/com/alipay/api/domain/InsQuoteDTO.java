@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsQuoteDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5527637558976767645L;
+	private static final long serialVersionUID = 7712543788739564735L;
 
 	/**
 	 * 基础保障额度，单位：分

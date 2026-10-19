@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.solution.batch.submit request
  * 
  * @author auto create
- * @since 1.0, 2026-09-30 17:26:17
+ * @since 1.0, 2026-10-13 16:52:59
  */
 public class AlipayMerchantSolutionBatchSubmitRequest implements AlipayRequest<AlipayMerchantSolutionBatchSubmitResponse> {
 

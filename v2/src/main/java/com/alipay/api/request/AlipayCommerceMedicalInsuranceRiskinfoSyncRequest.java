@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.insurance.riskinfo.sync request
  * 
  * @author auto create
- * @since 1.0, 2026-09-10 10:47:52
+ * @since 1.0, 2026-10-19 15:07:37
  */
 public class AlipayCommerceMedicalInsuranceRiskinfoSyncRequest implements AlipayRequest<AlipayCommerceMedicalInsuranceRiskinfoSyncResponse> {
 

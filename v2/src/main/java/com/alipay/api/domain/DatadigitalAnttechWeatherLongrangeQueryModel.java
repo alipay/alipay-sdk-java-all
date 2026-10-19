@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 气象中长期预测服务
  *
  * @author auto create
- * @since 1.0, 2026-06-30 20:24:53
+ * @since 1.0, 2026-10-15 15:35:54
  */
 public class DatadigitalAnttechWeatherLongrangeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5742541129945862922L;
+	private static final long serialVersionUID = 8843826552275395733L;
 
 	/**
 	 * 蚂蚁数科气象服务产品码，找蚂蚁数科运营同学获取
@@ -47,31 +47,32 @@ public class DatadigitalAnttechWeatherLongrangeQueryModel extends AlipayObject {
 	private String requestId;
 
 	/**
-	 * 取值范围：
-temperature2m
-dewPoint2m
-apparentTemperature
-relativeHumidity2m
-pressureMsl
-surfacePressure
-weatherCode
-precipitation
-cloudCover
-windSpeed10m
-windSpeed100m
-windSpeed200m
-windDirection10m
-windDirection100m
-windDirection200m
-shortwaveRadiationInstant
-directRadiationInstant
-diffuseRadiationInstant
-shortwaveRadiation
-directRadiation
-diffuseRadiation
-windGusts10m
-temperatureMax2m
-temperatureMin2m
+	 * 需要查询的中长期天气要素列表，可填写一个或多个要素名称。要素名称与返回字段一致。取值范围及含义如下：
+temperature_2_m：2米气温（°C）；
+dew_point_2_m：2米露点温度（°C）；
+apparent_temperature：体感温度（°C）；
+relative_humidity_2_m：2米相对湿度（%）；
+pressure_msl：海平面气压（hPa）；
+surface_pressure：地表气压（hPa）；
+weather_code：天气现象枚举码；
+weather_type_code：天气现象数值码；
+precipitation：降水量（mm）；
+cloud_cover：总云量（%）；
+wind_speed_10_m：10米风速（m/s）；
+wind_speed_100_m：100米风速（m/s）；
+wind_speed_200_m：200米风速（m/s）；
+wind_direction_10_m：10米风向（度）；
+wind_direction_100_m：100米风向（度）；
+wind_direction_200_m：200米风向（度）；
+shortwave_radiation_instant：短波辐射瞬时值（W/m2）；
+direct_radiation_instant：直接辐射瞬时值（W/m2）；
+diffuse_radiation_instant：散射辐射瞬时值（W/m2）；
+shortwave_radiation：短波辐射（W/m2）；
+direct_radiation：直接辐射（W/m2）；
+diffuse_radiation：散射辐射（W/m2）；
+wind_gusts_10_m：10米阵风风速（m/s）；
+temperature_max_2_m：2米最高气温（°C）；
+temperature_min_2_m：2米最低气温（°C）。
 	 */
 	@ApiListField("weather_variables")
 	@ApiField("string")

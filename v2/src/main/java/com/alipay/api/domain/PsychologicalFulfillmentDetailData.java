@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PsychologicalFulfillmentDetailData extends AlipayObject {
 
-	private static final long serialVersionUID = 8173855267116828639L;
+	private static final long serialVersionUID = 7851161837342349549L;
 
 	/**
 	 * 预约开始时间

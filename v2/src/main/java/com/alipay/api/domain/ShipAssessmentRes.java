@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发货评估方案
  *
  * @author auto create
- * @since 1.0, 2026-10-09 11:17:52
+ * @since 1.0, 2026-10-14 14:16:41
  */
 public class ShipAssessmentRes extends AlipayObject {
 
-	private static final long serialVersionUID = 2575838127172423554L;
+	private static final long serialVersionUID = 1153562317145198213L;
 
 	/**
 	 * D是商家在租安盾后台创建并获取

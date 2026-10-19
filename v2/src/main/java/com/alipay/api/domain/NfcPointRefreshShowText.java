@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 展示文案
  *
  * @author auto create
- * @since 1.0, 2026-10-09 15:27:54
+ * @since 1.0, 2026-10-14 11:22:57
  */
 public class NfcPointRefreshShowText extends AlipayObject {
 
-	private static final long serialVersionUID = 7165497893655398858L;
+	private static final long serialVersionUID = 3196448115162838482L;
 
 	/**
 	 * 底部小字文案
@@ -24,6 +24,12 @@ public class NfcPointRefreshShowText extends AlipayObject {
 	 */
 	@ApiField("middle_smart_text")
 	private String middleSmartText;
+
+	/**
+	 * 气泡的展示文案
+	 */
+	@ApiField("prompt_text")
+	private String promptText;
 
 	/**
 	 * 顶部标题文案
@@ -43,6 +49,13 @@ public class NfcPointRefreshShowText extends AlipayObject {
 	}
 	public void setMiddleSmartText(String middleSmartText) {
 		this.middleSmartText = middleSmartText;
+	}
+
+	public String getPromptText() {
+		return this.promptText;
+	}
+	public void setPromptText(String promptText) {
+		this.promptText = promptText;
 	}
 
 	public String getTitleText() {

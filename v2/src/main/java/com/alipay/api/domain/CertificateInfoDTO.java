@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证信息。包含凭证id、次序号、核销状态等字段。
  *
  * @author auto create
- * @since 1.0, 2026-04-17 21:07:08
+ * @since 1.0, 2026-10-19 17:07:43
  */
 public class CertificateInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7888653622811532679L;
+	private static final long serialVersionUID = 3396969278599528298L;
 
 	/**
 	 * 支付宝平台侧的凭证id

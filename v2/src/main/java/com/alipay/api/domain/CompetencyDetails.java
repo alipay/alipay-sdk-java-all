@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CompetencyDetails extends AlipayObject {
 
-	private static final long serialVersionUID = 7352446272421694423L;
+	private static final long serialVersionUID = 2237327473131546145L;
 
 	/**
 	 * 考察维度名称

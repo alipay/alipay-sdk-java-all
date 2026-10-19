@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订阅待生效的item
  *
  * @author auto create
- * @since 1.0, 2026-04-28 14:02:33
+ * @since 1.0, 2026-10-12 17:06:58
  */
 public class SubscriptionQueryPendingItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7676342692645497545L;
+	private static final long serialVersionUID = 4321319515466276827L;
+
+	/**
+	 * 续费模式代表用户后续续费的支付方式，只在订阅的聚合收银模式下才会返回该字段
+	 */
+	@ApiField("charge_mode")
+	private String chargeMode;
 
 	/**
 	 * 创建时间
@@ -54,6 +60,13 @@ public class SubscriptionQueryPendingItem extends AlipayObject {
 	 */
 	@ApiField("status")
 	private String status;
+
+	public String getChargeMode() {
+		return this.chargeMode;
+	}
+	public void setChargeMode(String chargeMode) {
+		this.chargeMode = chargeMode;
+	}
 
 	public String getCreated() {
 		return this.created;

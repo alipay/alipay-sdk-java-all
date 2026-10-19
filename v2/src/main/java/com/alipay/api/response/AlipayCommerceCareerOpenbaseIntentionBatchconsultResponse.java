@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceCareerOpenbaseIntentionBatchconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2348262991666878258L;
+	private static final long serialVersionUID = 6217745261191642669L;
 
 	/** 
 	 * 意向雷达平台生成的批次号

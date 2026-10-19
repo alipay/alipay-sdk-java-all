@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.repaynotify.consult response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-06 11:01:13
+ * @since 1.0, 2026-10-16 09:42:02
  */
 public class AlipayPcreditHuabeiRepaynotifyConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5272678652928245189L;
+	private static final long serialVersionUID = 2749379349848985581L;
 
 	/** 
 	 * 咨询编号

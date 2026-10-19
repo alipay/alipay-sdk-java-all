@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalFractalRagsearchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5875489432594383979L;
+	private static final long serialVersionUID = 2757566126451142988L;
 
 	/**
 	 * 通行证code

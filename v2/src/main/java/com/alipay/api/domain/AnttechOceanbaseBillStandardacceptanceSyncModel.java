@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AnttechOceanbaseBillStandardacceptanceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1382818217522998328L;
+	private static final long serialVersionUID = 5521944943738152478L;
 
 	/**
 	 * 计财账单受理请求入参，支持批量list写入，strategyIdentity需要和OB计财系统约定，idempotentKey作为幂等键，保证不会重复，重复幂等会被拒绝，额外的扩展信息properties通过json的方式传入

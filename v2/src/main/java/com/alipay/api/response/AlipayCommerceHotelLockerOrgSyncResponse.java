@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceHotelLockerOrgSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4188861826618779866L;
+	private static final long serialVersionUID = 7437854931789158396L;
 
 	/** 
 	 * 支付宝机构唯一ID

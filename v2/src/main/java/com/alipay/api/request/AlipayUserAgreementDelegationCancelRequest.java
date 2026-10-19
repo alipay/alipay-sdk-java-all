@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.agreement.delegation.cancel request
  * 
  * @author auto create
- * @since 1.0, 2026-10-08 16:07:54
+ * @since 1.0, 2026-10-19 15:42:48
  */
 public class AlipayUserAgreementDelegationCancelRequest implements AlipayRequest<AlipayUserAgreementDelegationCancelResponse> {
 

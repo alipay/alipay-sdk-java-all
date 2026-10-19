@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 立减进度条渲染结果
  *
  * @author auto create
- * @since 1.0, 2026-10-09 15:27:54
+ * @since 1.0, 2026-10-14 11:22:57
  */
 public class NfcPointRefreshData extends AlipayObject {
 
-	private static final long serialVersionUID = 4851924397929424747L;
+	private static final long serialVersionUID = 7374425431692482412L;
 
 	/**
 	 * 本接口仅支持text氛围
@@ -88,6 +88,12 @@ public class NfcPointRefreshData extends AlipayObject {
 	 */
 	@ApiField("show_text")
 	private NfcPointRefreshShowText showText;
+
+	/**
+	 * 为小程序缓存过期时间，单位秒
+	 */
+	@ApiField("timeout_cache")
+	private Long timeoutCache;
 
 	/**
 	 * null
@@ -178,6 +184,13 @@ public class NfcPointRefreshData extends AlipayObject {
 	}
 	public void setShowText(NfcPointRefreshShowText showText) {
 		this.showText = showText;
+	}
+
+	public Long getTimeoutCache() {
+		return this.timeoutCache;
+	}
+	public void setTimeoutCache(Long timeoutCache) {
+		this.timeoutCache = timeoutCache;
 	}
 
 	public List<NfcPointRefreshVoiceResource> getVoiceResources() {

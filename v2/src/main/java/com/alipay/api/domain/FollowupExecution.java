@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-10-09 16:27:08
+ * @since 1.0, 2026-10-15 15:42:57
  */
 public class FollowupExecution extends AlipayObject {
 
-	private static final long serialVersionUID = 8463663313545462844L;
+	private static final long serialVersionUID = 7191197536812828116L;
 
 	/**
 	 * 本次确认的计费分钟数；处理中返回 null，未接通返回 0。
@@ -38,13 +38,26 @@ public class FollowupExecution extends AlipayObject {
 	private String occurredAt;
 
 	/**
+	 * ai电话语音转文本内容
+	 */
+	@ApiField("record_text")
+	private String recordText;
+
+	/**
 	 * 录音下载地址；已接通且媒体就绪时返回短时效签名地址，否则返回 null。地址过期后可重新调用本接口获取。
 	 */
 	@ApiField("record_url")
 	private String recordUrl;
 
 	/**
-	 * 本次通话的结果结构；没有结果时返回空对象。
+	 * 本次通话的结果结构；没有结果时返回空对象。返回值字段以业务线下对齐为准
+示例值: {
+  "summary": "外呼未接通（NO_ANSWER），按重拨策略安排下次呼叫。",
+  "resultValue": "联系不上",
+  "connectStatus": "NO_ANSWER",
+  "endReason": "CALL_RETRY_SCHEDULED",
+  "status": "SCHEDULED"
+}
 	 */
 	@ApiField("result_params")
 	private FollowupExecutionResultParams resultParams;
@@ -75,6 +88,13 @@ public class FollowupExecution extends AlipayObject {
 	}
 	public void setOccurredAt(String occurredAt) {
 		this.occurredAt = occurredAt;
+	}
+
+	public String getRecordText() {
+		return this.recordText;
+	}
+	public void setRecordText(String recordText) {
+		this.recordText = recordText;
 	}
 
 	public String getRecordUrl() {

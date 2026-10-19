@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 曝光规则
  *
  * @author auto create
- * @since 1.0, 2026-10-09 15:27:54
+ * @since 1.0, 2026-10-14 11:22:57
  */
 public class NfcPointRefreshExposureRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8347622373936988983L;
+	private static final long serialVersionUID = 5352756381577987268L;
 
 	/**
 	 * 以刷新后的值决定是否展示进度条

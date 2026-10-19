@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.promo.activityperiod.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-29 15:02:56
+ * @since 1.0, 2026-10-19 12:35:30
  */
 public class AlipayCommerceOperationPromoActivityperiodQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6124579929538595379L;
+	private static final long serialVersionUID = 6657196597464939911L;
 
 	/** 
 	 * 当前在途活动

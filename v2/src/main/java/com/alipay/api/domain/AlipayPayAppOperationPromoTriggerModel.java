@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付券联合营销发奖接口
  *
  * @author auto create
- * @since 1.0, 2026-09-17 18:47:57
+ * @since 1.0, 2026-10-16 16:21:15
  */
 public class AlipayPayAppOperationPromoTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7492837165236273982L;
+	private static final long serialVersionUID = 3324779298667154278L;
 
 	/**
 	 * 手机号MD5加密结果

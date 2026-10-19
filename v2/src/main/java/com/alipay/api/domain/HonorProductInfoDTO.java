@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class HonorProductInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2871634434966529137L;
+	private static final long serialVersionUID = 1811997599293381597L;
 
 	/**
 	 * 年利率, 示例: 23.4 【即23.4%】

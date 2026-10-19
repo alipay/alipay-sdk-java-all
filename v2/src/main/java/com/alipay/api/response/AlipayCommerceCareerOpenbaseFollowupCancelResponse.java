@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.career.openbase.followup.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-29 10:37:53
+ * @since 1.0, 2026-10-14 15:32:58
  */
 public class AlipayCommerceCareerOpenbaseFollowupCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3627175954522372642L;
+	private static final long serialVersionUID = 6542766848282842881L;
 
 	/** 
 	 * 平台任务号（18 位纯数字，按字符串处理，勿解析内部结构）；用于回告与计费对账。查询、取消以 outBizNo 定位。

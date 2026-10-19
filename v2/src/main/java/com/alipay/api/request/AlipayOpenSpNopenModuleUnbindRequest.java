@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.nopen.module.unbind request
  * 
  * @author auto create
- * @since 1.0, 2026-04-29 19:32:48
+ * @since 1.0, 2026-10-14 15:27:48
  */
 public class AlipayOpenSpNopenModuleUnbindRequest implements AlipayRequest<AlipayOpenSpNopenModuleUnbindResponse> {
 

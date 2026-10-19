@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * AI付PC端委托申请接口
  *
  * @author auto create
- * @since 1.0, 2026-07-23 11:20:55
+ * @since 1.0, 2026-10-12 16:07:16
  */
 public class AlipayAipayDelegationPcApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2213855325273316954L;
+	private static final long serialVersionUID = 4112179396751256876L;
 
 	/**
 	 * 【描述】请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。

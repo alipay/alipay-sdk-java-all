@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.invoice.consume.apply request
  * 
  * @author auto create
- * @since 1.0, 2026-06-09 14:47:57
+ * @since 1.0, 2026-10-14 11:04:32
  */
 public class AlipayCommerceEcInvoiceConsumeApplyRequest implements AlipayRequest<AlipayCommerceEcInvoiceConsumeApplyResponse> {
 

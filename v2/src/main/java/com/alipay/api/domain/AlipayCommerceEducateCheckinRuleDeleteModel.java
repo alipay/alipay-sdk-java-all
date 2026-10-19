@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateCheckinRuleDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5437275447178582845L;
+	private static final long serialVersionUID = 5584285149763335861L;
 
 	/**
 	 * 机构内标

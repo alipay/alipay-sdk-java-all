@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppCommunityIsvpayrecordModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1593842814711872944L;
+	private static final long serialVersionUID = 6895961558728358543L;
 
 	/** 
 	 * 是	核心定位键：创单时平台生成并传给服务商的统一单号，回写定位、校验、更新均以其为准

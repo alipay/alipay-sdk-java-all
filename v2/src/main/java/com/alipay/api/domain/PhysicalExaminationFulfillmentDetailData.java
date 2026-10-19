@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 体检服务
  *
  * @author auto create
- * @since 1.0, 2026-07-17 10:54:22
+ * @since 1.0, 2026-10-14 20:19:20
  */
 public class PhysicalExaminationFulfillmentDetailData extends AlipayObject {
 
-	private static final long serialVersionUID = 4882366439489565424L;
+	private static final long serialVersionUID = 3369485623859198444L;
 
 	/**
 	 * 格式:yyyy-MM-dd HH:mm:ss
@@ -30,6 +30,12 @@ public class PhysicalExaminationFulfillmentDetailData extends AlipayObject {
 	 */
 	@ApiField("birth_date")
 	private String birthDate;
+
+	/**
+	 * USER_INITIATED
+	 */
+	@ApiField("cancel_reason")
+	private String cancelReason;
 
 	/**
 	 * 格式:yyyy-MM-dd HH:mm:ss
@@ -92,6 +98,18 @@ public class PhysicalExaminationFulfillmentDetailData extends AlipayObject {
 	private String phone;
 
 	/**
+	 * xxxx
+	 */
+	@ApiField("report_pdf")
+	private String reportPdf;
+
+	/**
+	 * 报告查询链接
+	 */
+	@ApiField("report_query_url")
+	private String reportQueryUrl;
+
+	/**
 	 * 如:浙江省杭州市
 	 */
 	@ApiField("service_city")
@@ -128,6 +146,13 @@ public class PhysicalExaminationFulfillmentDetailData extends AlipayObject {
 	}
 	public void setBirthDate(String birthDate) {
 		this.birthDate = birthDate;
+	}
+
+	public String getCancelReason() {
+		return this.cancelReason;
+	}
+	public void setCancelReason(String cancelReason) {
+		this.cancelReason = cancelReason;
 	}
 
 	public String getCancelTime() {
@@ -198,6 +223,20 @@ public class PhysicalExaminationFulfillmentDetailData extends AlipayObject {
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+	public String getReportPdf() {
+		return this.reportPdf;
+	}
+	public void setReportPdf(String reportPdf) {
+		this.reportPdf = reportPdf;
+	}
+
+	public String getReportQueryUrl() {
+		return this.reportQueryUrl;
+	}
+	public void setReportQueryUrl(String reportQueryUrl) {
+		this.reportQueryUrl = reportQueryUrl;
 	}
 
 	public String getServiceCity() {

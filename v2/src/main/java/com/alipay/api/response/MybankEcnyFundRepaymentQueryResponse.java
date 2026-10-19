@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankEcnyFundRepaymentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8485698755142299285L;
+	private static final long serialVersionUID = 3219626797734993177L;
 
 	/** 
 	 * null

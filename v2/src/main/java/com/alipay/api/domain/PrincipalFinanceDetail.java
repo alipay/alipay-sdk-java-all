@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询消耗明细列表
  *
  * @author auto create
- * @since 1.0, 2025-01-07 11:36:55
+ * @since 1.0, 2026-10-14 15:31:39
  */
 public class PrincipalFinanceDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5454393849564632556L;
+	private static final long serialVersionUID = 1721394993452379619L;
 
 	/**
 	 * 支付宝账号
 	 */
 	@ApiField("alipay_account")
 	private String alipayAccount;
+
+	/**
+	 * 商户号
+	 */
+	@ApiField("alipay_pid")
+	private String alipayPid;
 
 	/**
 	 * 时间格式yyyy-MM-dd
@@ -42,6 +48,12 @@ public class PrincipalFinanceDetail extends AlipayObject {
 	 */
 	@ApiField("cut_amount_format")
 	private String cutAmountFormat;
+
+	/**
+	 * 账户id
+	 */
+	@ApiField("principal_id")
+	private String principalId;
 
 	/**
 	 * 商家名称
@@ -80,6 +92,13 @@ public class PrincipalFinanceDetail extends AlipayObject {
 		this.alipayAccount = alipayAccount;
 	}
 
+	public String getAlipayPid() {
+		return this.alipayPid;
+	}
+	public void setAlipayPid(String alipayPid) {
+		this.alipayPid = alipayPid;
+	}
+
 	public String getBizDate() {
 		return this.bizDate;
 	}
@@ -106,6 +125,13 @@ public class PrincipalFinanceDetail extends AlipayObject {
 	}
 	public void setCutAmountFormat(String cutAmountFormat) {
 		this.cutAmountFormat = cutAmountFormat;
+	}
+
+	public String getPrincipalId() {
+		return this.principalId;
+	}
+	public void setPrincipalId(String principalId) {
+		this.principalId = principalId;
 	}
 
 	public String getPrincipalName() {

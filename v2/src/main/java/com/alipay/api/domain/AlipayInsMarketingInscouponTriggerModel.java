@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayInsMarketingInscouponTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5278272444819738964L;
+	private static final long serialVersionUID = 4865998325485216961L;
 
 	/**
 	 * null

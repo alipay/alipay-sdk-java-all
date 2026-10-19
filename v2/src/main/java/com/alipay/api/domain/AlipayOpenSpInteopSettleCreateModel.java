@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务商一体化开通作业添加入驻开通项
  *
  * @author auto create
- * @since 1.0, 2026-05-28 14:55:35
+ * @since 1.0, 2026-10-14 14:22:07
  */
 public class AlipayOpenSpInteopSettleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7453233689478477765L;
+	private static final long serialVersionUID = 2287237559823541614L;
 
 	/**
 	 * 银行账户信息。个体工商户、普通企业必填。

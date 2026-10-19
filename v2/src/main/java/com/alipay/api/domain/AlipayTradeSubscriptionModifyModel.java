@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅修改
  *
  * @author auto create
- * @since 1.0, 2026-09-21 12:20:51
+ * @since 1.0, 2026-10-12 17:58:00
  */
 public class AlipayTradeSubscriptionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8157367437794834776L;
+	private static final long serialVersionUID = 2443348185697275818L;
 
 	/**
 	 * 是否在周期结束时取消，仅用于取消/取消后恢复订阅，其他场景无需使用。
@@ -23,6 +23,12 @@ false：CANCEL场景传false表示立即取消并发起退款，REVERT_CANCEL场
 	 */
 	@ApiField("cancel_at_period_end")
 	private Boolean cancelAtPeriodEnd;
+
+	/**
+	 * CHECK_OUT_PAGE代表聚合收银模式，默认可不传
+	 */
+	@ApiField("cashier_mode")
+	private String cashierMode;
 
 	/**
 	 * 更新描述，若无特殊需求，无需使用该字段
@@ -102,6 +108,13 @@ false：重置周期，具体使用方式详见接入指南。
 	}
 	public void setCancelAtPeriodEnd(Boolean cancelAtPeriodEnd) {
 		this.cancelAtPeriodEnd = cancelAtPeriodEnd;
+	}
+
+	public String getCashierMode() {
+		return this.cashierMode;
+	}
+	public void setCashierMode(String cashierMode) {
+		this.cashierMode = cashierMode;
 	}
 
 	public String getDescription() {

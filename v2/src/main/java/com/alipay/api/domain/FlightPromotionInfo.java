@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FlightPromotionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5756892492376381138L;
+	private static final long serialVersionUID = 3381652611133998217L;
 
 	/**
 	 * 币种代码

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.content.usereventcontent.query request
  * 
  * @author auto create
- * @since 1.0, 2026-07-06 17:31:59
+ * @since 1.0, 2026-10-12 19:02:17
  */
 public class AlipayOpenContentUsereventcontentQueryRequest implements AlipayRequest<AlipayOpenContentUsereventcontentQueryResponse> {
 

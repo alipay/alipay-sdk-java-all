@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAipayNowpayChargeInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8747453236993983488L;
+	private static final long serialVersionUID = 1577739313299416737L;
 
 	/** 
 	 * 配置入口二维码

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 埋点信息
  *
  * @author auto create
- * @since 1.0, 2026-10-09 15:27:54
+ * @since 1.0, 2026-10-14 11:22:57
  */
 public class NfcPointRefreshEventTracking extends AlipayObject {
 
-	private static final long serialVersionUID = 3813547157322334121L;
+	private static final long serialVersionUID = 4235415754941369584L;
 
 	/**
 	 * 埋点海报氛围

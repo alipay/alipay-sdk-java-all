@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.career.openbase.followup.query request
  * 
  * @author auto create
- * @since 1.0, 2026-10-09 10:17:57
+ * @since 1.0, 2026-10-15 15:01:01
  */
 public class AlipayCommerceCareerOpenbaseFollowupQueryRequest implements AlipayRequest<AlipayCommerceCareerOpenbaseFollowupQueryResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayCommerceCareerOpenbaseFollowupQueryRequest implements AlipayR
 	private String apiVersion="1.0";
 
 	/** 
-	* 查询AI跟进任务
+	* 商家通过任务单号查询 AI 跟进任务的当前状态、执行结果及计费分钟等信息，用于跟踪任务进度或补查通知结果。
 	 */
 	private String bizContent;
 

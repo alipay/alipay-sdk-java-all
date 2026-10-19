@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MerchantIndirectCollectionAnalysisTimeLineRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 8775644718399262758L;
+	private static final long serialVersionUID = 8835755367474994667L;
 
 	/**
 	 * 渠道维度 收款摘要信息

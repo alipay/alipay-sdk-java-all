@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 间连解决方案批次数据提报
  *
  * @author auto create
- * @since 1.0, 2026-09-07 11:33:05
+ * @since 1.0, 2026-10-13 16:51:52
  */
 public class AlipayMerchantSolutionBatchSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2533941164918311926L;
+	private static final long serialVersionUID = 6593212225961485529L;
+
+	/**
+	 * 商户以何种维度进行提报。只支持两种枚举值org和orgSource。如果为org，则本次提报商户归属主体为org机构；如果为orgSource，则本次提报商户归属主体为source服务商；如果不传入则默认为orgSource；传入其他值会触发参数错误
+	 */
+	@ApiField("admit_mode")
+	private String admitMode;
 
 	/**
 	 * 解决方案数据提报中，提报的文件信息
@@ -46,6 +52,13 @@ public class AlipayMerchantSolutionBatchSubmitModel extends AlipayObject {
 	 */
 	@ApiField("solution_code")
 	private String solutionCode;
+
+	public String getAdmitMode() {
+		return this.admitMode;
+	}
+	public void setAdmitMode(String admitMode) {
+		this.admitMode = admitMode;
+	}
 
 	public List<AlipaySolutionFile> getFileInfo() {
 		return this.fileInfo;

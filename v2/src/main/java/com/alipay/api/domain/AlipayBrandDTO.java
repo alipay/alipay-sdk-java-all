@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBrandDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3717217484714974198L;
+	private static final long serialVersionUID = 2586232826663232892L;
 
 	/**
 	 * 用于支付宝品牌心智中的支付成功logo

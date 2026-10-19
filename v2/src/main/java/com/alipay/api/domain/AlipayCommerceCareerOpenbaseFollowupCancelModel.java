@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 取消AI跟进任务
+ * AI跟进-取消任务
  *
  * @author auto create
- * @since 1.0, 2026-09-29 10:37:53
+ * @since 1.0, 2026-10-14 15:32:58
  */
 public class AlipayCommerceCareerOpenbaseFollowupCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6495547178696745314L;
+	private static final long serialVersionUID = 7495267224375763162L;
 
 	/**
 	 * 客户业务单号，任务定位键。

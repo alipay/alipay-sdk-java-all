@@ -2,6 +2,7 @@ package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.SaasAccountInfo;
+import com.alipay.api.domain.SaasCustomerInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -9,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.saas.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-22 18:07:56
+ * @since 1.0, 2026-10-15 15:32:55
  */
 public class AlipayTradeSaasOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2789453224619349991L;
+	private static final long serialVersionUID = 5464149826353717471L;
 
 	/** 
 	 * 聚合收银台短链访问地址。商户将用户跳转到该地址后，浏览器会重定向到带收银台访问凭证的完整地址。
@@ -38,6 +39,12 @@ public class AlipayTradeSaasOrderCreateResponse extends AlipayResponse {
 	 */
 	@ApiField("saas_account_info")
 	private SaasAccountInfo saasAccountInfo;
+
+	/** 
+	 * 本次交易按需静默创建的SaaS客户信息
+	 */
+	@ApiField("saas_customer_info")
+	private SaasCustomerInfo saasCustomerInfo;
 
 	/** 
 	 * 银行渠道交易号。仅在显式单选银行转账且同步创单成功时返回。
@@ -77,6 +84,13 @@ public class AlipayTradeSaasOrderCreateResponse extends AlipayResponse {
 	}
 	public SaasAccountInfo getSaasAccountInfo( ) {
 		return this.saasAccountInfo;
+	}
+
+	public void setSaasCustomerInfo(SaasCustomerInfo saasCustomerInfo) {
+		this.saasCustomerInfo = saasCustomerInfo;
+	}
+	public SaasCustomerInfo getSaasCustomerInfo( ) {
+		return this.saasCustomerInfo;
 	}
 
 	public void setTradeNo(String tradeNo) {

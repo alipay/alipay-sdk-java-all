@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.retailvoice.config.sync request
  * 
  * @author auto create
- * @since 1.0, 2026-09-20 10:07:53
+ * @since 1.0, 2026-10-18 18:57:50
  */
 public class AlipayCommerceRetailvoiceConfigSyncRequest implements AlipayRequest<AlipayCommerceRetailvoiceConfigSyncResponse> {
 

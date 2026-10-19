@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalPointTaskCompleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3491446518825228339L;
+	private static final long serialVersionUID = 6146642546318279664L;
 
 	/**
 	 * 业务时间，后续各种校验都会以业务时间为准(String类型, 格式为yyyy-MM-dd HH:mm:ss)

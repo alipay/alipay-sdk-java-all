@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalMedfollowupBadgeNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8134893623973378557L;
+	private static final long serialVersionUID = 4465328956515683276L;
 
 	/**
 	 * 动作

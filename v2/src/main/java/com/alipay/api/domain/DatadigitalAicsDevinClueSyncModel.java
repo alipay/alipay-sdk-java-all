@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAicsDevinClueSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2167382749632283798L;
+	private static final long serialVersionUID = 3571729876988992994L;
 
 	/**
 	 * 线索的客户名称，区分为个人线索和企业线索，个人线索传名称，企业线索传公司名称

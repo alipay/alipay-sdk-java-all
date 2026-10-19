@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-04-29 15:17:47
+ * @since 1.0, 2026-10-19 12:36:31
  */
 public class NfcDeviceActivityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1481229178723242721L;
+	private static final long serialVersionUID = 3348185527849394821L;
 
 	/**
 	 * 设备ID

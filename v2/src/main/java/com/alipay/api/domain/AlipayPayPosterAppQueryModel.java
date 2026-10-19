@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序海报拉取接口
  *
  * @author auto create
- * @since 1.0, 2026-10-09 15:27:54
+ * @since 1.0, 2026-10-14 11:22:57
  */
 public class AlipayPayPosterAppQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5536649446237373112L;
+	private static final long serialVersionUID = 2469346682858857658L;
 
 	/**
 	 * 设备业务标识，调用方须有该设备的查询权限

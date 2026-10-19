@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 二级回收商代扣关系查询
  *
  * @author auto create
- * @since 1.0, 2025-08-11 23:15:50
+ * @since 1.0, 2026-10-13 10:30:01
  */
 public class AlipayCommerceRecycleDeductRelationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5842912317825572495L;
+	private static final long serialVersionUID = 4888598546163585519L;
 
 	/**
 	 * 二级商户pid

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LogisticsRoboVehicleTypeSizeObj extends AlipayObject {
 
-	private static final long serialVersionUID = 1437141557783613289L;
+	private static final long serialVersionUID = 2377185872547384438L;
 
 	/**
 	 * 车高 单位:mm

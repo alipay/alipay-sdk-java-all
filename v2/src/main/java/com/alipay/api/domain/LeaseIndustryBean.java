@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LeaseIndustryBean extends AlipayObject {
 
-	private static final long serialVersionUID = 7853392281289229818L;
+	private static final long serialVersionUID = 8265471695941499679L;
 
 	/**
 	 * 商品可用的城市列表

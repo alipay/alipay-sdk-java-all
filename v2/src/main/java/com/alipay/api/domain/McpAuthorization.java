@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class McpAuthorization extends AlipayObject {
 
-	private static final long serialVersionUID = 8565363538153549835L;
+	private static final long serialVersionUID = 8291618468688389335L;
 
 	/**
 	 * apiKey 授权

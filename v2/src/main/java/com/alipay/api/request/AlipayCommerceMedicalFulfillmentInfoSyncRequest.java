@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.fulfillment.info.sync request
  * 
  * @author auto create
- * @since 1.0, 2026-09-30 14:34:35
+ * @since 1.0, 2026-10-14 20:37:55
  */
 public class AlipayCommerceMedicalFulfillmentInfoSyncRequest implements AlipayRequest<AlipayCommerceMedicalFulfillmentInfoSyncResponse> {
 

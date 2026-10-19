@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 进度匹配文案
  *
  * @author auto create
- * @since 1.0, 2026-10-09 15:27:54
+ * @since 1.0, 2026-10-14 11:22:57
  */
 public class NfcPointRefreshMatchText extends AlipayObject {
 
-	private static final long serialVersionUID = 4629362663584481886L;
+	private static final long serialVersionUID = 5435597385234968914L;
 
 	/**
 	 * 当前进度命中的文案

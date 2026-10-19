@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业码账单申请开票
  *
  * @author auto create
- * @since 1.0, 2026-06-09 14:47:57
+ * @since 1.0, 2026-10-14 11:04:32
  */
 public class AlipayCommerceEcInvoiceConsumeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2434858171616852436L;
+	private static final long serialVersionUID = 6875344372455591961L;
 
 	/**
 	 * 支付宝交易号，可通过查询企业码账单详情获取

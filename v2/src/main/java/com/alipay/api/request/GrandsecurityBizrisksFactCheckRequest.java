@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: grandsecurity.bizrisks.fact.check request
  * 
  * @author auto create
- * @since 1.0, 2026-10-08 11:24:36
+ * @since 1.0, 2026-10-12 20:52:56
  */
 public class GrandsecurityBizrisksFactCheckRequest implements AlipayRequest<GrandsecurityBizrisksFactCheckResponse> {
 

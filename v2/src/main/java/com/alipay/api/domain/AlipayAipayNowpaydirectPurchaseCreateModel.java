@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAipayNowpaydirectPurchaseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4676825845415421419L;
+	private static final long serialVersionUID = 2114295466583783735L;
 
 	/**
 	 * 购买完成返回地址

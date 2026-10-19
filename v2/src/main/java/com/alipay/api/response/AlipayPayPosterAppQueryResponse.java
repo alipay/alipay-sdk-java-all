@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.poster.app.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-10-09 15:27:54
+ * @since 1.0, 2026-10-14 11:22:57
  */
 public class AlipayPayPosterAppQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6318458935542646868L;
+	private static final long serialVersionUID = 7768167939159826216L;
 
 	/** 
 	 * 立减进度条渲染结果

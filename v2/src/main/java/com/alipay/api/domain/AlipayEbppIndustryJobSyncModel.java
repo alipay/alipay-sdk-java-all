@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人才就业岗位同步
  *
  * @author auto create
- * @since 1.0, 2024-08-21 15:34:52
+ * @since 1.0, 2026-10-15 16:09:30
  */
 public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8711149945475251256L;
+	private static final long serialVersionUID = 3653629962235463279L;
 
 	/**
 	 * 学历要求
@@ -23,9 +23,10 @@ public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 	private String academicRequire;
 
 	/**
-	 * 岗位详细地址
-如果是线下岗位，则传具体岗位地址信息
-如果是线上岗位，也需要传具体的region_code
+	 * 岗位详细地址。</br>
+如果是线下岗位，则传具体岗位地址信息。</br>
+如果是线上岗位，也需要传具体的region_code。</br>
+detail、geo、region-code 须保持一致，均为实际招聘地址，否则岗位无法展示
 	 */
 	@ApiField("address")
 	private JobAddress address;

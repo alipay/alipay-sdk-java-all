@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETF申购状态查询
  *
  * @author auto create
- * @since 1.0, 2025-01-14 14:30:19
+ * @since 1.0, 2026-10-13 10:36:21
  */
 public class AlipayCommerceRecycleetfrecordStatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4894234164233551458L;
+	private static final long serialVersionUID = 4435395844586957741L;
 
 	/**
 	 * 商户订单号

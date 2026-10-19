@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.virtualcard.cardlistdata.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-04 17:02:35
+ * @since 1.0, 2026-10-19 16:31:15
  */
 public class AlipayCommerceTransportVirtualcardCardlistdataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1375968468272855673L;
+	private static final long serialVersionUID = 2688756421363465956L;
 
 	/** 
 	 * 子场景卡列表

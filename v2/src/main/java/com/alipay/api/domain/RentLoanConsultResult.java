@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * null
+ * 资商通风控咨询结果
  *
  * @author auto create
- * @since 1.0, 2025-04-10 15:12:29
+ * @since 1.0, 2025-04-10 14:54:23
  */
 public class RentLoanConsultResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8371816578562715588L;
+	private static final long serialVersionUID = 5874134983242923865L;
 
 	/**
 	 * ALLOW：表示允许通过

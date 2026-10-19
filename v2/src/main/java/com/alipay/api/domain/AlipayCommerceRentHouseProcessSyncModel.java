@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租房过程信息同步
  *
  * @author auto create
- * @since 1.0, 2026-08-26 10:57:51
+ * @since 1.0, 2026-10-15 13:12:59
  */
 public class AlipayCommerceRentHouseProcessSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4276166838783451725L;
+	private static final long serialVersionUID = 1363128538614948363L;
 
 	/**
 	 * 用户id

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndustryNatureInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5434572984383576142L;
+	private static final long serialVersionUID = 6126748896899556936L;
 
 	/**
 	 * 行业性质有效期结束时间（为空表示永久有效）

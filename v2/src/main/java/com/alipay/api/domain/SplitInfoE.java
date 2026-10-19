@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 拆分信息
  *
  * @author auto create
- * @since 1.0, 2026-08-26 10:57:51
+ * @since 1.0, 2026-10-15 13:12:59
  */
 public class SplitInfoE extends AlipayObject {
 
-	private static final long serialVersionUID = 2256199568335776779L;
+	private static final long serialVersionUID = 1526558633148584335L;
 
 	/**
 	 * 原始期数/月

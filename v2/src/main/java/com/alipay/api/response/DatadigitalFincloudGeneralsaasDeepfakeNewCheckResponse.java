@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.deepfake.new.check response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-02 16:47:53
+ * @since 1.0, 2026-10-15 16:37:58
  */
 public class DatadigitalFincloudGeneralsaasDeepfakeNewCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2869891356164511321L;
+	private static final long serialVersionUID = 8392582862658247368L;
 
 	/** 
 	 * 防伪识别单据号，计费依据，请保留以便排查问题。

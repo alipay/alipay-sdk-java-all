@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.rentcar.outorder.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:31:53
+ * @since 1.0, 2026-10-15 10:42:29
  */
 public class AlipayEcoMycarRentcarOutorderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3496518296385384121L;
+	private static final long serialVersionUID = 1548824211993979576L;
 
 	/** 
 	 * 订单同步到支付宝车生活后生成的车生活订单id

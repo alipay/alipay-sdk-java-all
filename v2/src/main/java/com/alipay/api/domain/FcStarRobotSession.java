@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FcStarRobotSession extends AlipayObject {
 
-	private static final long serialVersionUID = 7721628916264283843L;
+	private static final long serialVersionUID = 2717479754169222331L;
 
 	/**
 	 * 会话结束时间戳（单位秒）

@@ -1,0 +1,317 @@
+package com.alipay.api.domain;
+
+import java.util.Date;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 扩展信息
+ *
+ * @author auto create
+ * @since 1.0, 2026-10-19 17:38:01
+ */
+public class PlatformConsultOrderExtInfo extends AlipayObject {
+
+	private static final long serialVersionUID = 2523877625235897146L;
+
+	/**
+	 * 支付宝渠道订单标识 枚举值： 是:Y 否:N
+	 */
+	@ApiField("alipay_channel_order_flag")
+	private String alipayChannelOrderFlag;
+
+	/**
+	 * 审核意见
+	 */
+	@ApiField("approve_comment")
+	private String approveComment;
+
+	/**
+	 * 渠道描述
+	 */
+	@ApiField("channel_desc")
+	private String channelDesc;
+
+	/**
+	 * 医患沟通详情链接
+	 */
+	@ApiField("chat_url")
+	private String chatUrl;
+
+	/**
+	 * 病情主诉
+	 */
+	@ApiField("complaint")
+	private String complaint;
+
+	/**
+	 * 医生职称中文描述
+	 */
+	@ApiField("doctor_avatar")
+	private String doctorAvatar;
+
+	/**
+	 * 联系医生问诊链接
+	 */
+	@ApiField("doctor_inquiry_link_page")
+	private String doctorInquiryLinkPage;
+
+	/**
+	 * 医生职称
+	 */
+	@ApiField("doctor_title")
+	private String doctorTitle;
+
+	/**
+	 * 医生类型
+	 */
+	@ApiField("doctor_type")
+	private String doctorType;
+
+	/**
+	 * 医院名称
+	 */
+	@ApiField("hospital_name")
+	private String hospitalName;
+
+	/**
+	 * 订单开票入口
+	 */
+	@ApiField("invoice_url")
+	private String invoiceUrl;
+
+	/**
+	 * 问诊订单评价信息
+	 */
+	@ApiField("medical_inquiry_order_evaluate_info")
+	private PlatformConsultOrderEvaluateInfo medicalInquiryOrderEvaluateInfo;
+
+	/**
+	 * 给好大夫定义的一个订单来源
+	 */
+	@ApiField("order_from")
+	private String orderFrom;
+
+	/**
+	 * 订单所属pid
+	 */
+	@ApiField("order_pid")
+	private String orderPid;
+
+	/**
+	 * 订单商品的spu名
+	 */
+	@ApiField("order_spu")
+	private String orderSpu;
+
+	/**
+	 * 订单原价，单位元，保留小数点2位
+	 */
+	@ApiField("original_price")
+	private String originalPrice;
+
+	/**
+	 * 外部业务单号
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
+
+	/**
+	 * 加号扩展信息
+	 */
+	@ApiField("plus_register_info")
+	private PlatformConsultPlusRegisterInfo plusRegisterInfo;
+
+	/**
+	 * 订单的商品名称
+	 */
+	@ApiField("product_name")
+	private String productName;
+
+	/**
+	 * 订单退款入口
+	 */
+	@ApiField("refund_url")
+	private String refundUrl;
+
+	/**
+	 * 服务预期结束时间
+	 */
+	@ApiField("service_expect_end_time")
+	private Date serviceExpectEndTime;
+
+	/**
+	 * 枚举值： 支付宝问诊频道:ALIPAY_INQUIRY_CHANNEL 支付宝义诊频道:ALIPAY_PUBLIC_WELFARE_INQUIRY_CHANNEL 支付宝小程序:ALIPAY_MINI_APP 支付宝其他渠道:ALIPAY_OTHER_CHANNEL H5页面:H5 患者端app:PATIENT_APP pc端:PC 微信小程序:WECHAT_APP 支付宝AQ:ALIPAY_AQ AQ-APP:AQ_APP AQ-小程序:AQ_MINI_APP 香港支付宝app:ALIPAY_HK
+	 */
+	@ApiField("source")
+	private String source;
+
+	/**
+	 * 用户类型，如阿福类型
+	 */
+	@ApiField("user_type")
+	private String userType;
+
+	public String getAlipayChannelOrderFlag() {
+		return this.alipayChannelOrderFlag;
+	}
+	public void setAlipayChannelOrderFlag(String alipayChannelOrderFlag) {
+		this.alipayChannelOrderFlag = alipayChannelOrderFlag;
+	}
+
+	public String getApproveComment() {
+		return this.approveComment;
+	}
+	public void setApproveComment(String approveComment) {
+		this.approveComment = approveComment;
+	}
+
+	public String getChannelDesc() {
+		return this.channelDesc;
+	}
+	public void setChannelDesc(String channelDesc) {
+		this.channelDesc = channelDesc;
+	}
+
+	public String getChatUrl() {
+		return this.chatUrl;
+	}
+	public void setChatUrl(String chatUrl) {
+		this.chatUrl = chatUrl;
+	}
+
+	public String getComplaint() {
+		return this.complaint;
+	}
+	public void setComplaint(String complaint) {
+		this.complaint = complaint;
+	}
+
+	public String getDoctorAvatar() {
+		return this.doctorAvatar;
+	}
+	public void setDoctorAvatar(String doctorAvatar) {
+		this.doctorAvatar = doctorAvatar;
+	}
+
+	public String getDoctorInquiryLinkPage() {
+		return this.doctorInquiryLinkPage;
+	}
+	public void setDoctorInquiryLinkPage(String doctorInquiryLinkPage) {
+		this.doctorInquiryLinkPage = doctorInquiryLinkPage;
+	}
+
+	public String getDoctorTitle() {
+		return this.doctorTitle;
+	}
+	public void setDoctorTitle(String doctorTitle) {
+		this.doctorTitle = doctorTitle;
+	}
+
+	public String getDoctorType() {
+		return this.doctorType;
+	}
+	public void setDoctorType(String doctorType) {
+		this.doctorType = doctorType;
+	}
+
+	public String getHospitalName() {
+		return this.hospitalName;
+	}
+	public void setHospitalName(String hospitalName) {
+		this.hospitalName = hospitalName;
+	}
+
+	public String getInvoiceUrl() {
+		return this.invoiceUrl;
+	}
+	public void setInvoiceUrl(String invoiceUrl) {
+		this.invoiceUrl = invoiceUrl;
+	}
+
+	public PlatformConsultOrderEvaluateInfo getMedicalInquiryOrderEvaluateInfo() {
+		return this.medicalInquiryOrderEvaluateInfo;
+	}
+	public void setMedicalInquiryOrderEvaluateInfo(PlatformConsultOrderEvaluateInfo medicalInquiryOrderEvaluateInfo) {
+		this.medicalInquiryOrderEvaluateInfo = medicalInquiryOrderEvaluateInfo;
+	}
+
+	public String getOrderFrom() {
+		return this.orderFrom;
+	}
+	public void setOrderFrom(String orderFrom) {
+		this.orderFrom = orderFrom;
+	}
+
+	public String getOrderPid() {
+		return this.orderPid;
+	}
+	public void setOrderPid(String orderPid) {
+		this.orderPid = orderPid;
+	}
+
+	public String getOrderSpu() {
+		return this.orderSpu;
+	}
+	public void setOrderSpu(String orderSpu) {
+		this.orderSpu = orderSpu;
+	}
+
+	public String getOriginalPrice() {
+		return this.originalPrice;
+	}
+	public void setOriginalPrice(String originalPrice) {
+		this.originalPrice = originalPrice;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
+	}
+
+	public PlatformConsultPlusRegisterInfo getPlusRegisterInfo() {
+		return this.plusRegisterInfo;
+	}
+	public void setPlusRegisterInfo(PlatformConsultPlusRegisterInfo plusRegisterInfo) {
+		this.plusRegisterInfo = plusRegisterInfo;
+	}
+
+	public String getProductName() {
+		return this.productName;
+	}
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+	public String getRefundUrl() {
+		return this.refundUrl;
+	}
+	public void setRefundUrl(String refundUrl) {
+		this.refundUrl = refundUrl;
+	}
+
+	public Date getServiceExpectEndTime() {
+		return this.serviceExpectEndTime;
+	}
+	public void setServiceExpectEndTime(Date serviceExpectEndTime) {
+		this.serviceExpectEndTime = serviceExpectEndTime;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
+	}
+
+	public String getUserType() {
+		return this.userType;
+	}
+	public void setUserType(String userType) {
+		this.userType = userType;
+	}
+
+}

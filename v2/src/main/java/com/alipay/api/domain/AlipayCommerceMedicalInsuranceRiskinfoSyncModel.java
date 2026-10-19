@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益同步接口
  *
  * @author auto create
- * @since 1.0, 2026-09-10 10:47:52
+ * @since 1.0, 2026-10-19 15:07:37
  */
 public class AlipayCommerceMedicalInsuranceRiskinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4326251292638327132L;
+	private static final long serialVersionUID = 1358322278258197532L;
 
 	/**
 	 * 保司类型，非枚举类型

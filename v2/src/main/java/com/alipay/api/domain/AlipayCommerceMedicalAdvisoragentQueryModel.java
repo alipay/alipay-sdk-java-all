@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 顾问Agent流式对话
  *
  * @author auto create
- * @since 1.0, 2026-09-14 17:22:35
+ * @since 1.0, 2026-10-15 17:19:54
  */
 public class AlipayCommerceMedicalAdvisoragentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7438134971194747478L;
+	private static final long serialVersionUID = 2394316411563733981L;
 
 	/**
 	 * 额外字段

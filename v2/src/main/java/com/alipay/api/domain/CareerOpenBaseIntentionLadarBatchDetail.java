@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CareerOpenBaseIntentionLadarBatchDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5237245776815456473L;
+	private static final long serialVersionUID = 7864284427716692256L;
 
 	/**
 	 * 使用SM4算法加密后的身份证号密文

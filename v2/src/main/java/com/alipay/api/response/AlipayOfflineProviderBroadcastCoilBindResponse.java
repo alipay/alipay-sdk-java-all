@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.broadcast.coil.bind response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-29 19:42:54
+ * @since 1.0, 2026-10-16 00:06:20
  */
 public class AlipayOfflineProviderBroadcastCoilBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2128676776129827661L;
+	private static final long serialVersionUID = 7318531639997765328L;
 
 	/** 
 	 * 绑定操作是否成功

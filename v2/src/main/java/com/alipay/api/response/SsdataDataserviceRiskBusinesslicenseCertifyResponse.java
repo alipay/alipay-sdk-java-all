@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class SsdataDataserviceRiskBusinesslicenseCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4512512361722155482L;
+	private static final long serialVersionUID = 8214957813685781338L;
 
 	/** 
 	 * 营业执照的公司地址

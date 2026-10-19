@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-17 18:47:57
+ * @since 1.0, 2026-10-16 16:21:15
  */
 public class OpPromoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1628572274361295944L;
+	private static final long serialVersionUID = 3836874182737345956L;
 
 	/**
 	 * 优惠数量

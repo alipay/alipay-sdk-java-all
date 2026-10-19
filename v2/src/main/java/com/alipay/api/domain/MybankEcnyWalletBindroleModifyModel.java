@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankEcnyWalletBindroleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3268361892885148574L;
+	private static final long serialVersionUID = 4751114786723339369L;
 
 	/**
 	 * 绑定场景

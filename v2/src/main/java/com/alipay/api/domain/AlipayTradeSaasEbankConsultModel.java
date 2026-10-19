@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网银支付付款机构可用性咨询
  *
  * @author auto create
- * @since 1.0, 2026-09-22 18:07:56
+ * @since 1.0, 2026-10-19 13:22:59
  */
 public class AlipayTradeSaasEbankConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7889125726538774671L;
+	private static final long serialVersionUID = 3158737943614994825L;
 
 	/**
 	 * 统一买家身份信息。已有Customer时传入buyer_id_type和buyer_id；未提供已有Customer时必须提供out_merchant_no。

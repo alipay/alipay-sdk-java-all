@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易补充信息
  *
  * @author auto create
- * @since 1.0, 2026-08-26 10:57:51
+ * @since 1.0, 2026-10-15 13:12:59
  */
 public class TradeDetailE extends AlipayObject {
 
-	private static final long serialVersionUID = 5652454367672987261L;
+	private static final long serialVersionUID = 5792792213974935634L;
 
 	/**
 	 * 免押必过；设置后，不会过风控，谨慎设置；仅支持设置值"Y"，不支持其他值

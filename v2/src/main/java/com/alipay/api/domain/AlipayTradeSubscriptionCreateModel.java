@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅创建
  *
  * @author auto create
- * @since 1.0, 2026-09-21 12:20:31
+ * @since 1.0, 2026-10-16 17:52:58
  */
 public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3689156175114277315L;
+	private static final long serialVersionUID = 4429382374139796227L;
+
+	/**
+	 * CHECK_OUT_PAGE代表聚合收银模式，默认可不传
+	 */
+	@ApiField("cashier_mode")
+	private String cashierMode;
 
 	/**
 	 * 客户id，客户创建接口（alipay.trade.customer.create）返回的客户id
@@ -29,7 +35,7 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	private String deductType;
 
 	/**
-	 * 订阅生效的类型，枚举值：IMMEDIATE_EFFECTIVE（默认）。传入 SCHEDULED_EFFECTIVE 时表示「订阅预约生效模式」
+	 * 订阅生效的类型，默认为IMMEDIATE_EFFECTIVE。
 	 */
 	@ApiField("effective_type")
 	private String effectiveType;
@@ -67,7 +73,11 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	private Long payAmount;
 
 	/**
-	 * 若为「单笔升级连续订阅」，必填。周期订阅正式生效的时间，格式 yyyy-MM-dd。
+	 * 【仅对部分商户开放】
+若为「单笔升级连续订阅」，必填。
+参数格式为：
+YYYY-MM-DD
+周期订阅正式生效的时间。
 月维度下，订阅到期时间，统一按照23:59:59进行默认处理。
 	 */
 	@ApiField("scheduled_effective_time")
@@ -91,6 +101,13 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	 */
 	@ApiField("trial_period_days")
 	private Long trialPeriodDays;
+
+	public String getCashierMode() {
+		return this.cashierMode;
+	}
+	public void setCashierMode(String cashierMode) {
+		this.cashierMode = cashierMode;
+	}
 
 	public String getCustomerId() {
 		return this.customerId;

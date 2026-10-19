@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.royalty.relation.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-12 10:57:36
+ * @since 1.0, 2026-10-13 10:29:42
  */
 public class AlipayCommerceRecycleRoyaltyRelationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2811346725725383993L;
+	private static final long serialVersionUID = 4527584315826621996L;
 
 	/** 
 	 * 查询结果

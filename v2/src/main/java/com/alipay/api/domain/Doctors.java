@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医生推荐列表
  *
  * @author auto create
- * @since 1.0, 2026-09-14 17:22:35
+ * @since 1.0, 2026-10-15 17:19:54
  */
 public class Doctors extends AlipayObject {
 
-	private static final long serialVersionUID = 6289889415124276432L;
+	private static final long serialVersionUID = 6245583363168188974L;
 
 	/**
 	 * 权威认证

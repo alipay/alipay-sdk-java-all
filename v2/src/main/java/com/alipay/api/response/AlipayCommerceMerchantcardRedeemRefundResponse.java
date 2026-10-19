@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMerchantcardRedeemRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8318874616526591622L;
+	private static final long serialVersionUID = 7693428391697848146L;
 
 	/** 
 	 * 实际退款金额（单位：分）

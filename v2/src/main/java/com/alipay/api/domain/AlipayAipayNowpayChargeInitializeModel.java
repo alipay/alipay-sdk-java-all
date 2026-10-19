@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayAipayNowpayChargeInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7512957694691339963L;
+	private static final long serialVersionUID = 6699972126733538986L;
 
 	/**
 	 * 配置完成返回平台地址

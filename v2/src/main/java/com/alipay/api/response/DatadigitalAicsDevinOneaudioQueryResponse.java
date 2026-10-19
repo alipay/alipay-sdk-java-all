@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalAicsDevinOneaudioQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2739988372589791641L;
+	private static final long serialVersionUID = 6135418572183935832L;
 
 	/** 
 	 * 通话ID

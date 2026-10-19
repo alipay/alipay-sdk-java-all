@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * saleforce更新商机接口
  *
  * @author auto create
- * @since 1.0, 2026-09-22 17:07:56
+ * @since 1.0, 2026-10-14 18:17:59
  */
 public class AnttechOceanbaseObglobalSfleadsModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5414689686746291233L;
+	private static final long serialVersionUID = 4172783849956355951L;
 
 	/**
 	 * 提供给saleforce更新商机接口的入参

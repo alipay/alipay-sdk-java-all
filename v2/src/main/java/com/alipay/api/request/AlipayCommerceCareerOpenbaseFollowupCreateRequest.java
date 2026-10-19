@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.career.openbase.followup.create request
  * 
  * @author auto create
- * @since 1.0, 2026-09-29 15:37:52
+ * @since 1.0, 2026-10-15 14:51:55
  */
 public class AlipayCommerceCareerOpenbaseFollowupCreateRequest implements AlipayRequest<AlipayCommerceCareerOpenbaseFollowupCreateResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayCommerceCareerOpenbaseFollowupCreateRequest implements Alipay
 	private String apiVersion="1.0";
 
 	/** 
-	* 创建 AI 跟进任务
+	* 创建 AI 跟进任务：商家提交跟进方案、候选人信息和业务上下文，平台创建任务并返回任务单号。创建成功表示任务已受理，实际执行进度和结果可通过任务查询接口获取。相同商家业务单号重复提交时，返回原任务，不重复创建。
 	 */
 	private String bizContent;
 

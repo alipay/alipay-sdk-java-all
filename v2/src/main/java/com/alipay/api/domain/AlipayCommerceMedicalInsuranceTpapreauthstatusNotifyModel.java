@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * TPA渠道预授权状态同步
  *
  * @author auto create
- * @since 1.0, 2026-05-26 18:27:48
+ * @since 1.0, 2026-10-16 17:38:04
  */
 public class AlipayCommerceMedicalInsuranceTpapreauthstatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3797564789834837733L;
+	private static final long serialVersionUID = 2332698346211815916L;
 
 	/**
 	 * 押金额度,单位,元,人民币

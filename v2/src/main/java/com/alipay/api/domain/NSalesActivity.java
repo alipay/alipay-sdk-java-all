@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class NSalesActivity extends AlipayObject {
 
-	private static final long serialVersionUID = 7595286924179379884L;
+	private static final long serialVersionUID = 1445869196483337631L;
 
 	/**
 	 * 卖进活动设备编号

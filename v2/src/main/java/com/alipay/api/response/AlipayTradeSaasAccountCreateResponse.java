@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.saas.account.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-10-09 14:48:41
+ * @since 1.0, 2026-10-19 10:49:11
  */
 public class AlipayTradeSaasAccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4641531951513431286L;
+	private static final long serialVersionUID = 6681279359128144735L;
 
 	/** 
 	 * SaaS客户ID。后续账户查询和交易请求可使用该字段标识客户。

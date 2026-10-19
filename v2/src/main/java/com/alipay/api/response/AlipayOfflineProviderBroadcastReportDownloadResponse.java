@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.broadcast.report.download response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-21 16:17:53
+ * @since 1.0, 2026-10-16 00:06:20
  */
 public class AlipayOfflineProviderBroadcastReportDownloadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4271949385552935171L;
+	private static final long serialVersionUID = 6688661417686925944L;
 
 	/** 
 	 * 查询音响数据报表下载地址，当报表未生成时不会返回值

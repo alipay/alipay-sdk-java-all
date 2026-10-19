@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportChargerIdlefeeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2132118651822236345L;
+	private static final long serialVersionUID = 2747643247181413985L;
 
 	/** 
 	 * 支付宝占位费订单号

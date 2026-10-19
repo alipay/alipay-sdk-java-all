@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 当前在途活动
  *
  * @author auto create
- * @since 1.0, 2026-06-29 15:02:56
+ * @since 1.0, 2026-10-19 12:35:30
  */
 public class ActivityPeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1626519595719522144L;
+	private static final long serialVersionUID = 6655312753463514515L;
 
 	/**
 	 * 活动唯一编码

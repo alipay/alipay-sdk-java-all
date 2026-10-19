@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 加油站特定要素明细
  *
  * @author auto create
- * @since 1.0, 2026-09-30 13:49:39
+ * @since 1.0, 2026-10-15 22:54:10
  */
 public class IndustryInvoiceGasStationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5415958747741632745L;
+	private static final long serialVersionUID = 5186314764251842474L;
 
 	/**
-	 * 支付渠道，2026年10月20号后必传
+	 * 支付渠道
 	 */
 	@ApiField("channel_type")
 	private String channelType;
@@ -86,13 +86,13 @@ public class IndustryInvoiceGasStationInfo extends AlipayObject {
 	private Long serialNo;
 
 	/**
-	 * 交易流水号，2026年10月20号后必传
+	 * 交易流水号
 	 */
 	@ApiField("trade_biz_no")
 	private String tradeBizNo;
 
 	/**
-	 * 支付单号，2026年10月20号后必传
+	 * 支付单号
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;

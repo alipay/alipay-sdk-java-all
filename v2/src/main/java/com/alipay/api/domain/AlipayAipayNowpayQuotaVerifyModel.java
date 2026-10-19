@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAipayNowpayQuotaVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8381265479875821195L;
+	private static final long serialVersionUID = 7166996678451963127L;
 
 	/**
 	 * COUNT 默认 1；POINT 为正整数，，单位次数或积分

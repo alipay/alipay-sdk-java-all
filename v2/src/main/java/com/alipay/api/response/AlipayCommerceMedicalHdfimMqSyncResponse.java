@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalHdfimMqSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1144693786621136826L;
+	private static final long serialVersionUID = 5638844992661933375L;
 
 	/** 
 	 * 实际转发的SOFAMQ tag
