@@ -9,7 +9,7 @@
 Alipay SDK for Java让您不用复杂编程即可访支付宝开放平台开放的各项能力，SDK可以自动帮您满足能力调用过程中所需的证书校验、加签、验签、发送HTTP请求等非功能性要求。
 
 这里向您介绍如何获取 Alipay SDK for Java 并开始调用。
-如果您在使用 Alipay SDK for Java 的过程中遇到任何问题，欢迎在当前 GitHub [提交 Issues](https://github.com/alipay/alipay-sdk-java-all/issues/new)。
+如果您在使用 Alipay SDK for Java 的过程中遇到任何问题，请参见下方“问题”一节了解反馈渠道。
 
 ## 环境要求
 1. Alipay SDK for Java 需要配合`JKD 1.6`或其以上版本。
