@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantSolutionBatchCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4262657714388351479L;
+	private static final long serialVersionUID = 1544267549828177395L;
 
 	/**
 	 * 解决方案数据退出中，提报的文件信息

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改蚂蚁店铺
  *
  * @author auto create
- * @since 1.0, 2026-07-22 19:37:24
+ * @since 1.0, 2026-10-26 21:23:51
  */
 public class AntMerchantExpandShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1733997994329826972L;
+	private static final long serialVersionUID = 1485243828187638561L;
 
 	/**
 	 * "门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。"
@@ -28,6 +28,12 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	 */
 	@ApiField("brand_id")
 	private String brandId;
+
+	/**
+	 * 品牌中心id
+	 */
+	@ApiField("brand_no")
+	private String brandNo;
 
 	/**
 	 * 经营地址。若填写本对象，其中省、市、区、地址必填，其余选填。无需更新本信息项时请整体留空，如有填写将整体覆盖本信息项
@@ -227,6 +233,13 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	}
 	public void setBrandId(String brandId) {
 		this.brandId = brandId;
+	}
+
+	public String getBrandNo() {
+		return this.brandNo;
+	}
+	public void setBrandNo(String brandNo) {
+		this.brandNo = brandNo;
 	}
 
 	public AddressInfo getBusinessAddress() {

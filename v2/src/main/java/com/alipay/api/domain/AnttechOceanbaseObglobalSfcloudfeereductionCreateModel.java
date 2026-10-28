@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * saleforce券申请提交
  *
  * @author auto create
- * @since 1.0, 2026-08-17 21:07:49
+ * @since 1.0, 2026-10-20 14:52:58
  */
 public class AnttechOceanbaseObglobalSfcloudfeereductionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2574532317356859712L;
+	private static final long serialVersionUID = 2721721219275355622L;
 
 	/**
 	 * 申请理由
@@ -61,25 +61,32 @@ public class AnttechOceanbaseObglobalSfcloudfeereductionCreateModel extends Alip
 	private Date couponStartTime;
 
 	/**
-	 * 券有效期（自定义时间/券发至账户时间当日开始）
+	 * 券有效期计算方式，沿用现有取值：AbsoluteTime为自定义起止时间，RelativeTime为券到账后按天计算有效期。
 	 */
 	@ApiField("coupon_validity_type")
 	private String couponValidityType;
 
 	/**
-	 * 商机累计ARR
+	 * 商机累计年度经常性收入金额，入参单位为美元（USD），不是美分；国内非SLA场景由海图按现有逻辑换算为人民币元。
 	 */
 	@ApiField("cumulative_arr")
 	private String cumulativeArr;
 
 	/**
-	 * 面值
+	 * 券面值金额，以所选预算池及渠道对应币种的主币单位传入，例如人民币元或美元，不传分或美分；币种沿用现有发券配置。
 	 */
 	@ApiField("denomination")
 	private String denomination;
 
 	/**
-	 * 商机编码
+	 * null
+	 */
+	@ApiListField("instance_id_list")
+	@ApiField("string")
+	private List<String> instanceIdList;
+
+	/**
+	 * 商机编码，取Salesforce已同步海图商机的Opportunity_Code__c字段。
 	 */
 	@ApiField("leads_code")
 	private String leadsCode;
@@ -104,7 +111,7 @@ public class AnttechOceanbaseObglobalSfcloudfeereductionCreateModel extends Alip
 	private String reductionReason;
 
 	/**
-	 * 站点（国内站/国际站）
+	 * 站点，沿用现有取值DOMESTIC（国内站）或OVERSEAS（海外站）。
 	 */
 	@ApiField("region")
 	private String region;
@@ -195,6 +202,13 @@ public class AnttechOceanbaseObglobalSfcloudfeereductionCreateModel extends Alip
 	}
 	public void setDenomination(String denomination) {
 		this.denomination = denomination;
+	}
+
+	public List<String> getInstanceIdList() {
+		return this.instanceIdList;
+	}
+	public void setInstanceIdList(List<String> instanceIdList) {
+		this.instanceIdList = instanceIdList;
 	}
 
 	public String getLeadsCode() {

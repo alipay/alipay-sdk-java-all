@@ -13,11 +13,11 @@ import com.alipay.api.internal.mapping.ApiField;
 其他信息可参考租安盾产品接入指南。
  *
  * @author auto create
- * @since 1.0, 2026-10-14 14:16:41
+ * @since 1.0, 2026-10-26 09:37:55
  */
 public class VerticalRiskVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8484291272815362569L;
+	private static final long serialVersionUID = 5498468393177192852L;
 
 	/**
 	 * 预测用户在未来租赁周期内的履约能力，从0到5履约能力变高，风险更低

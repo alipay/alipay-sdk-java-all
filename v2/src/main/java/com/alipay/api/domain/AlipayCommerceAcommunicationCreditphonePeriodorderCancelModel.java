@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商行业信用购分期单撤销
  *
  * @author auto create
- * @since 1.0, 2024-02-01 15:23:04
+ * @since 1.0, 2026-10-23 13:57:00
  */
 public class AlipayCommerceAcommunicationCreditphonePeriodorderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4646974199211956614L;
+	private static final long serialVersionUID = 1363934276228296846L;
 
 	/**
 	 * 当期支付宝订单号
@@ -36,6 +36,12 @@ public class AlipayCommerceAcommunicationCreditphonePeriodorderCancelModel exten
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * 外部分期单号
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	public String getAlipayBizNo() {
 		return this.alipayBizNo;
@@ -63,6 +69,13 @@ public class AlipayCommerceAcommunicationCreditphonePeriodorderCancelModel exten
 	}
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 }

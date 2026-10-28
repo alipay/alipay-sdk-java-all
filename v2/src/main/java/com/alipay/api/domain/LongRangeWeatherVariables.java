@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LongRangeWeatherVariables extends AlipayObject {
 
-	private static final long serialVersionUID = 1654517424645691328L;
+	private static final long serialVersionUID = 4579437981633854778L;
 
 	/**
 	 * 体感温度，表示人体实际感受到的温度，单位：°C。

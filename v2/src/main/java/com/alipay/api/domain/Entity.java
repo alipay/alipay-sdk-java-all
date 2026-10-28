@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 额外字段
  *
  * @author auto create
- * @since 1.0, 2026-10-15 17:19:54
+ * @since 1.0, 2026-10-19 20:42:54
  */
 public class Entity extends AlipayObject {
 
-	private static final long serialVersionUID = 2645249999656359742L;
+	private static final long serialVersionUID = 2791938422227133213L;
 
 	/**
 	 * 详情id
@@ -42,6 +42,12 @@ public class Entity extends AlipayObject {
 	 */
 	@ApiField("event_id")
 	private String eventId;
+
+	/**
+	 * 地区
+	 */
+	@ApiField("region")
+	private String region;
 
 	public String getCaseId() {
 		return this.caseId;
@@ -76,6 +82,13 @@ public class Entity extends AlipayObject {
 	}
 	public void setEventId(String eventId) {
 		this.eventId = eventId;
+	}
+
+	public String getRegion() {
+		return this.region;
+	}
+	public void setRegion(String region) {
+		this.region = region;
 	}
 
 }

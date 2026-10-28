@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceBillEreceiptApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2289621353314637161L;
+	private static final long serialVersionUID = 3733796341911565558L;
 
 	/**
 	 * 支付宝资金流水号。发薪转账成功后返回的唯一标识，可通过星云薪酬发薪结果获取。

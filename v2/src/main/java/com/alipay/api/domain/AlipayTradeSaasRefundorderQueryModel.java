@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * saas退款查询
  *
  * @author auto create
- * @since 1.0, 2026-08-03 11:57:51
+ * @since 1.0, 2026-10-23 09:12:56
  */
 public class AlipayTradeSaasRefundorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7156491932917554624L;
+	private static final long serialVersionUID = 7569757796464193589L;
 
 	/**
 	 * SaaS客户ID。传入时用于增强订单归属校验。

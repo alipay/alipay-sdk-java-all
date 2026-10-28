@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.oceanbase.obglobal.sfcloudfeereduction.create request
  * 
  * @author auto create
- * @since 1.0, 2026-08-17 21:07:49
+ * @since 1.0, 2026-10-20 14:52:58
  */
 public class AnttechOceanbaseObglobalSfcloudfeereductionCreateRequest implements AlipayRequest<AnttechOceanbaseObglobalSfcloudfeereductionCreateResponse> {
 
@@ -19,7 +19,7 @@ public class AnttechOceanbaseObglobalSfcloudfeereductionCreateRequest implements
 	private String apiVersion="1.0";
 
 	/** 
-	* saleforce券申请提交
+	* 提交Salesforce云服务费用减免券申请并发起审批；可指定实例抵扣范围，相同sales_force_id按既有规则幂等处理。
 	 */
 	private String bizContent;
 

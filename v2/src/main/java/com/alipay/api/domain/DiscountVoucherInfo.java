@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 折扣券详情
  *
  * @author auto create
- * @since 1.0, 2023-11-01 19:38:07
+ * @since 1.0, 2026-10-27 15:38:24
  */
 public class DiscountVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1591738799666289131L;
+	private static final long serialVersionUID = 6789956517679319315L;
 
 	/**
 	 * 封顶金额。
@@ -30,6 +30,12 @@ public class DiscountVoucherInfo extends AlipayObject {
 	 */
 	@ApiField("floor_amount")
 	private String floorAmount;
+
+	/**
+	 * 门槛件数。取值范围：[1,9999]。该字段可不填写，认为无门槛。
+	 */
+	@ApiField("floor_count")
+	private Long floorCount;
 
 	/**
 	 * 优惠门槛信息
@@ -56,6 +62,13 @@ public class DiscountVoucherInfo extends AlipayObject {
 	}
 	public void setFloorAmount(String floorAmount) {
 		this.floorAmount = floorAmount;
+	}
+
+	public Long getFloorCount() {
+		return this.floorCount;
+	}
+	public void setFloorCount(Long floorCount) {
+		this.floorCount = floorCount;
 	}
 
 	public VoucherDeductThresholdInfo getVoucherDeductThresholdInfo() {

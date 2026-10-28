@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSpNordercateringCertificatesQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2356358613127362416L;
+	private static final long serialVersionUID = 4195662678273591456L;
 
 	/**
 	 * 点餐端类型

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付券联合营销发奖接口
  *
  * @author auto create
- * @since 1.0, 2026-10-16 16:21:15
+ * @since 1.0, 2026-10-28 11:07:59
  */
 public class AlipayPayAppOperationPromoTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3324779298667154278L;
+	private static final long serialVersionUID = 4339977192955882631L;
 
 	/**
 	 * 手机号MD5加密结果
@@ -48,6 +48,12 @@ public class AlipayPayAppOperationPromoTriggerModel extends AlipayObject {
 	 */
 	@ApiField("pay_operation_info")
 	private String payOperationInfo;
+
+	/**
+	 * 指定营销参数信息，如指定标签。
+	 */
+	@ApiField("promo_params")
+	private String promoParams;
 
 	/**
 	 * 请求id
@@ -107,6 +113,13 @@ public class AlipayPayAppOperationPromoTriggerModel extends AlipayObject {
 	}
 	public void setPayOperationInfo(String payOperationInfo) {
 		this.payOperationInfo = payOperationInfo;
+	}
+
+	public String getPromoParams() {
+		return this.promoParams;
+	}
+	public void setPromoParams(String promoParams) {
+		this.promoParams = promoParams;
 	}
 
 	public String getRequestId() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅修改
  *
  * @author auto create
- * @since 1.0, 2026-10-12 17:58:00
+ * @since 1.0, 2026-10-21 21:16:54
  */
 public class AlipayTradeSubscriptionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2443348185697275818L;
+	private static final long serialVersionUID = 1892487561963911836L;
 
 	/**
 	 * 是否在周期结束时取消，仅用于取消/取消后恢复订阅，其他场景无需使用。
@@ -92,7 +92,7 @@ false：重置周期，具体使用方式详见接入指南。
 	private Long refundAmount;
 
 	/**
-	 * 订单标题，若无特殊需求，无需使用该字段，默认使用商品名称
+	 * 订单标题，请规范命名，避免文字、数字长度冗余。用户签约页中，对客展示字段为商品名称。
 	 */
 	@ApiField("subscribe_title")
 	private String subscribeTitle;

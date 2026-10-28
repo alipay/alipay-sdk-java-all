@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechNftBlessGoodwillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5614842374271889368L;
+	private static final long serialVersionUID = 8588982152764577853L;
 
 	/**
 	 * 通过 OAuth 授权流程获取，用于解析用户 信息

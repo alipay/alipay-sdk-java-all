@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-11-06 14:22:41
+ * @since 1.0, 2026-10-23 19:17:58
  */
 public class RentRefundItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8787484949432725321L;
+	private static final long serialVersionUID = 8684632691958761275L;
 
 	/**
 	 * 第几期租金，从1开始

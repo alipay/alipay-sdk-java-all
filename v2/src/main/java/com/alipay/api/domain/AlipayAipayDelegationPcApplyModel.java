@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * AI付PC端委托申请接口
  *
  * @author auto create
- * @since 1.0, 2026-10-12 16:07:16
+ * @since 1.0, 2026-10-22 15:37:58
  */
 public class AlipayAipayDelegationPcApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4112179396751256876L;
+	private static final long serialVersionUID = 6236612625974587798L;
 
 	/**
 	 * 【描述】请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -52,6 +52,12 @@ public class AlipayAipayDelegationPcApplyModel extends AlipayObject {
 	 */
 	@ApiField("external_agreement_no")
 	private String externalAgreementNo;
+
+	/**
+	 * 风险参数
+	 */
+	@ApiField("out_agent_risk_info")
+	private OutAgentRiskInfo outAgentRiskInfo;
 
 	/**
 	 * 个人签约产品码，商户和支付宝签约时确定，商户可咨询技术支持。
@@ -99,6 +105,13 @@ public class AlipayAipayDelegationPcApplyModel extends AlipayObject {
 	}
 	public void setExternalAgreementNo(String externalAgreementNo) {
 		this.externalAgreementNo = externalAgreementNo;
+	}
+
+	public OutAgentRiskInfo getOutAgentRiskInfo() {
+		return this.outAgentRiskInfo;
+	}
+	public void setOutAgentRiskInfo(OutAgentRiskInfo outAgentRiskInfo) {
+		this.outAgentRiskInfo = outAgentRiskInfo;
 	}
 
 	public String getPersonalProductCode() {

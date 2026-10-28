@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LeadsProductTypeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8411268138398471299L;
+	private static final long serialVersionUID = 2297739992245955254L;
 
 	/**
 	 * 维保开始时间

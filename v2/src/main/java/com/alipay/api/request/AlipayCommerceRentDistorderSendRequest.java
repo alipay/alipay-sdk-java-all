@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.distorder.send request
  * 
  * @author auto create
- * @since 1.0, 2026-10-09 10:17:57
+ * @since 1.0, 2026-10-28 15:12:57
  */
 public class AlipayCommerceRentDistorderSendRequest implements AlipayRequest<AlipayCommerceRentDistorderSendResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CaSystemCrossPage extends AlipayObject {
 
-	private static final long serialVersionUID = 1495222947155181652L;
+	private static final long serialVersionUID = 1753727754679875865L;
 
 	/**
 	 * 默认骑缝章页数

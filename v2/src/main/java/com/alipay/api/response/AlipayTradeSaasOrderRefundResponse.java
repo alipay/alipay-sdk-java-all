@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.saas.order.refund response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-03 11:52:51
+ * @since 1.0, 2026-10-23 09:12:56
  */
 public class AlipayTradeSaasOrderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4734836169837966263L;
+	private static final long serialVersionUID = 8689614145885361439L;
 
 	/** 
 	 * 本次退款是否发生资金变化。Y表示发生资金变化，N表示未发生资金变化。

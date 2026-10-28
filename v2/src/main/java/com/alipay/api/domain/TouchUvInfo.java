@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-10-10 18:59:32
+ * @since 1.0, 2026-10-21 10:43:00
  */
 public class TouchUvInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1415285839635479717L;
+	private static final long serialVersionUID = 2476265474979562813L;
+
+	/**
+	 * 线圈类型编码
+	 */
+	@ApiField("coil_type")
+	private String coilType;
 
 	/**
 	 * 二维码链接
@@ -24,6 +30,13 @@ public class TouchUvInfo extends AlipayObject {
 	 */
 	@ApiField("touch_uv")
 	private Long touchUv;
+
+	public String getCoilType() {
+		return this.coilType;
+	}
+	public void setCoilType(String coilType) {
+		this.coilType = coilType;
+	}
 
 	public String getQrCodeUrl() {
 		return this.qrCodeUrl;

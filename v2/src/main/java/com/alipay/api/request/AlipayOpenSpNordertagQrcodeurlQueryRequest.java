@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.nordertag.qrcodeurl.query request
  * 
  * @author auto create
- * @since 1.0, 2026-03-13 23:32:44
+ * @since 1.0, 2026-10-28 15:00:44
  */
 public class AlipayOpenSpNordertagQrcodeurlQueryRequest implements AlipayRequest<AlipayOpenSpNordertagQrcodeurlQueryResponse> {
 

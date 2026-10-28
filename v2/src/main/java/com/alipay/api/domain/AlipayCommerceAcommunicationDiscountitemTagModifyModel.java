@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 特惠充分层标签修改接口
  *
  * @author auto create
- * @since 1.0, 2025-08-18 13:57:35
+ * @since 1.0, 2026-10-23 10:35:21
  */
 public class AlipayCommerceAcommunicationDiscountitemTagModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7369563817527133685L;
+	private static final long serialVersionUID = 7866331572826359691L;
 
 	/**
 	 * 机构侧商品ID

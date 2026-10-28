@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.device.data.send request
  * 
  * @author auto create
- * @since 1.0, 2026-05-06 10:14:39
+ * @since 1.0, 2026-10-26 16:47:54
  */
 public class AlipayCommerceMedicalDeviceDataSendRequest implements AlipayRequest<AlipayCommerceMedicalDeviceDataSendResponse> {
 

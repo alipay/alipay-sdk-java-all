@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandNfcInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7196966352693639476L;
+	private static final long serialVersionUID = 1651181471392189447L;
 
 	/** 
 	 * NFC链接对应的码值信息列表

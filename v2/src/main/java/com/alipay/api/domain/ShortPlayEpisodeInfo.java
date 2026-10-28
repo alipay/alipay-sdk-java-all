@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShortPlayEpisodeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7196837211119843162L;
+	private static final long serialVersionUID = 3252764973484455533L;
 
 	/**
 	 * 剧集封面媒资ID（支付宝上传接口返回的 file_id）

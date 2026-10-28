@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * saas支付创单
  *
  * @author auto create
- * @since 1.0, 2026-10-15 15:32:55
+ * @since 1.0, 2026-10-23 09:12:56
  */
 public class AlipayTradeSaasOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4811643151166384186L;
+	private static final long serialVersionUID = 3496361553895796216L;
 
 	/**
 	 * null

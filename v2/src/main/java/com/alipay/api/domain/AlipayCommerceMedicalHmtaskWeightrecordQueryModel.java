@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalHmtaskWeightrecordQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5784138498867439572L;
+	private static final long serialVersionUID = 6148342416792439766L;
 
 	/**
 	 * 用户openid

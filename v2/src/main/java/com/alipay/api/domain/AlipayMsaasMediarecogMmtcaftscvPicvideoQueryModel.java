@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 图片视频捞取请求
  *
  * @author auto create
- * @since 1.0, 2026-10-16 16:29:17
+ * @since 1.0, 2026-10-22 19:14:25
  */
 public class AlipayMsaasMediarecogMmtcaftscvPicvideoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3891372326147381753L;
+	private static final long serialVersionUID = 4589414584118619979L;
+
+	/**
+	 * 服务商id
+	 */
+	@ApiField("merchant_pid")
+	private String merchantPid;
 
 	/**
 	 * 请求Id
@@ -39,6 +45,13 @@ public class AlipayMsaasMediarecogMmtcaftscvPicvideoQueryModel extends AlipayObj
 	 */
 	@ApiField("video_detail")
 	private String videoDetail;
+
+	public String getMerchantPid() {
+		return this.merchantPid;
+	}
+	public void setMerchantPid(String merchantPid) {
+		this.merchantPid = merchantPid;
+	}
 
 	public String getRequestId() {
 		return this.requestId;

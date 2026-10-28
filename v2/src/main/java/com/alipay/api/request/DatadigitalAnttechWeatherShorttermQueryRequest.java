@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.anttech.weather.shortterm.query request
  * 
  * @author auto create
- * @since 1.0, 2026-07-08 11:22:55
+ * @since 1.0, 2026-10-28 09:55:06
  */
 public class DatadigitalAnttechWeatherShorttermQueryRequest implements AlipayRequest<DatadigitalAnttechWeatherShorttermQueryResponse> {
 

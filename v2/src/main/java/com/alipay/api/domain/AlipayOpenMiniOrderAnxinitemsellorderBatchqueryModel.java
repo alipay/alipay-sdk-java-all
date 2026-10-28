@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心卡售卖账单信息
  *
  * @author auto create
- * @since 1.0, 2024-06-18 14:18:15
+ * @since 1.0, 2026-10-22 15:07:48
  */
 public class AlipayOpenMiniOrderAnxinitemsellorderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1261866858529341259L;
+	private static final long serialVersionUID = 2474424548871834539L;
 
 	/**
 	 * 订单创建日期，格式为yyyy-MM-dd

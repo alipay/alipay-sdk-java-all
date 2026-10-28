@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 本次交易按需静默创建的SaaS客户信息
  *
  * @author auto create
- * @since 1.0, 2026-10-15 15:32:55
+ * @since 1.0, 2026-10-23 09:12:56
  */
 public class SaasCustomerInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1824189556499777234L;
+	private static final long serialVersionUID = 8339413523266786679L;
 
 	/**
 	 * SaaS客户ID

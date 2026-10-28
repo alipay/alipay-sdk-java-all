@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShortPlayActor extends AlipayObject {
 
-	private static final long serialVersionUID = 4534676483119479934L;
+	private static final long serialVersionUID = 7136683998996297939L;
 
 	/**
 	 * 演员名，最长 30 个字

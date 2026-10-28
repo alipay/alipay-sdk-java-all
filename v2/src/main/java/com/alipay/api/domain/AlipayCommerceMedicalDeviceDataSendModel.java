@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设备厂商数据上报标准化接口
  *
  * @author auto create
- * @since 1.0, 2026-05-06 10:14:39
+ * @since 1.0, 2026-10-26 16:47:54
  */
 public class AlipayCommerceMedicalDeviceDataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3811838618189723462L;
+	private static final long serialVersionUID = 8555425543483474645L;
 
 	/**
 	 * null

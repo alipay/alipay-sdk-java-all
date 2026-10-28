@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OrderNegotiatedPaymentTime extends AlipayObject {
 
-	private static final long serialVersionUID = 5266321767774115789L;
+	private static final long serialVersionUID = 5715746456313612182L;
 
 	/**
 	 * 租期。标识第几期，起始值为1，需保证编号递增

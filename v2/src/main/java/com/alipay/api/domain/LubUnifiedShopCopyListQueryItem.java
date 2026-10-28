@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LubUnifiedShopCopyListQueryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7881846158427893163L;
+	private static final long serialVersionUID = 8614332568796716682L;
 
 	/**
 	 * 品牌ID

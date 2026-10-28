@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAipayNowpayChargeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8117883354442952389L;
+	private static final long serialVersionUID = 6625617685728687554L;
 
 	/** 
 	 * 最终收费模式

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DatadigitalFincloudFinsaasTagcrowdCountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5455821597646587163L;
+	private static final long serialVersionUID = 1646364984329666215L;
 
 	/**
 	 * 标签组规则列表+不唯一

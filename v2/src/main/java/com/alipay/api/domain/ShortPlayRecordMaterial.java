@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 短剧备案材料信息。
  *
  * @author auto create
- * @since 1.0, 2026-09-16 16:43:03
+ * @since 1.0, 2026-10-21 11:15:59
  */
 public class ShortPlayRecordMaterial extends AlipayObject {
 
-	private static final long serialVersionUID = 2275629994633748767L;
+	private static final long serialVersionUID = 7385758756458688782L;
 
 	/**
 	 * 演员列表。
@@ -74,6 +74,12 @@ public class ShortPlayRecordMaterial extends AlipayObject {
 	private Boolean firstBroadcast;
 
 	/**
+	 * 发行机构。短剧分类为一类/二类时必填
+	 */
+	@ApiField("issue_org")
+	private String issueOrg;
+
+	/**
 	 * 主要演员片酬占总片酬比例（取值范围 0~1）
 	 */
 	@ApiField("main_actor_salary_ratio")
@@ -109,6 +115,12 @@ public class ShortPlayRecordMaterial extends AlipayObject {
 	 */
 	@ApiField("seqs_count")
 	private Long seqsCount;
+
+	/**
+	 * 短剧分类。0：一类；1：二类；2：三类
+	 */
+	@ApiField("short_play_category")
+	private String shortPlayCategory;
 
 	/**
 	 * 短剧简介，最少 200 个字
@@ -179,6 +191,13 @@ public class ShortPlayRecordMaterial extends AlipayObject {
 		this.firstBroadcast = firstBroadcast;
 	}
 
+	public String getIssueOrg() {
+		return this.issueOrg;
+	}
+	public void setIssueOrg(String issueOrg) {
+		this.issueOrg = issueOrg;
+	}
+
 	public String getMainActorSalaryRatio() {
 		return this.mainActorSalaryRatio;
 	}
@@ -219,6 +238,13 @@ public class ShortPlayRecordMaterial extends AlipayObject {
 	}
 	public void setSeqsCount(Long seqsCount) {
 		this.seqsCount = seqsCount;
+	}
+
+	public String getShortPlayCategory() {
+		return this.shortPlayCategory;
+	}
+	public void setShortPlayCategory(String shortPlayCategory) {
+		this.shortPlayCategory = shortPlayCategory;
 	}
 
 	public String getSummary() {

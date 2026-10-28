@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalTradeDirectCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4873831588331552188L;
+	private static final long serialVersionUID = 8292779953491399447L;
 
 	/**
 	 * 创单接口传入的外部订单号，trade_no和out_trade_no至少有一个要非空，优先会取trade_no

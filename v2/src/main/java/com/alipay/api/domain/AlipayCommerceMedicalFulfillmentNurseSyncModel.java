@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV同步护士信息给SAAS
  *
  * @author auto create
- * @since 1.0, 2026-07-17 16:42:49
+ * @since 1.0, 2026-10-26 10:52:59
  */
 public class AlipayCommerceMedicalFulfillmentNurseSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5596663645959421866L;
+	private static final long serialVersionUID = 8782573437568741457L;
 
 	/**
 	 * 预计出报告结束时间，示例：2026-06-25 12:30

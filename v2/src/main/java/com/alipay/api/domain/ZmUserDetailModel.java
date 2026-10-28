@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZmUserDetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2142281225694368588L;
+	private static final long serialVersionUID = 7338461461352913366L;
 
 	/**
 	 * hash值

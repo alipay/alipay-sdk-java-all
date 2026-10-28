@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 特价券详情
  *
  * @author auto create
- * @since 1.0, 2023-07-21 11:25:47
+ * @since 1.0, 2026-10-27 15:38:25
  */
 public class SpecialVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8584826524331472961L;
+	private static final long serialVersionUID = 5837236811644826179L;
 
 	/**
 	 * 门槛金额。说明：该字段可不填，认为无门槛;
 	 */
 	@ApiField("floor_amount")
 	private String floorAmount;
+
+	/**
+	 * 门槛件数。取值范围：[1,9999]。该字段可不填，认为无门槛
+	 */
+	@ApiField("floor_count")
+	private Long floorCount;
 
 	/**
 	 * 特价，即：原价-特价=优惠金额。
@@ -36,6 +42,13 @@ public class SpecialVoucherInfo extends AlipayObject {
 	}
 	public void setFloorAmount(String floorAmount) {
 		this.floorAmount = floorAmount;
+	}
+
+	public Long getFloorCount() {
+		return this.floorCount;
+	}
+	public void setFloorCount(Long floorCount) {
+		this.floorCount = floorCount;
 	}
 
 	public String getSpecialAmount() {

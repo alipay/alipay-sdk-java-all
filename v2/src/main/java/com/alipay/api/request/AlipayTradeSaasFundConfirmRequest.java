@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.saas.fund.confirm request
  * 
  * @author auto create
- * @since 1.0, 2026-09-20 10:42:52
+ * @since 1.0, 2026-10-23 09:12:56
  */
 public class AlipayTradeSaasFundConfirmRequest implements AlipayRequest<AlipayTradeSaasFundConfirmResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.crowdapp.entity.match request
  * 
  * @author auto create
- * @since 1.0, 2025-12-29 10:47:41
+ * @since 1.0, 2026-10-22 20:29:31
  */
 public class AlipayDigitalmgmtCrowdappEntityMatchRequest implements AlipayRequest<AlipayDigitalmgmtCrowdappEntityMatchResponse> {
 

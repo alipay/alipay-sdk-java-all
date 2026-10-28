@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QianfanCardComponent extends AlipayObject {
 
-	private static final long serialVersionUID = 4332198746342364585L;
+	private static final long serialVersionUID = 3814955637682434248L;
 
 	/**
 	 * 参数映射

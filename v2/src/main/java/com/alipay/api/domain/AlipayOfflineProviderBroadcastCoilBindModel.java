@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderBroadcastCoilBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5278989584456845185L;
+	private static final long serialVersionUID = 8183876944835239141L;
 
 	/**
 	 * 线圈NFCURL。服务商从线圈读取后原样传入。nfc_url和tag_sn必须传入至少一个值。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 短临降水查询请求
  *
  * @author auto create
- * @since 1.0, 2026-07-08 11:22:55
+ * @since 1.0, 2026-10-28 09:55:06
  */
 public class DatadigitalAnttechWeatherShorttermQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8177276228418786643L;
+	private static final long serialVersionUID = 6421546913429856792L;
 
 	/**
 	 * 蚂蚁数科气象服务产品码，找蚂蚁数科运营同学获取

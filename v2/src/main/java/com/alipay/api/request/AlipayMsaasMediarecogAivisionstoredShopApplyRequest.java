@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.mediarecog.aivisionstored.shop.apply request
  * 
  * @author auto create
- * @since 1.0, 2026-06-01 19:12:50
+ * @since 1.0, 2026-10-26 15:38:01
  */
 public class AlipayMsaasMediarecogAivisionstoredShopApplyRequest implements AlipayRequest<AlipayMsaasMediarecogAivisionstoredShopApplyResponse> {
 

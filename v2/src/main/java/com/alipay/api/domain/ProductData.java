@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品模型，可以通过该参数一并创建商品信息
  *
  * @author auto create
- * @since 1.0, 2026-09-02 14:57:52
+ * @since 1.0, 2026-10-21 11:18:00
  */
 public class ProductData extends AlipayObject {
 
-	private static final long serialVersionUID = 5374772784414899598L;
+	private static final long serialVersionUID = 7286912246264793773L;
 
 	/**
 	 * 商品描述
@@ -26,7 +26,7 @@ public class ProductData extends AlipayObject {
 	private String metadata;
 
 	/**
-	 * 商品名称
+	 * 商品名称，建议命名格式：服务名-等级/版本-周期 e.g：AI视频Token包-高级会员-月度订阅
 	 */
 	@ApiField("name")
 	private String name;

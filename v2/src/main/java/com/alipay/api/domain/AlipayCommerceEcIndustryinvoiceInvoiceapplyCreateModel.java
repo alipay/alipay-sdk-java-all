@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付可开票开票申请创建
  *
  * @author auto create
- * @since 1.0, 2026-10-15 22:54:11
+ * @since 1.0, 2026-10-20 15:05:47
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3334691344325444772L;
+	private static final long serialVersionUID = 7246163465928734214L;
 
 	/**
 	 * 附加要素列表
@@ -205,6 +205,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	@ApiListField("real_property_business_list")
 	@ApiField("industry_invoice_real_property_business")
 	private List<IndustryInvoiceRealPropertyBusiness> realPropertyBusinessList;
+
+	/**
+	 * 减按征收类型
+	 */
+	@ApiField("reduced_tax_rate_type")
+	private String reducedTaxRateType;
 
 	/**
 	 * 加油站开票参数（含开票环节/加油卡发票号码列表/加油站特定要素明细）
@@ -488,6 +494,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	}
 	public void setRealPropertyBusinessList(List<IndustryInvoiceRealPropertyBusiness> realPropertyBusinessList) {
 		this.realPropertyBusinessList = realPropertyBusinessList;
+	}
+
+	public String getReducedTaxRateType() {
+		return this.reducedTaxRateType;
+	}
+	public void setReducedTaxRateType(String reducedTaxRateType) {
+		this.reducedTaxRateType = reducedTaxRateType;
 	}
 
 	public IndustryInvoiceRefinedOilGasStation getRefinedOilGasStation() {

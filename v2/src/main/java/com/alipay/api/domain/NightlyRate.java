@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class NightlyRate extends AlipayObject {
 
-	private static final long serialVersionUID = 7416883377515638656L;
+	private static final long serialVersionUID = 2797228892454748187L;
 
 	/**
 	 * 加床价

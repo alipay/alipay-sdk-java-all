@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.saas.order.refund request
  * 
  * @author auto create
- * @since 1.0, 2026-08-03 11:52:51
+ * @since 1.0, 2026-10-23 09:12:56
  */
 public class AlipayTradeSaasOrderRefundRequest implements AlipayRequest<AlipayTradeSaasOrderRefundResponse> {
 

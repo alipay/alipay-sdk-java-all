@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 协议状态通知
  *
  * @author auto create
- * @since 1.0, 2025-09-18 16:03:39
+ * @since 1.0, 2026-10-28 17:21:42
  */
 public class XingheLendassistCarfinFinagreementNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7641113271281577755L;
+	private static final long serialVersionUID = 4475743161313942239L;
 
 	/**
 	 * 协议列表
@@ -46,6 +46,13 @@ public class XingheLendassistCarfinFinagreementNotifyModel extends AlipayObject 
 	 */
 	@ApiField("out_lend_apply_no")
 	private String outLendApplyNo;
+
+	/**
+	 * LEND=支用协议(缺省默认)
+CREDIT=授信场景（征信授权协议）
+	 */
+	@ApiField("scene")
+	private String scene;
 
 	public List<AgreementFile> getAgreementFileList() {
 		return this.agreementFileList;
@@ -80,6 +87,13 @@ public class XingheLendassistCarfinFinagreementNotifyModel extends AlipayObject 
 	}
 	public void setOutLendApplyNo(String outLendApplyNo) {
 		this.outLendApplyNo = outLendApplyNo;
+	}
+
+	public String getScene() {
+		return this.scene;
+	}
+	public void setScene(String scene) {
+		this.scene = scene;
 	}
 
 }

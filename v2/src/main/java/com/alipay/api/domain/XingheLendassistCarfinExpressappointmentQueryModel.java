@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class XingheLendassistCarfinExpressappointmentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8433741282921924695L;
+	private static final long serialVersionUID = 1637798919151331368L;
 
 	/**
 	 * 地区国标码

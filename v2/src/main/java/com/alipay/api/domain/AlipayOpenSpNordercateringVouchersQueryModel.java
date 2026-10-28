@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSpNordercateringVouchersQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1777273997772885942L;
+	private static final long serialVersionUID = 4645835799713993816L;
 
 	/**
 	 * 设备app token

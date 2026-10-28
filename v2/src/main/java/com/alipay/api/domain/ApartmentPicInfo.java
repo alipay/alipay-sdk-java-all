@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ApartmentPicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3425461239414216556L;
+	private static final long serialVersionUID = 3633628642789497574L;
 
 	/**
 	 * 公寓外观图片

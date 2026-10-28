@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceCareerOpenbaseInvitationBatchsendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4531313366571691486L;
+	private static final long serialVersionUID = 7683644533373697965L;
 
 	/**
 	 * null

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.freezefinance.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-14 18:02:35
+ * @since 1.0, 2026-10-20 19:41:33
  */
 public class AlipayDataDataserviceAdcampaignFreezefinanceBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5567872451449368164L;
+	private static final long serialVersionUID = 6174621966456829589L;
 
 	/** 
 	 * 冻结单信息

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditUserOpenCertifyCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4791583989337823912L;
+	private static final long serialVersionUID = 8527511668649672733L;
 
 	/** 
 	 * auth_url

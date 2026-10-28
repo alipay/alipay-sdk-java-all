@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcaftscv.picvideo.query request
  * 
  * @author auto create
- * @since 1.0, 2026-10-16 17:11:00
+ * @since 1.0, 2026-10-22 19:17:58
  */
 public class AlipayMsaasMediarecogMmtcaftscvPicvideoQueryRequest implements AlipayRequest<AlipayMsaasMediarecogMmtcaftscvPicvideoQueryResponse> {
 

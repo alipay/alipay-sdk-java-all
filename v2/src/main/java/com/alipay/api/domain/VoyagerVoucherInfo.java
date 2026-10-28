@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoyagerVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6341141955197251116L;
+	private static final long serialVersionUID = 1866198891343613369L;
 
 	/**
 	 * 行动按钮跳转地址

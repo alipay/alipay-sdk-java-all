@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechNftBlessBodhileafQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4634331839773247374L;
+	private static final long serialVersionUID = 8329622621697466357L;
 
 	/** 
 	 * 当前菩提叶余额

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechNftBlessGoodwillSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2661163334223127542L;
+	private static final long serialVersionUID = 3632555887725194653L;
 
 	/**
 	 * 用户授权令牌

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 凭证核销结果
  *
  * @author auto create
- * @since 1.0, 2026-03-31 16:45:01
+ * @since 1.0, 2026-10-27 20:04:17
  */
 public class CertificateUseResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8334984619961562251L;
+	private static final long serialVersionUID = 5428653953391857478L;
 
 	/**
 	 * 凭证实例的金额信息，在异常场景下可能为空，需要判断是否有值才可进行使用。
@@ -33,6 +33,13 @@ public class CertificateUseResult extends AlipayObject {
 	 */
 	@ApiField("code")
 	private String code;
+
+	/**
+	 * 抵扣来源明细
+	 */
+	@ApiListField("deduction_info_list")
+	@ApiField("deduction_info_list")
+	private List<DeductionInfoList> deductionInfoList;
 
 	/**
 	 * 核销准备返回的支付宝平台加密券码
@@ -57,6 +64,12 @@ public class CertificateUseResult extends AlipayObject {
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
+
+	/**
+	 * 买单金额摘要
+	 */
+	@ApiField("pay_bill_info")
+	private PayBillInfo payBillInfo;
 
 	/**
 	 * 核销结果枚举
@@ -104,6 +117,13 @@ public class CertificateUseResult extends AlipayObject {
 		this.code = code;
 	}
 
+	public List<DeductionInfoList> getDeductionInfoList() {
+		return this.deductionInfoList;
+	}
+	public void setDeductionInfoList(List<DeductionInfoList> deductionInfoList) {
+		this.deductionInfoList = deductionInfoList;
+	}
+
 	public String getEncryptedCode() {
 		return this.encryptedCode;
 	}
@@ -130,6 +150,13 @@ public class CertificateUseResult extends AlipayObject {
 	}
 	public void setOutOrderId(String outOrderId) {
 		this.outOrderId = outOrderId;
+	}
+
+	public PayBillInfo getPayBillInfo() {
+		return this.payBillInfo;
+	}
+	public void setPayBillInfo(PayBillInfo payBillInfo) {
+		this.payBillInfo = payBillInfo;
 	}
 
 	public String getResult() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅创建
  *
  * @author auto create
- * @since 1.0, 2026-10-16 17:52:58
+ * @since 1.0, 2026-10-21 16:13:39
  */
 public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4429382374139796227L;
+	private static final long serialVersionUID = 3122636317891699823L;
 
 	/**
 	 * CHECK_OUT_PAGE代表聚合收银模式，默认可不传
@@ -84,7 +84,7 @@ YYYY-MM-DD
 	private String scheduledEffectiveTime;
 
 	/**
-	 * 订单标题，若无特殊需求，无需使用该字段，默认使用商品名称
+	 * 订单标题，请规范命名，避免文字、数字长度冗余。用户签约页中，对客展示字段为商品名称。
 	 */
 	@ApiField("subscribe_title")
 	private String subscribeTitle;

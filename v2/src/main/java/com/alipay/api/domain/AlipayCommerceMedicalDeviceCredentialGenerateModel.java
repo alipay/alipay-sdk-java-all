@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 厂商指定设备生成设备身份凭证
  *
  * @author auto create
- * @since 1.0, 2026-10-12 20:17:58
+ * @since 1.0, 2026-10-21 16:37:54
  */
 public class AlipayCommerceMedicalDeviceCredentialGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6474881389459317626L;
+	private static final long serialVersionUID = 4464441988244498196L;
 
 	/**
 	 * null
@@ -30,9 +30,10 @@ public class AlipayCommerceMedicalDeviceCredentialGenerateModel extends AlipayOb
 	private String itemId;
 
 	/**
-	 * 厂商的英文code，由产品提供
+	 * 厂商编码 当前字段已废弃(内部产品确认不需要这个参数来透传到服务端处理)
 	 */
 	@ApiField("role_source")
+	@Deprecated
 	private String roleSource;
 
 	public List<DeviceIdentityCredentialOpenApiDevice> getDevices() {

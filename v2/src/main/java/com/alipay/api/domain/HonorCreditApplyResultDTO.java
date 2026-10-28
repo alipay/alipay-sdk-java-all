@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HonorCreditApplyResultDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7497253295867686614L;
+	private static final long serialVersionUID = 3318821294944519758L;
 
 	/**
 	 * 荣耀侧授信申请流水号

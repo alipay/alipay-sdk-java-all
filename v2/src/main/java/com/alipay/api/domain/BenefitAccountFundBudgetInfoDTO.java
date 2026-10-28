@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BenefitAccountFundBudgetInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6895529693685259284L;
+	private static final long serialVersionUID = 1416897763972896663L;
 
 	/**
 	 * 退回预算，实际可能未退资金，单位：元

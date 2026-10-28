@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.acommunication.discountitem.tag.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-08-18 13:57:35
+ * @since 1.0, 2026-10-23 10:35:21
  */
 public class AlipayCommerceAcommunicationDiscountitemTagModifyRequest implements AlipayRequest<AlipayCommerceAcommunicationDiscountitemTagModifyResponse> {
 

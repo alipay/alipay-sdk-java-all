@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 加油站特定要素明细
  *
  * @author auto create
- * @since 1.0, 2026-10-15 22:54:10
+ * @since 1.0, 2026-10-20 15:05:47
  */
 public class IndustryInvoiceGasStationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5186314764251842474L;
+	private static final long serialVersionUID = 8221674356548921521L;
 
 	/**
 	 * 支付渠道
@@ -86,13 +86,13 @@ public class IndustryInvoiceGasStationInfo extends AlipayObject {
 	private Long serialNo;
 
 	/**
-	 * 交易流水号
+	 * 交易流水号： 销售管理系统或者相关业务系统中的业务订单号，需长期保存用以支持税务事后抽查。支付宝收单交易建议使用账单信息中的商家订单号
 	 */
 	@ApiField("trade_biz_no")
 	private String tradeBizNo;
 
 	/**
-	 * 支付单号
+	 * 交易（支付）单号： 支付机构的支付流水号，支付宝交易请使用账单详情中的订单号
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;

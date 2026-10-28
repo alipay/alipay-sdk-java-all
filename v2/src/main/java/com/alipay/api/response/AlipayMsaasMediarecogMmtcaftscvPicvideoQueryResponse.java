@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcaftscv.picvideo.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-10-16 17:11:00
+ * @since 1.0, 2026-10-22 19:17:58
  */
 public class AlipayMsaasMediarecogMmtcaftscvPicvideoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7325969313764415972L;
+	private static final long serialVersionUID = 2151483187658746171L;
 
 	/** 
 	 * 货柜每层视频展示信息

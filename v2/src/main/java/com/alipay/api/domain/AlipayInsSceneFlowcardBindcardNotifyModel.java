@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsSceneFlowcardBindcardNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8784843899513572411L;
+	private static final long serialVersionUID = 6449887663529184223L;
 
 	/**
 	 * 支付宝的服务记录编号

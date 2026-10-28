@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保险营销权益查询接口
  *
  * @author auto create
- * @since 1.0, 2026-09-23 10:12:51
+ * @since 1.0, 2026-10-26 17:58:00
  */
 public class AlipayInsMarketingInscouponQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1115191662396642875L;
+	private static final long serialVersionUID = 2125432825895647624L;
 
 	/**
 	 * 绑定券id，可选，如果传了券id，则只查该券对应的权益

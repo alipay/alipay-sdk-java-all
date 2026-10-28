@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扩展信息
  *
  * @author auto create
- * @since 1.0, 2026-10-19 17:38:01
+ * @since 1.0, 2026-10-23 22:52:56
  */
 public class PlatformConsultOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2523877625235897146L;
+	private static final long serialVersionUID = 2339468895696143452L;
 
 	/**
 	 * 支付宝渠道订单标识 枚举值： 是:Y 否:N

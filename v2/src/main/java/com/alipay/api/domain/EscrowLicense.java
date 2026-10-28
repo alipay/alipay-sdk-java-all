@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EscrowLicense extends AlipayObject {
 
-	private static final long serialVersionUID = 5518118183466786137L;
+	private static final long serialVersionUID = 2258559741173228118L;
 
 	/**
 	 * 证件有效期，格式yyyy-MM-dd

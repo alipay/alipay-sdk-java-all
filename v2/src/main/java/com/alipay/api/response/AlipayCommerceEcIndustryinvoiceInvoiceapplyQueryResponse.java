@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.industryinvoice.invoiceapply.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-10-19 16:18:27
+ * @since 1.0, 2026-10-20 15:12:59
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3466641326157693243L;
+	private static final long serialVersionUID = 3822265233656422416L;
 
 	/** 
 	 * 附加要素列表
@@ -198,6 +198,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	 */
 	@ApiField("red_confirmation_uuid")
 	private String redConfirmationUuid;
+
+	/** 
+	 * 减按征收类型
+	 */
+	@ApiField("reduced_tax_rate_type")
+	private String reducedTaxRateType;
 
 	/** 
 	 * 加油站开票参数（含开票环节/加油卡发票号码列表/加油站特定要素明细）
@@ -455,6 +461,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	}
 	public String getRedConfirmationUuid( ) {
 		return this.redConfirmationUuid;
+	}
+
+	public void setReducedTaxRateType(String reducedTaxRateType) {
+		this.reducedTaxRateType = reducedTaxRateType;
+	}
+	public String getReducedTaxRateType( ) {
+		return this.reducedTaxRateType;
 	}
 
 	public void setRefinedOilGasStation(IndustryInvoiceRefinedOilGasStation refinedOilGasStation) {

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.crowdapp.entity.match response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-29 10:47:41
+ * @since 1.0, 2026-10-22 20:29:31
  */
 public class AlipayDigitalmgmtCrowdappEntityMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2172719782331363255L;
+	private static final long serialVersionUID = 4359841981223718979L;
 
 	/** 
 	 * null

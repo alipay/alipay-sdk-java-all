@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医生推荐列表
  *
  * @author auto create
- * @since 1.0, 2026-10-15 17:19:54
+ * @since 1.0, 2026-10-19 20:42:54
  */
 public class Doctors extends AlipayObject {
 
-	private static final long serialVersionUID = 6245583363168188974L;
+	private static final long serialVersionUID = 2723879842944756445L;
 
 	/**
 	 * 权威认证
@@ -24,6 +24,12 @@ public class Doctors extends AlipayObject {
 	 */
 	@ApiField("department")
 	private String department;
+
+	/**
+	 * 职称
+	 */
+	@ApiField("doctor_title")
+	private String doctorTitle;
 
 	/**
 	 * 医生用户名
@@ -56,7 +62,7 @@ public class Doctors extends AlipayObject {
 	private String phoneReplyTime;
 
 	/**
-	 * 职称
+	 * 专业性
 	 */
 	@ApiField("professional")
 	private String professional;
@@ -97,6 +103,13 @@ public class Doctors extends AlipayObject {
 	}
 	public void setDepartment(String department) {
 		this.department = department;
+	}
+
+	public String getDoctorTitle() {
+		return this.doctorTitle;
+	}
+	public void setDoctorTitle(String doctorTitle) {
+		this.doctorTitle = doctorTitle;
 	}
 
 	public String getDoctorUserName() {

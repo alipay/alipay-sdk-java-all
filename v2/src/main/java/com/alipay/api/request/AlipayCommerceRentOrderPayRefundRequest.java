@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.order.pay.refund request
  * 
  * @author auto create
- * @since 1.0, 2025-11-06 14:22:41
+ * @since 1.0, 2026-10-23 19:17:58
  */
 public class AlipayCommerceRentOrderPayRefundRequest implements AlipayRequest<AlipayCommerceRentOrderPayRefundResponse> {
 

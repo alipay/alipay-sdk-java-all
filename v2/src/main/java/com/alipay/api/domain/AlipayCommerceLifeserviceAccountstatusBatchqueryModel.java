@@ -10,7 +10,7 @@ import com.alipay.api.AlipayObject;
  */
 public class AlipayCommerceLifeserviceAccountstatusBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3846361166768376619L;
+	private static final long serialVersionUID = 7495817121281297175L;
 
 	
 

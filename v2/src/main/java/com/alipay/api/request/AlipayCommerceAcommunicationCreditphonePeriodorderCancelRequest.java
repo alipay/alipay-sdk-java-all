@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.periodorder.cancel request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:55:07
+ * @since 1.0, 2026-10-23 13:57:58
  */
 public class AlipayCommerceAcommunicationCreditphonePeriodorderCancelRequest implements AlipayRequest<AlipayCommerceAcommunicationCreditphonePeriodorderCancelResponse> {
 

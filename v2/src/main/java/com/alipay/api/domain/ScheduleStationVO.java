@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScheduleStationVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3639283861834849946L;
+	private static final long serialVersionUID = 7851547961515168998L;
 
 	/**
 	 * 列车预计到达该站的时间，单位：秒。当前站点为 0 表示列车已到站/即将到站。

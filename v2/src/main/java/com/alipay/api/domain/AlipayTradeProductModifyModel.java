@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品修改
  *
  * @author auto create
- * @since 1.0, 2026-06-08 19:47:56
+ * @since 1.0, 2026-10-21 11:23:00
  */
 public class AlipayTradeProductModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6428722615452457617L;
+	private static final long serialVersionUID = 1833894936656337316L;
 
 	/**
 	 * 该商品默认价格id
@@ -32,7 +32,7 @@ public class AlipayTradeProductModifyModel extends AlipayObject {
 	private String metadata;
 
 	/**
-	 * 商品名称
+	 * 商品名称，建议命名格式：服务名-等级/版本-周期 e.g：AI视频Token包-高级会员-月度订阅
 	 */
 	@ApiField("name")
 	private String name;

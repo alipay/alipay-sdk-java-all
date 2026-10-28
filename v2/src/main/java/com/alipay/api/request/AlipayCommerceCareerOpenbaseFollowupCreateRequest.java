@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.career.openbase.followup.create request
  * 
  * @author auto create
- * @since 1.0, 2026-10-15 14:51:55
+ * @since 1.0, 2026-10-21 13:57:58
  */
 public class AlipayCommerceCareerOpenbaseFollowupCreateRequest implements AlipayRequest<AlipayCommerceCareerOpenbaseFollowupCreateResponse> {
 

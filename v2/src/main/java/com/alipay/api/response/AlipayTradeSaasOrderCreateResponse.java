@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.saas.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-10-15 15:32:55
+ * @since 1.0, 2026-10-23 09:12:56
  */
 public class AlipayTradeSaasOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5464149826353717471L;
+	private static final long serialVersionUID = 7696693249179914982L;
 
 	/** 
 	 * 聚合收银台短链访问地址。商户将用户跳转到该地址后，浏览器会重定向到带收银台访问凭证的完整地址。

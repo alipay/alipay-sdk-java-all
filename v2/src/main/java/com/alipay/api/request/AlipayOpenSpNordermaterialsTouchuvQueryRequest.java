@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.nordermaterials.touchuv.query request
  * 
  * @author auto create
- * @since 1.0, 2026-10-10 18:59:32
+ * @since 1.0, 2026-10-21 10:43:00
  */
 public class AlipayOpenSpNordermaterialsTouchuvQueryRequest implements AlipayRequest<AlipayOpenSpNordermaterialsTouchuvQueryResponse> {
 

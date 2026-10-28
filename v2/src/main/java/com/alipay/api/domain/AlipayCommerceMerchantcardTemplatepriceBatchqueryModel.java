@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMerchantcardTemplatepriceBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1285558925934223223L;
+	private static final long serialVersionUID = 2383452956266659439L;
 
 	/**
 	 * 需要查询动态价格的商品模板ID。

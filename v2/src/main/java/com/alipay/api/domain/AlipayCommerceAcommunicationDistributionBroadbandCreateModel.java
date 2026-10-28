@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商宽带创建订单
  *
  * @author auto create
- * @since 1.0, 2026-08-26 13:54:09
+ * @since 1.0, 2026-10-23 13:48:16
  */
 public class AlipayCommerceAcommunicationDistributionBroadbandCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5379259499781579295L;
+	private static final long serialVersionUID = 7388912481871572528L;
+
+	/**
+	 * 活动ID
+	 */
+	@ApiField("active_id")
+	private String activeId;
 
 	/**
 	 * 地址详情
@@ -50,6 +56,12 @@ public class AlipayCommerceAcommunicationDistributionBroadbandCreateModel extend
 	private String contactPhoneNumber;
 
 	/**
+	 * 发展人
+	 */
+	@ApiField("developer_id")
+	private String developerId;
+
+	/**
 	 * 区域编码
 	 */
 	@ApiField("district_code")
@@ -84,6 +96,13 @@ public class AlipayCommerceAcommunicationDistributionBroadbandCreateModel extend
 	 */
 	@ApiField("supplier_pid")
 	private String supplierPid;
+
+	public String getActiveId() {
+		return this.activeId;
+	}
+	public void setActiveId(String activeId) {
+		this.activeId = activeId;
+	}
 
 	public String getAddressDetail() {
 		return this.addressDetail;
@@ -125,6 +144,13 @@ public class AlipayCommerceAcommunicationDistributionBroadbandCreateModel extend
 	}
 	public void setContactPhoneNumber(String contactPhoneNumber) {
 		this.contactPhoneNumber = contactPhoneNumber;
+	}
+
+	public String getDeveloperId() {
+		return this.developerId;
+	}
+	public void setDeveloperId(String developerId) {
+		this.developerId = developerId;
 	}
 
 	public String getDistrictCode() {

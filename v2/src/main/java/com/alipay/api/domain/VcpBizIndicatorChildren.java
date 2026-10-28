@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VcpBizIndicatorChildren extends AlipayObject {
 
-	private static final long serialVersionUID = 2474453553169238665L;
+	private static final long serialVersionUID = 8647134832948283258L;
 
 	/**
 	 * 指标code

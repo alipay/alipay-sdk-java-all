@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商保支付-查询用户保单信息-责任剩余保额
  *
  * @author auto create
- * @since 1.0, 2026-09-10 10:42:55
+ * @since 1.0, 2026-10-21 20:02:52
  */
 public class DutyResidueAmount extends AlipayObject {
 
-	private static final long serialVersionUID = 3738644319231864297L;
+	private static final long serialVersionUID = 4521669537774715222L;
 
 	/**
 	 * 保障详情

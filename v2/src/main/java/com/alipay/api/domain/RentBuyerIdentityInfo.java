@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户身份信息，用于订单签约时身份校验
  *
  * @author auto create
- * @since 1.0, 2026-06-01 00:08:13
+ * @since 1.0, 2026-10-26 16:37:58
  */
 public class RentBuyerIdentityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1737148347924393723L;
+	private static final long serialVersionUID = 2731768813269552484L;
 
 	/**
 	 * 买家姓名信息

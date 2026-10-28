@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 凭证信息
  *
  * @author auto create
- * @since 1.0, 2024-11-08 14:49:18
+ * @since 1.0, 2026-10-27 20:03:45
  */
 public class CertificateQueryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6826955344836984699L;
+	private static final long serialVersionUID = 1846491886972227995L;
 
 	/**
 	 * 凭证实例的金额信息，在异常场景下可能为空，需要判断是否有值才可进行使用。
@@ -40,10 +42,24 @@ public class CertificateQueryInfo extends AlipayObject {
 	private String code;
 
 	/**
+	 * 抵扣来源明细
+	 */
+	@ApiListField("deduction_info_list")
+	@ApiField("deduction_info_list")
+	private List<DeductionInfoList> deductionInfoList;
+
+	/**
 	 * 商家侧核销对应的交易订单id
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
+
+	/**
+	 * 买单金额摘要
+根据 pay_bill_info 是否为空判断是否为买单场景。
+	 */
+	@ApiField("pay_bill_info")
+	private PayBillInfo payBillInfo;
 
 	/**
 	 * 商品信息
@@ -109,11 +125,25 @@ public class CertificateQueryInfo extends AlipayObject {
 		this.code = code;
 	}
 
+	public List<DeductionInfoList> getDeductionInfoList() {
+		return this.deductionInfoList;
+	}
+	public void setDeductionInfoList(List<DeductionInfoList> deductionInfoList) {
+		this.deductionInfoList = deductionInfoList;
+	}
+
 	public String getOutOrderId() {
 		return this.outOrderId;
 	}
 	public void setOutOrderId(String outOrderId) {
 		this.outOrderId = outOrderId;
+	}
+
+	public PayBillInfo getPayBillInfo() {
+		return this.payBillInfo;
+	}
+	public void setPayBillInfo(PayBillInfo payBillInfo) {
+		this.payBillInfo = payBillInfo;
 	}
 
 	public CertificateSkuInfo getSkuInfo() {

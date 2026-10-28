@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantGroupOnboardingProxyinvokeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4883797277588634315L;
+	private static final long serialVersionUID = 2554927723863721959L;
 
 	/**
 	 * 服务商三方应用appid，须与调用方app_id一致

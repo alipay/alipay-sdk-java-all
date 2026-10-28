@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceAcommunicationCreditphonePreconsultSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5722775752987575323L;
+	private static final long serialVersionUID = 8782159233712913394L;
 
 	/**
 	 * 支付宝用户ID

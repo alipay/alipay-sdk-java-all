@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SolShopWifiInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5877528917498215825L;
+	private static final long serialVersionUID = 5527253797261874289L;
 
 	/**
 	 * 门店ID

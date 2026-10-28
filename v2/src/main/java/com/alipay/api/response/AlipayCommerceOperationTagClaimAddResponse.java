@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationTagClaimAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3294315593849923558L;
+	private static final long serialVersionUID = 7567424754928544952L;
 
 	/** 
 	 * 实际添加的点餐线圈成功数量，如果为0表示无可添加的线圈

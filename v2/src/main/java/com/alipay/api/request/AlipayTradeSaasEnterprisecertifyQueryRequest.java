@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.saas.enterprisecertify.query request
  * 
  * @author auto create
- * @since 1.0, 2026-10-16 21:02:56
+ * @since 1.0, 2026-10-22 18:32:58
  */
 public class AlipayTradeSaasEnterprisecertifyQueryRequest implements AlipayRequest<AlipayTradeSaasEnterprisecertifyQueryResponse> {
 

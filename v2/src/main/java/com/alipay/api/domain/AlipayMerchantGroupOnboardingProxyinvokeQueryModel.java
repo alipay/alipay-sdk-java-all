@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantGroupOnboardingProxyinvokeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7115499949188458139L;
+	private static final long serialVersionUID = 1168215937942783963L;
 
 	/**
 	 * 由神券分配给服务商的线索 ID

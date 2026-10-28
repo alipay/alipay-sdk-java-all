@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndrPoboDebitRecordDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5212378255177465573L;
+	private static final long serialVersionUID = 2681764137565293617L;
 
 	/**
 	 * 学校实际扣款金额

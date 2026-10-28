@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityAipayApassUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8714873443843112865L;
+	private static final long serialVersionUID = 3529722823688657481L;
 
 	/**
 	 * JWT，payload 的 `extensions` 含 appName / appSign / resourceId / deviceId / clawType

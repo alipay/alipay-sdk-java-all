@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class QianfanCardItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4642319875773558818L;
+	private static final long serialVersionUID = 3621718433978683712L;
 
 	/**
 	 * 卡片名称

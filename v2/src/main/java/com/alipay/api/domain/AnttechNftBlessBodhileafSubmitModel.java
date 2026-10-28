@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechNftBlessBodhileafSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4874721554149738284L;
+	private static final long serialVersionUID = 7862239998829698876L;
 
 	/**
 	 * 通过 OAuth 授权流程获取，用于解析用户 openUserId

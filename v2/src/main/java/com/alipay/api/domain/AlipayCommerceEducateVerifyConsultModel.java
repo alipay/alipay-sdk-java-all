@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 苹果查询链接接口
  *
  * @author auto create
- * @since 1.0, 2026-04-29 13:15:24
+ * @since 1.0, 2026-10-22 15:20:37
  */
 public class AlipayCommerceEducateVerifyConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1576237798937883993L;
+	private static final long serialVersionUID = 7442182773332884722L;
+
+	/**
+	 * 重定向链接列表
+	 */
+	@ApiListField("redirect_urls")
+	@ApiField("redirect_urls")
+	private List<RedirectUrls> redirectUrls;
 
 	/**
 	 * 用于传递此次验证的基本信息
@@ -24,6 +34,13 @@ public class AlipayCommerceEducateVerifyConsultModel extends AlipayObject {
 	 */
 	@ApiField("verify_request_id")
 	private String verifyRequestId;
+
+	public List<RedirectUrls> getRedirectUrls() {
+		return this.redirectUrls;
+	}
+	public void setRedirectUrls(List<RedirectUrls> redirectUrls) {
+		this.redirectUrls = redirectUrls;
+	}
 
 	public VerifyOrderInfo getVerifyInfo() {
 		return this.verifyInfo;

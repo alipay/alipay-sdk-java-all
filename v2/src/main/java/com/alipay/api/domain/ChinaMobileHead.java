@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChinaMobileHead extends AlipayObject {
 
-	private static final long serialVersionUID = 7411428475489349956L;
+	private static final long serialVersionUID = 1821515841336187833L;
 
 	/**
 	 * 移动标志请求apiId

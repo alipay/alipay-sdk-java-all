@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-07-08 11:22:55
+ * @since 1.0, 2026-10-28 09:55:06
  */
 public class WeatherShortTermRainDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8443923189225913124L;
+	private static final long serialVersionUID = 8136552823227732812L;
 
 	/**
 	 * 预报时间

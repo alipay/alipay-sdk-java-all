@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppCommunityBillsNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8253894476473673145L;
+	private static final long serialVersionUID = 8686681645497649222L;
 
 	/**
 	 * 待缴费金额，正数 单位:分 如欠费 200.20 元，则传入 20020

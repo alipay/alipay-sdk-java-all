@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景扩展变量，类型为 Map<String, String>，键和值均为字符串。调用方可根据场景传入键值对；具体支持的字段及其含义，以对应场景的线下 DSL 配置为准。
  *
  * @author auto create
- * @since 1.0, 2026-10-15 14:51:55
+ * @since 1.0, 2026-10-21 13:57:58
  */
 public class FollowupCreateContext extends AlipayObject {
 
-	private static final long serialVersionUID = 6527244362484625345L;
+	private static final long serialVersionUID = 2586748228764728619L;
 
 	/**
 	 * 候选人姓名 当前字段已废弃(废弃历史字段,内部字段由三方自定义)

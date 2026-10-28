@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告代理商投放数据查询
  *
  * @author auto create
- * @since 1.0, 2025-09-09 14:11:51
+ * @since 1.0, 2026-10-22 15:19:11
  */
 public class AlipayDataDataserviceAdAgentreportdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6515242353491199114L;
+	private static final long serialVersionUID = 5696334592984693527L;
 
 	/**
 	 * 登录用户支付宝统一ID,2088开头字符串,代理商自身PID。
@@ -65,6 +65,13 @@ public class AlipayDataDataserviceAdAgentreportdataQueryModel extends AlipayObje
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/**
+	 * 商家ID数组
+	 */
+	@ApiListField("principal_id_list")
+	@ApiField("number")
+	private List<Long> principalIdList;
 
 	/**
 	 * 代理商商家标识,在广告投放平台代理商详情获取。<a href="https://opendocs.alipay.com/xlight/0eucvz?pathHash=dc01fadb">获取文档</a>
@@ -152,6 +159,13 @@ public class AlipayDataDataserviceAdAgentreportdataQueryModel extends AlipayObje
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public List<Long> getPrincipalIdList() {
+		return this.principalIdList;
+	}
+	public void setPrincipalIdList(List<Long> principalIdList) {
+		this.principalIdList = principalIdList;
 	}
 
 	public String getPrincipalTag() {

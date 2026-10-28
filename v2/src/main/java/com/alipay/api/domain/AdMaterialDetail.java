@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 素材详情
  *
  * @author auto create
- * @since 1.0, 2025-03-28 15:34:22
+ * @since 1.0, 2026-10-26 19:57:34
  */
 public class AdMaterialDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1681655451673436683L;
+	private static final long serialVersionUID = 1115195158574552235L;
 
 	/**
 	 * 播放时长，单位ms
@@ -26,13 +26,19 @@ public class AdMaterialDetail extends AlipayObject {
 	private Long height;
 
 	/**
+	 * 素材名称
+	 */
+	@ApiField("material_name")
+	private String materialName;
+
+	/**
 	 * 素材类型，1图片2视频
 	 */
 	@ApiField("material_type")
 	private Long materialType;
 
 	/**
-	 * 素材值
+	 * 素材值，图片/视频类型时，为图片/视频链接
 	 */
 	@ApiField("material_value")
 	private String materialValue;
@@ -85,6 +91,13 @@ public class AdMaterialDetail extends AlipayObject {
 	}
 	public void setHeight(Long height) {
 		this.height = height;
+	}
+
+	public String getMaterialName() {
+		return this.materialName;
+	}
+	public void setMaterialName(String materialName) {
+		this.materialName = materialName;
 	}
 
 	public Long getMaterialType() {

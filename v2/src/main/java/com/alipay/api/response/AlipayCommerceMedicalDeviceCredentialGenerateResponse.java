@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.device.credential.generate response.
  * 
  * @author auto create
- * @since 1.0, 2026-10-12 20:17:58
+ * @since 1.0, 2026-10-21 16:37:54
  */
 public class AlipayCommerceMedicalDeviceCredentialGenerateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1655657297176488946L;
+	private static final long serialVersionUID = 3642716744855258967L;
 
 	/** 
 	 * 剩余额度(个)

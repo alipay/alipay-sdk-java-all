@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OcrNormalScanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5139832786576913583L;
+	private static final long serialVersionUID = 5652113458911829599L;
 
 	/**
 	 * 发票代码

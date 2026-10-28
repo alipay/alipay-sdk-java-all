@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditHuabeiPcreditbenefitHuabeijinPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7339715666489824251L;
+	private static final long serialVersionUID = 5674451281431646637L;
 
 	/** 
 	 * 包含了花呗金反活动信息，如活动id，开始时间结束时间，反花呗金比例等

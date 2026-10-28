@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankEcnyFundBatchtransferCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6323521441943522948L;
+	private static final long serialVersionUID = 5851413764841348893L;
 
 	/** 
 	 * 转账页面跳转地址

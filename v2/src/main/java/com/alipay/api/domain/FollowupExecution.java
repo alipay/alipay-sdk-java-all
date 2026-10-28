@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FollowupExecution extends AlipayObject {
 
-	private static final long serialVersionUID = 7191197536812828116L;
+	private static final long serialVersionUID = 7366654293521915344L;
 
 	/**
 	 * 本次确认的计费分钟数；处理中返回 null，未接通返回 0。

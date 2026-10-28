@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 协议文件
  *
  * @author auto create
- * @since 1.0, 2025-09-18 15:56:03
+ * @since 1.0, 2026-10-28 17:21:41
  */
 public class AgreementFile extends AlipayObject {
 
-	private static final long serialVersionUID = 1219369545926639289L;
+	private static final long serialVersionUID = 6512832321856787344L;
 
 	/**
 	 * 星河协议编号（唯一）

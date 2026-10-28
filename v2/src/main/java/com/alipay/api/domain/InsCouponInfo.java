@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-23 10:12:51
+ * @since 1.0, 2026-10-26 17:58:00
  */
 public class InsCouponInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1283648552355528131L;
+	private static final long serialVersionUID = 7692253153216837227L;
 
 	/**
 	 * 权益关联的券id，权益查询接口返回的权益信息中有，使用该值传值

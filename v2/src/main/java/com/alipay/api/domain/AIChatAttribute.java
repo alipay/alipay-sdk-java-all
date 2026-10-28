@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AIChatAttribute extends AlipayObject {
 
-	private static final long serialVersionUID = 5592594957662713216L;
+	private static final long serialVersionUID = 2179638738764244459L;
 
 	/**
 	 * 甜度

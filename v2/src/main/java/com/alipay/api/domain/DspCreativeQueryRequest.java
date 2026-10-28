@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DspCreativeQueryRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8595537673543414248L;
+	private static final long serialVersionUID = 2152888116315514142L;
 
 	/**
 	 * 创意id

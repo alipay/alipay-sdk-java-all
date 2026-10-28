@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSpNordercateringCertificatesQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7781766844115838659L;
+	private static final long serialVersionUID = 2488226695874629214L;
 
 	/** 
 	 * null

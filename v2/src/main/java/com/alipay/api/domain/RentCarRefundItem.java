@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentCarRefundItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8364978721752438632L;
+	private static final long serialVersionUID = 3159973884611241276L;
 
 	/**
 	 * 用于对账，对应业务账单中的商家订单号字段

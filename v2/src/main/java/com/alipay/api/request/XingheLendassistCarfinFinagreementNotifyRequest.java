@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: xinghe.lendassist.carfin.finagreement.notify request
  * 
  * @author auto create
- * @since 1.0, 2025-09-19 18:32:40
+ * @since 1.0, 2026-10-28 17:22:59
  */
 public class XingheLendassistCarfinFinagreementNotifyRequest implements AlipayRequest<XingheLendassistCarfinFinagreementNotifyResponse> {
 

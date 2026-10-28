@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAipayNowpaydirectChargeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3551414163699434397L;
+	private static final long serialVersionUID = 4721247643479258291L;
 
 	/**
 	 * 外部商品id，从管理小程序商品详情页获取

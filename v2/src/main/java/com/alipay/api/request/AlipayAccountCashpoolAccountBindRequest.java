@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.cashpool.account.bind request
  * 
  * @author auto create
- * @since 1.0, 2020-07-06 11:20:40
+ * @since 1.0, 2026-10-20 13:52:24
  */
 public class AlipayAccountCashpoolAccountBindRequest implements AlipayRequest<AlipayAccountCashpoolAccountBindResponse> {
 

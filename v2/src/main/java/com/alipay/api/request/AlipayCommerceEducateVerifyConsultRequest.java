@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.verify.consult request
  * 
  * @author auto create
- * @since 1.0, 2026-04-29 13:37:44
+ * @since 1.0, 2026-10-22 15:32:56
  */
 public class AlipayCommerceEducateVerifyConsultRequest implements AlipayRequest<AlipayCommerceEducateVerifyConsultResponse> {
 

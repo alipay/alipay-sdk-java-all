@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单支付
  *
  * @author auto create
- * @since 1.0, 2026-09-03 19:19:18
+ * @since 1.0, 2026-10-23 19:07:57
  */
 public class AlipayCommerceRentOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3153795131413633698L;
+	private static final long serialVersionUID = 4419842769443441861L;
 
 	/**
 	 * 租赁售后单号

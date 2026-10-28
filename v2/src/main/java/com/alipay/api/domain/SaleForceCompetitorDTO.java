@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-08-17 21:07:49
+ * @since 1.0, 2026-10-20 14:52:58
  */
 public class SaleForceCompetitorDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2462759672736376324L;
+	private static final long serialVersionUID = 5191456456237741531L;
 
 	/**
 	 * null
@@ -24,7 +24,7 @@ public class SaleForceCompetitorDTO extends AlipayObject {
 	private List<String> competitor;
 
 	/**
-	 * 数据库类型
+	 * 竞对数据库分类文本，取自Salesforce竞对记录的业务配置，例如KV；该配置可扩展，海图按文本保存，不限定固定枚举值。
 	 */
 	@ApiField("db_type")
 	private String dbType;

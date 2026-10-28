@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RegistrationGreenChannelFulfillmentDetailData extends AlipayObject {
 
-	private static final long serialVersionUID = 1138579659894492861L;
+	private static final long serialVersionUID = 7413737155245189255L;
 
 	/**
 	 * 就医信息

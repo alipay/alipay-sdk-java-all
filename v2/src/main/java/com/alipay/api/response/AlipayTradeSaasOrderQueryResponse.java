@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.saas.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-25 21:17:52
+ * @since 1.0, 2026-10-23 09:12:56
  */
 public class AlipayTradeSaasOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4396665543484788349L;
+	private static final long serialVersionUID = 3656215854349855519L;
 
 	/** 
 	 * 银行转账实际付款账号。仅在银行转账支付成功且渠道返回该信息时返回。

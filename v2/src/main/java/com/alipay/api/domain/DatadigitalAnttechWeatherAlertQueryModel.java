@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 极端天气预警查询请求
  *
  * @author auto create
- * @since 1.0, 2026-07-08 12:17:56
+ * @since 1.0, 2026-10-28 09:55:29
  */
 public class DatadigitalAnttechWeatherAlertQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1352365296141538858L;
+	private static final long serialVersionUID = 3446297516461636551L;
 
 	/**
 	 * 蚂蚁数科气象服务产品码，找蚂蚁数科运营同学获取

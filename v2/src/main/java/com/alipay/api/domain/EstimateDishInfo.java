@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EstimateDishInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2637969895323228839L;
+	private static final long serialVersionUID = 5372421831296214511L;
 
 	/**
 	 * 口碑菜品id

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.order.orderbill.download request
  * 
  * @author auto create
- * @since 1.0, 2025-07-09 16:07:24
+ * @since 1.0, 2026-10-22 15:07:25
  */
 public class AlipayOpenMiniOrderOrderbillDownloadRequest implements AlipayRequest<AlipayOpenMiniOrderOrderbillDownloadResponse> {
 

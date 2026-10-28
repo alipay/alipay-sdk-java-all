@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LbsVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2121192897467855436L;
+	private static final long serialVersionUID = 8158954288128962722L;
 
 	/**
 	 * 纬度（单位：度，WGS84 坐标系，字符串形式）。

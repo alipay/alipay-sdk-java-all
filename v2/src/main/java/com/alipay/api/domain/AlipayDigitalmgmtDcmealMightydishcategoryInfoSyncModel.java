@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDigitalmgmtDcmealMightydishcategoryInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7118122664115262853L;
+	private static final long serialVersionUID = 8624434749514828698L;
 
 	/**
 	 * 菜品分类数组

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 透镜圈选_实体同圈选应用匹配判断接口
  *
  * @author auto create
- * @since 1.0, 2025-12-29 10:47:41
+ * @since 1.0, 2026-10-22 20:29:31
  */
 public class AlipayDigitalmgmtCrowdappEntityMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5224916836445967859L;
+	private static final long serialVersionUID = 5751592731948393356L;
 
 	/**
 	 * 是否判断operator是否具有crowdAppIds对应的圈选应用的权限

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EtcTollFeeTollStatsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1734842623191578759L;
+	private static final long serialVersionUID = 8841244939883744533L;
 
 	/**
 	 * 平均通行费(元）

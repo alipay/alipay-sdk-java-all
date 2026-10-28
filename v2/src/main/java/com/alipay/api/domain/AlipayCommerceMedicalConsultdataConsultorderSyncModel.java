@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AIA_问诊订单回流接口
  *
  * @author auto create
- * @since 1.0, 2026-10-19 17:38:01
+ * @since 1.0, 2026-10-23 22:52:56
  */
 public class AlipayCommerceMedicalConsultdataConsultorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8864741969445868451L;
+	private static final long serialVersionUID = 6849673138662318842L;
 
 	/**
 	 * 支付宝openid
@@ -116,6 +116,12 @@ public class AlipayCommerceMedicalConsultdataConsultorderSyncModel extends Alipa
 	 */
 	@ApiField("order_hidden_flag")
 	private String orderHiddenFlag;
+
+	/**
+	 * b端订单详情页
+	 */
+	@ApiField("order_link_page_to_bussiness")
+	private String orderLinkPageToBussiness;
 
 	/**
 	 * 订单修改时间
@@ -312,6 +318,13 @@ public class AlipayCommerceMedicalConsultdataConsultorderSyncModel extends Alipa
 	}
 	public void setOrderHiddenFlag(String orderHiddenFlag) {
 		this.orderHiddenFlag = orderHiddenFlag;
+	}
+
+	public String getOrderLinkPageToBussiness() {
+		return this.orderLinkPageToBussiness;
+	}
+	public void setOrderLinkPageToBussiness(String orderLinkPageToBussiness) {
+		this.orderLinkPageToBussiness = orderLinkPageToBussiness;
 	}
 
 	public Date getOrderModifiedTime() {

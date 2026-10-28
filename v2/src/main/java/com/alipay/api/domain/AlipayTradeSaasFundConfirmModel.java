@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金认款
  *
  * @author auto create
- * @since 1.0, 2026-09-20 10:42:52
+ * @since 1.0, 2026-10-23 09:12:56
  */
 public class AlipayTradeSaasFundConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3786652373838653184L;
+	private static final long serialVersionUID = 1413136278561195724L;
 
 	/**
 	 * 资金确认动作。CONFIRM表示认款，REJECT表示拒绝待认款资金并全额退款；不传默认CONFIRM。REJECT仅需传fund_no，不应传order_no、trade_no或claim_amount。

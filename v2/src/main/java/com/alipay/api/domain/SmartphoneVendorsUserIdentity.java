@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手机厂商用户唯一标识
  *
  * @author auto create
- * @since 1.0, 2026-10-12 19:02:17
+ * @since 1.0, 2026-10-21 19:42:57
  */
 public class SmartphoneVendorsUserIdentity extends AlipayObject {
 
-	private static final long serialVersionUID = 1876231887974553486L;
+	private static final long serialVersionUID = 1536118673666947394L;
 
 	/**
 	 * 手机厂商用户标识

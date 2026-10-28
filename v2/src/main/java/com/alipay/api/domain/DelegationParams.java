@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AI付代买委托信息
  *
  * @author auto create
- * @since 1.0, 2026-09-03 14:22:56
+ * @since 1.0, 2026-10-26 17:33:01
  */
 public class DelegationParams extends AlipayObject {
 
-	private static final long serialVersionUID = 6138228379829987144L;
+	private static final long serialVersionUID = 6295332732461918456L;
 
 	/**
 	 * 对AI付代买委托意图做描述
@@ -66,6 +66,12 @@ public class DelegationParams extends AlipayObject {
 	 */
 	@ApiField("max_total_amount")
 	private String maxTotalAmount;
+
+	/**
+	 * A付委托代码运营信息
+	 */
+	@ApiField("pay_operation_info")
+	private String payOperationInfo;
 
 	/**
 	 * AI委托授权单次限额，币种为人民币，金额为元
@@ -159,6 +165,13 @@ public class DelegationParams extends AlipayObject {
 	}
 	public void setMaxTotalAmount(String maxTotalAmount) {
 		this.maxTotalAmount = maxTotalAmount;
+	}
+
+	public String getPayOperationInfo() {
+		return this.payOperationInfo;
+	}
+	public void setPayOperationInfo(String payOperationInfo) {
+		this.payOperationInfo = payOperationInfo;
 	}
 
 	public String getQuotaAmount() {

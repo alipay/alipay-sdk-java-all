@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.verify.consult response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-29 13:37:44
+ * @since 1.0, 2026-10-22 15:32:56
  */
 public class AlipayCommerceEducateVerifyConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7575747414591774596L;
+	private static final long serialVersionUID = 2751356112356229119L;
 
 	/** 
 	 * 用于跳转验证的链接

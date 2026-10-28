@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FollowUpCreateTaskBizIdRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7637529998421243122L;
+	private static final long serialVersionUID = 6789945657398335694L;
 
 	/**
 	 * 蚂蚁健康OpenID

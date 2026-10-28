@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.saas.fund.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-20 10:42:52
+ * @since 1.0, 2026-10-23 09:12:56
  */
 public class AlipayTradeSaasFundConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6485413489338964388L;
+	private static final long serialVersionUID = 8573646661648578918L;
 
 	/** 
 	 * Fundds已受理的超额部分自动退款金额，单位为元；等额认款时为0.00。

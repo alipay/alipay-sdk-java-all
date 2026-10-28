@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 凭证核销准备详情
  *
  * @author auto create
- * @since 1.0, 2023-10-16 15:24:26
+ * @since 1.0, 2026-10-27 16:41:15
  */
 public class CertificatePrepareInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8472222347362598455L;
+	private static final long serialVersionUID = 1396376334434355174L;
 
 	/**
 	 * 凭证实例的金额信息，在异常场景下可能为空，需要判断是否有值才可进行使用。
@@ -28,6 +30,13 @@ public class CertificatePrepareInfo extends AlipayObject {
 	private String certificateId;
 
 	/**
+	 * 抵扣来源明细
+	 */
+	@ApiListField("deduction_info_list")
+	@ApiField("deduction_info_list")
+	private List<DeductionInfoList> deductionInfoList;
+
+	/**
 	 * 加密券码，核销接口使用
 	 */
 	@ApiField("encrypted_code")
@@ -38,6 +47,13 @@ public class CertificatePrepareInfo extends AlipayObject {
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	/**
+	 * 买单金额摘要
+根据 pay_bill_info 是否为空判断是否为买单场景。
+	 */
+	@ApiField("pay_bill_info")
+	private PayBillInfo payBillInfo;
 
 	/**
 	 * 商品信息
@@ -77,6 +93,13 @@ public class CertificatePrepareInfo extends AlipayObject {
 		this.certificateId = certificateId;
 	}
 
+	public List<DeductionInfoList> getDeductionInfoList() {
+		return this.deductionInfoList;
+	}
+	public void setDeductionInfoList(List<DeductionInfoList> deductionInfoList) {
+		this.deductionInfoList = deductionInfoList;
+	}
+
 	public String getEncryptedCode() {
 		return this.encryptedCode;
 	}
@@ -89,6 +112,13 @@ public class CertificatePrepareInfo extends AlipayObject {
 	}
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
+	}
+
+	public PayBillInfo getPayBillInfo() {
+		return this.payBillInfo;
+	}
+	public void setPayBillInfo(PayBillInfo payBillInfo) {
+		this.payBillInfo = payBillInfo;
 	}
 
 	public CertificateSkuInfo getSkuInfo() {

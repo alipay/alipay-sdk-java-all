@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.device.credential.generate request
  * 
  * @author auto create
- * @since 1.0, 2026-10-12 20:17:58
+ * @since 1.0, 2026-10-21 16:37:54
  */
 public class AlipayCommerceMedicalDeviceCredentialGenerateRequest implements AlipayRequest<AlipayCommerceMedicalDeviceCredentialGenerateResponse> {
 

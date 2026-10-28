@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保险营销权益触发操作接口
  *
  * @author auto create
- * @since 1.0, 2026-09-23 10:12:51
+ * @since 1.0, 2026-10-26 17:58:00
  */
 public class AlipayInsMarketingInscouponTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4865998325485216961L;
+	private static final long serialVersionUID = 6827335277394784846L;
 
 	/**
 	 * null

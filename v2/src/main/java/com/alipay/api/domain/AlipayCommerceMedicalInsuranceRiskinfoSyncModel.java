@@ -10,17 +10,35 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益同步接口
  *
  * @author auto create
- * @since 1.0, 2026-10-19 15:07:37
+ * @since 1.0, 2026-10-26 13:57:58
  */
 public class AlipayCommerceMedicalInsuranceRiskinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1358322278258197532L;
+	private static final long serialVersionUID = 3841947819839888573L;
 
 	/**
 	 * 保司类型，非枚举类型
 	 */
 	@ApiField("company_type")
 	private String companyType;
+
+	/**
+	 * YYYY-MM-DD HH:MM:SS
+	 */
+	@ApiField("effect_end_time")
+	private String effectEndTime;
+
+	/**
+	 * YYYY-MM-DD HH:MM:SS
+	 */
+	@ApiField("effect_start_time")
+	private String effectStartTime;
+
+	/**
+	 * YYYY-MM-DD HH:MM:SS；通常为保单犹豫期到期时间。不能晚于最早的权益生效时间。
+	 */
+	@ApiField("equity_settle_start_time")
+	private String equitySettleStartTime;
 
 	/**
 	 * 原权益流水号
@@ -45,6 +63,12 @@ public class AlipayCommerceMedicalInsuranceRiskinfoSyncModel extends AlipayObjec
 	 */
 	@ApiField("parent_status")
 	private String parentStatus;
+
+	/**
+	 * 支付时间（保单下单时间）
+	 */
+	@ApiField("pay_time")
+	private String payTime;
 
 	/**
 	 * 产品编号
@@ -84,6 +108,27 @@ public class AlipayCommerceMedicalInsuranceRiskinfoSyncModel extends AlipayObjec
 		this.companyType = companyType;
 	}
 
+	public String getEffectEndTime() {
+		return this.effectEndTime;
+	}
+	public void setEffectEndTime(String effectEndTime) {
+		this.effectEndTime = effectEndTime;
+	}
+
+	public String getEffectStartTime() {
+		return this.effectStartTime;
+	}
+	public void setEffectStartTime(String effectStartTime) {
+		this.effectStartTime = effectStartTime;
+	}
+
+	public String getEquitySettleStartTime() {
+		return this.equitySettleStartTime;
+	}
+	public void setEquitySettleStartTime(String equitySettleStartTime) {
+		this.equitySettleStartTime = equitySettleStartTime;
+	}
+
 	public String getOldSerialNo() {
 		return this.oldSerialNo;
 	}
@@ -110,6 +155,13 @@ public class AlipayCommerceMedicalInsuranceRiskinfoSyncModel extends AlipayObjec
 	}
 	public void setParentStatus(String parentStatus) {
 		this.parentStatus = parentStatus;
+	}
+
+	public String getPayTime() {
+		return this.payTime;
+	}
+	public void setPayTime(String payTime) {
+		this.payTime = payTime;
 	}
 
 	public String getProdNo() {

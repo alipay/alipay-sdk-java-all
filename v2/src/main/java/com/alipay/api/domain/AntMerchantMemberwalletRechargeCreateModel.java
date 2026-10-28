@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantMemberwalletRechargeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7157677422269164575L;
+	private static final long serialVersionUID = 5129537862657672615L;
 
 	/**
 	 * 充值权益金（单位：元）

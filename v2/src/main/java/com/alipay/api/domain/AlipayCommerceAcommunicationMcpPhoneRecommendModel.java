@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceAcommunicationMcpPhoneRecommendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6583566476632385171L;
+	private static final long serialVersionUID = 8127841352943872942L;
 
 	/**
 	 * null

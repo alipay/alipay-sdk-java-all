@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.career.openbase.followup.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-10-15 15:01:01
+ * @since 1.0, 2026-10-21 13:57:58
  */
 public class AlipayCommerceCareerOpenbaseFollowupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8461898534318282566L;
+	private static final long serialVersionUID = 7872732678165195127L;
+
+	/** 
+	 * 由支付宝的对接人提供的 版本ID标识
+	 */
+	@ApiField("artifact_id")
+	private String artifactId;
 
 	/** 
 	 * 终态分类：status=ENDED 时必填(恒有值,回告仅随终态推送)。取值 ENDED=自然完成 / TIMEOUT=超时 / CANCELLED=客户取消(预留,当前抑制不推送) / REJECTED=执行域拒收。与
@@ -44,6 +50,13 @@ public class AlipayCommerceCareerOpenbaseFollowupQueryResponse extends AlipayRes
 	 */
 	@ApiField("status")
 	private String status;
+
+	public void setArtifactId(String artifactId) {
+		this.artifactId = artifactId;
+	}
+	public String getArtifactId( ) {
+		return this.artifactId;
+	}
 
 	public void setEndedType(String endedType) {
 		this.endedType = endedType;

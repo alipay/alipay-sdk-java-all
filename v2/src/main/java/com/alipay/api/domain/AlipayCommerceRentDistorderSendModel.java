@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分销订单发货
  *
  * @author auto create
- * @since 1.0, 2026-10-09 10:17:57
+ * @since 1.0, 2026-10-28 15:12:57
  */
 public class AlipayCommerceRentDistorderSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8491577947233352229L;
+	private static final long serialVersionUID = 3721263141862632916L;
 
 	/**
 	 * 分销订单号
@@ -32,7 +32,7 @@ public class AlipayCommerceRentDistorderSendModel extends AlipayObject {
 	private String channelOrderId;
 
 	/**
-	 * 快递公司编码
+	 * 快递公司编码。传真实快递公司编码（如 SF，可经 alibaba.idle.logistics.companies.query 查询）走快递发货；传固定值 SELF_PICKUP 走自提、INTRA_CITY 走同城配送（均为无需物流发货/虚拟发货）
 	 */
 	@ApiField("delivery_id")
 	private String deliveryId;
@@ -69,7 +69,7 @@ public class AlipayCommerceRentDistorderSendModel extends AlipayObject {
 	private String senderPhone;
 
 	/**
-	 * 快递单号
+	 * 快递单号。delivery_id 为真实快递公司编码时必填；为 SELF_PICKUP/INTRA_CITY 时可不传。示例：SF123123
 	 */
 	@ApiField("waybill_id")
 	private String waybillId;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCreditAutofinanceLoanPlanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1291481133358766247L;
+	private static final long serialVersionUID = 3783918845175541115L;
 
 	/** 
 	 * 贷款方案列表，是一个List结构,针对不同的业务平台有不同的返回值，目前大搜车业务只支持的返回值有：firstpayamt 首付租金，firstpayprop 首付比例，lastpayamt 回购尾款，loantenor 贷款期数，monthpayamt 每月还款额度

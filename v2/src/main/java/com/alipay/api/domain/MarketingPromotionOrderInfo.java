@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收推广订单信息
  *
  * @author auto create
- * @since 1.0, 2026-09-04 10:17:43
+ * @since 1.0, 2026-10-21 10:33:22
  */
 public class MarketingPromotionOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3795946595513433574L;
+	private static final long serialVersionUID = 5797947369258351692L;
+
+	/**
+	 * 详细地址
+	 */
+	@ApiField("address")
+	private String address;
 
 	/**
 	 * 预估金额（固定值）单位为元
@@ -101,6 +107,12 @@ public class MarketingPromotionOrderInfo extends AlipayObject {
 	private String inspectQuantity;
 
 	/**
+	 * 纬度
+	 */
+	@ApiField("latitude")
+	private String latitude;
+
+	/**
 	 * 物流单号
 	 */
 	@ApiField("logistics_bill_no")
@@ -111,6 +123,12 @@ public class MarketingPromotionOrderInfo extends AlipayObject {
 	 */
 	@ApiField("logistics_platform")
 	private String logisticsPlatform;
+
+	/**
+	 * 经度
+	 */
+	@ApiField("longitude")
+	private String longitude;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -208,6 +226,13 @@ public class MarketingPromotionOrderInfo extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getAddress() {
+		return this.address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
 	public String getAssessAmount() {
 		return this.assessAmount;
@@ -307,6 +332,13 @@ public class MarketingPromotionOrderInfo extends AlipayObject {
 		this.inspectQuantity = inspectQuantity;
 	}
 
+	public String getLatitude() {
+		return this.latitude;
+	}
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
 	public String getLogisticsBillNo() {
 		return this.logisticsBillNo;
 	}
@@ -319,6 +351,13 @@ public class MarketingPromotionOrderInfo extends AlipayObject {
 	}
 	public void setLogisticsPlatform(String logisticsPlatform) {
 		this.logisticsPlatform = logisticsPlatform;
+	}
+
+	public String getLongitude() {
+		return this.longitude;
+	}
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
 	}
 
 	public String getOpenId() {

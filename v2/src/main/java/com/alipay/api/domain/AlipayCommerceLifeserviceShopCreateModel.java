@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心生活门店创建
  *
  * @author auto create
- * @since 1.0, 2026-09-11 15:32:57
+ * @since 1.0, 2026-10-26 17:52:58
  */
 public class AlipayCommerceLifeserviceShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8356659817441428122L;
+	private static final long serialVersionUID = 6497936836597429635L;
 
 	/**
 	 * 授权委托书图片osskey
@@ -66,9 +66,17 @@ public class AlipayCommerceLifeserviceShopCreateModel extends AlipayObject {
 	private String qualificationExpirationDate;
 
 	/**
-	 * 资质类型: 营业执照-BUSINESS_LICENSE/
-食品卫生许可证-FOOD_SANITATION_LICENSE/
-卫生许可证-SANITATION_LICENSE
+	 * 资质类型: 营业执照:BUSINESS_LICENSE
+食品卫生许可证:FOOD_SANITATION_LICENSE
+卫生许可证:SANITATION_LICENSE
+食品经营许可证:FOOD_BUSINESS_LICENSE
+动物诊疗许可证:ANIMAL_DIAGNOSIS_LICENSE
+开锁业备案证书:LOCK_PICKING_FILING_LICENSE
+办学许可证:EDUCATION_LICENSE
+高危险性体育项目经营许可证:HIGH_RISK_SPORTS_LICENSE
+民办非企业单位登记证书:PRIVATE_NON_ENTERPRISE_REG_CERT
+高处悬挂作业安全资格证:HIGH_ALTITUDE_HANGING_SAFETY_CERT
+高空清洗悬吊作业企业安全生产证书:HIGH_ALTITUDE_CLEANING_SAFETY_CERT
 	 */
 	@ApiField("qualification_type")
 	private String qualificationType;

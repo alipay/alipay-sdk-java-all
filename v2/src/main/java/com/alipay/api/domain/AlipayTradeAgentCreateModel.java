@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeAgentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3725564683646188964L;
+	private static final long serialVersionUID = 1275412825674666378L;
 
 	/**
 	 * 可解析的json字段，用于填写附加的参数

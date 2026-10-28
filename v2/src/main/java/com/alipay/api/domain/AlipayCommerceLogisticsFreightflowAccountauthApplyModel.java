@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceLogisticsFreightflowAccountauthApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1466934248371939641L;
+	private static final long serialVersionUID = 7428342586462237927L;
 
 	/**
 	 * 格式标准：需要在尾部添加时间戳，格式为yyyyMMdd。 ●外部需要保证重复请求不更换时间戳，否则会导致幂等击穿

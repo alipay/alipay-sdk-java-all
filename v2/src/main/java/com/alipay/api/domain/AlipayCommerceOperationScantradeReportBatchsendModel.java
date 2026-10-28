@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceOperationScantradeReportBatchsendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7574752263391222552L;
+	private static final long serialVersionUID = 1212669914367415746L;
 
 	/**
 	 * 场景编码，碰开放扫码交易：PENG_OPEN_SCAN

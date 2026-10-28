@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WaitRateAlgoItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1469973415577239275L;
+	private static final long serialVersionUID = 2671794249981957534L;
 
 	/**
 	 * 待评价算法打分itemId

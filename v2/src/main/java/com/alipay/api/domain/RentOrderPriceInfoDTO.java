@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单金额信息
  *
  * @author auto create
- * @since 1.0, 2025-07-16 19:25:02
+ * @since 1.0, 2026-10-23 19:07:53
  */
 public class RentOrderPriceInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3451265841515872411L;
+	private static final long serialVersionUID = 5571863442852524399L;
 
 	/**
 	 * 增值服务费，单位：元，精确到小数点后两位。
@@ -42,6 +42,12 @@ public class RentOrderPriceInfoDTO extends AlipayObject {
 	 */
 	@ApiField("order_price")
 	private String orderPrice;
+
+	/**
+	 * 新车置办费，仅汽车订阅使用。单位：元，精确到小数点后两位。
+	 */
+	@ApiField("vehicle_setup_price")
+	private String vehicleSetupPrice;
 
 	public String getAdditionalPrice() {
 		return this.additionalPrice;
@@ -76,6 +82,13 @@ public class RentOrderPriceInfoDTO extends AlipayObject {
 	}
 	public void setOrderPrice(String orderPrice) {
 		this.orderPrice = orderPrice;
+	}
+
+	public String getVehicleSetupPrice() {
+		return this.vehicleSetupPrice;
+	}
+	public void setVehicleSetupPrice(String vehicleSetupPrice) {
+		this.vehicleSetupPrice = vehicleSetupPrice;
 	}
 
 }

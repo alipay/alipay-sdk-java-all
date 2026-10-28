@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * TPA渠道预授权状态同步
  *
  * @author auto create
- * @since 1.0, 2026-10-16 17:38:04
+ * @since 1.0, 2026-10-21 21:42:55
  */
 public class AlipayCommerceMedicalInsuranceTpapreauthstatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2332698346211815916L;
+	private static final long serialVersionUID = 2786999548548751643L;
 
 	/**
 	 * 押金额度,单位,元,人民币
@@ -42,6 +45,13 @@ public class AlipayCommerceMedicalInsuranceTpapreauthstatusNotifyModel extends A
 	 */
 	@ApiField("pre_auth_audit_status_msg")
 	private String preAuthAuditStatusMsg;
+
+	/**
+	 * null
+	 */
+	@ApiListField("pre_auth_info_list")
+	@ApiField("insurance_pre_auth_info")
+	private List<InsurancePreAuthInfo> preAuthInfoList;
 
 	/**
 	 * 预授权申请单号
@@ -100,6 +110,13 @@ public class AlipayCommerceMedicalInsuranceTpapreauthstatusNotifyModel extends A
 	}
 	public void setPreAuthAuditStatusMsg(String preAuthAuditStatusMsg) {
 		this.preAuthAuditStatusMsg = preAuthAuditStatusMsg;
+	}
+
+	public List<InsurancePreAuthInfo> getPreAuthInfoList() {
+		return this.preAuthInfoList;
+	}
+	public void setPreAuthInfoList(List<InsurancePreAuthInfo> preAuthInfoList) {
+		this.preAuthInfoList = preAuthInfoList;
 	}
 
 	public String getPreAuthNo() {

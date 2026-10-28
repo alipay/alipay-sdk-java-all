@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 加油站开票参数
  *
  * @author auto create
- * @since 1.0, 2026-10-15 22:54:10
+ * @since 1.0, 2026-10-20 15:05:47
  */
 public class IndustryInvoiceRefinedOilGasStation extends AlipayObject {
 
-	private static final long serialVersionUID = 8589795639451992532L;
+	private static final long serialVersionUID = 7899158724124975333L;
 
 	/**
 	 * 加油卡发票号码列表

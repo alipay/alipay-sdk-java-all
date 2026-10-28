@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportMapstudioOverlapratioQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4823512639981753953L;
+	private static final long serialVersionUID = 3287449647448626969L;
 
 	/** 
 	 * 线路重复度返回值

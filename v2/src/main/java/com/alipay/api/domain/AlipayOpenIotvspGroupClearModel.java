@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotvspGroupClearModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3592994145582251499L;
+	private static final long serialVersionUID = 7251896291251629747L;
 
 	/**
 	 * 业务id，由调用方生成的唯一业务流水，原则上不可重复

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗饿了么fun卡权益发放接口
  *
  * @author auto create
- * @since 1.0, 2026-06-29 14:32:43
+ * @since 1.0, 2026-10-23 10:19:23
  */
 public class AlipayPcreditHuabeiPcreditbenefitFuncardbenefitSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6245977713891645745L;
+	private static final long serialVersionUID = 6642988234196124449L;
 
 	/**
 	 * 支付宝用户的userId。
@@ -20,7 +20,7 @@ public class AlipayPcreditHuabeiPcreditbenefitFuncardbenefitSendModel extends Al
 	private String alipayUserId;
 
 	/**
-	 * 直发花呗金场景：发放的花呗金数量，花呗金单位 个，1个花呗金等价于1分，飞猪场景可以传飞猪履约金额用于发奖定价
+	 * 直发花呗金场景：传入应返的金额，单位为分，123代表123分
 	 */
 	@ApiField("amount")
 	private Long amount;

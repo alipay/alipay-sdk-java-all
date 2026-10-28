@@ -11,17 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.localitem.modify response.
  * 
  * @author auto create
- * @since 1.0, 2026-10-19 15:39:13
+ * @since 1.0, 2026-10-23 11:12:57
  */
 public class AlipayOpenAppLocalitemModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7784159189536268721L;
+	private static final long serialVersionUID = 7327546134919932246L;
 
 	/** 
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/** 
+	 * 修改前商家侧商品ID，修改商家侧商品ID后，该字段记录旧值，只记录上一次的值。
+	 */
+	@ApiField("old_out_item_id")
+	private String oldOutItemId;
 
 	/** 
 	 * 商家侧商品ID，要求 APPID 下全局唯一.
@@ -41,6 +47,13 @@ public class AlipayOpenAppLocalitemModifyResponse extends AlipayResponse {
 	}
 	public String getItemId( ) {
 		return this.itemId;
+	}
+
+	public void setOldOutItemId(String oldOutItemId) {
+		this.oldOutItemId = oldOutItemId;
+	}
+	public String getOldOutItemId( ) {
+		return this.oldOutItemId;
 	}
 
 	public void setOutItemId(String outItemId) {

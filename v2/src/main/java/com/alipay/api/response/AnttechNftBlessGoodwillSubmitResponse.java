@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechNftBlessGoodwillSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4413327119715715478L;
+	private static final long serialVersionUID = 3154641399448197979L;
 
 	/** 
 	 * 善念值实际发放个数

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预授权信息。不传表示当前订单不使用预授权及芝麻免押
  *
  * @author auto create
- * @since 1.0, 2025-11-28 14:16:46
+ * @since 1.0, 2026-10-26 16:33:54
  */
 public class RentFundAuthFreezeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7377352591538471865L;
+	private static final long serialVersionUID = 1267646442618882663L;
 
 	/**
 	 * 商家外部传入的预授权单号
@@ -44,6 +44,12 @@ public class RentFundAuthFreezeInfoDTO extends AlipayObject {
 	 */
 	@ApiField("risk_assessment_price")
 	private String riskAssessmentPrice;
+
+	/**
+	 * 风控评估方案ID
+	 */
+	@ApiField("risk_scheme_id")
+	private String riskSchemeId;
 
 	public String getAuthNo() {
 		return this.authNo;
@@ -78,6 +84,13 @@ public class RentFundAuthFreezeInfoDTO extends AlipayObject {
 	}
 	public void setRiskAssessmentPrice(String riskAssessmentPrice) {
 		this.riskAssessmentPrice = riskAssessmentPrice;
+	}
+
+	public String getRiskSchemeId() {
+		return this.riskSchemeId;
+	}
+	public void setRiskSchemeId(String riskSchemeId) {
+		this.riskSchemeId = riskSchemeId;
 	}
 
 }

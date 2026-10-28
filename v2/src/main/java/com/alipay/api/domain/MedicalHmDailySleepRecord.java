@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalHmDailySleepRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 3172773199146863937L;
+	private static final long serialVersionUID = 3329847931335966366L;
 
 	/**
 	 * 睡眠数据类型

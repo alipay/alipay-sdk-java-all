@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubscriptionQueryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1446555552867283356L;
+	private static final long serialVersionUID = 8682385644628769584L;
 
 	/**
 	 * 续费模式代表用户后续续费的支付方式，只在订阅的聚合收银模式下才会返回该字段

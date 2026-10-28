@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询结果数据列表
  *
  * @author auto create
- * @since 1.0, 2025-08-22 14:11:29
+ * @since 1.0, 2026-10-22 15:19:11
  */
 public class AdReportDataDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4474353938892114427L;
+	private static final long serialVersionUID = 7718855239524488116L;
 
 	/**
 	 * 查询素材数据，ALL层级透出
@@ -250,6 +250,12 @@ public class AdReportDataDetail extends AlipayObject {
 	 */
 	@ApiField("principal_alipay_account")
 	private String principalAlipayAccount;
+
+	/**
+	 * 商家ID
+	 */
+	@ApiField("principal_id")
+	private String principalId;
 
 	/**
 	 * 商家名称
@@ -552,6 +558,13 @@ public class AdReportDataDetail extends AlipayObject {
 	}
 	public void setPrincipalAlipayAccount(String principalAlipayAccount) {
 		this.principalAlipayAccount = principalAlipayAccount;
+	}
+
+	public String getPrincipalId() {
+		return this.principalId;
+	}
+	public void setPrincipalId(String principalId) {
+		this.principalId = principalId;
 	}
 
 	public String getPrincipalName() {

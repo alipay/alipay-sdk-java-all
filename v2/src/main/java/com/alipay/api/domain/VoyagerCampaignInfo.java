@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VoyagerCampaignInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6749591869178513133L;
+	private static final long serialVersionUID = 6498533823638115537L;
 
 	/**
 	 * 用户是否可领（活动非进行中或券已用完时为 false）

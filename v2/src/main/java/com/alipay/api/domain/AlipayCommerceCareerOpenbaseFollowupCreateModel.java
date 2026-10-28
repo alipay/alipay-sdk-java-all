@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * AI跟进-创建任务
  *
  * @author auto create
- * @since 1.0, 2026-10-15 14:51:55
+ * @since 1.0, 2026-10-21 13:57:58
  */
 public class AlipayCommerceCareerOpenbaseFollowupCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8194952973719616986L;
+	private static final long serialVersionUID = 2716822939324293555L;
+
+	/**
+	 * 由支付宝的对接人提供的 版本ID标识
+	 */
+	@ApiField("artifact_id")
+	private String artifactId;
 
 	/**
 	 * 候选人姓名
@@ -48,6 +54,13 @@ public class AlipayCommerceCareerOpenbaseFollowupCreateModel extends AlipayObjec
 	 */
 	@ApiField("plan_id")
 	private String planId;
+
+	public String getArtifactId() {
+		return this.artifactId;
+	}
+	public void setArtifactId(String artifactId) {
+		this.artifactId = artifactId;
+	}
 
 	public String getCandidateName() {
 		return this.candidateName;

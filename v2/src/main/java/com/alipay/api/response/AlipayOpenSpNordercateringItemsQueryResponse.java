@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSpNordercateringItemsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4838133898164551266L;
+	private static final long serialVersionUID = 6673843151482988475L;
 
 	/** 
 	 * 品牌跳转链接

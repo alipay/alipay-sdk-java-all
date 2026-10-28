@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.marketing.inscoupon.trigger request
  * 
  * @author auto create
- * @since 1.0, 2026-09-23 10:12:51
+ * @since 1.0, 2026-10-26 17:58:00
  */
 public class AlipayInsMarketingInscouponTriggerRequest implements AlipayRequest<AlipayInsMarketingInscouponTriggerResponse> {
 

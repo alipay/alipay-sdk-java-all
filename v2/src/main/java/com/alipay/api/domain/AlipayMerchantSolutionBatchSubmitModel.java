@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantSolutionBatchSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6593212225961485529L;
+	private static final long serialVersionUID = 6613379515246825277L;
 
 	/**
 	 * 商户以何种维度进行提报。只支持两种枚举值org和orgSource。如果为org，则本次提报商户归属主体为org机构；如果为orgSource，则本次提报商户归属主体为source服务商；如果不传入则默认为orgSource；传入其他值会触发参数错误

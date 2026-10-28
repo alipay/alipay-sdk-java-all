@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * TPA渠道理赔状态回传
  *
  * @author auto create
- * @since 1.0, 2026-10-14 18:02:21
+ * @since 1.0, 2026-10-21 21:42:55
  */
 public class AlipayCommerceMedicalInsuranceTpaclaimstatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2853114818536594618L;
+	private static final long serialVersionUID = 5596289433485185128L;
 
 	/**
 	 * 申请时间
